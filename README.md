@@ -38,4 +38,4 @@ docs/                     the site (static HTML, served by GitHub Pages)
 Data is in [`docs/data.json`](docs/data.json) if you want to use it; a daily
 history per race is kept for up to a year.
 
-Built by [Daniel Goldstein](https://github.com/daniel-a-n-goldstein).
+Built by [Daniel A. N. Goldstein](https://daniel-a-n-goldstein.com), University of Oslo.
