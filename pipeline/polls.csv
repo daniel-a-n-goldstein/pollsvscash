@@ -1,5 +1,5 @@
 "id","poll_prob","poll_margin","poll_date","note"
-"senate-gop",75.6,,"2026-07-12","PLACEHOLDER — replace with a published model probability (e.g. DDHQ Senate forecast) and date it"
+"senate-gop",44,,"2026-07-12","DDHQ Senate forecast and date it, fetched 2026-10-09"
 "house-dem",,7.9,"9/16 - 10/5","RCP average 9/16 - 10/5: Democrats +7.9 (Democrats vs Republicans), fetched 2026-10-09"
 "nc-senate",,8.8,"9/6 - 10/3","RCP average 9/6 - 10/3: Cooper +8.8 (Cooper vs Whatley), fetched 2026-10-09"
 "ga-senate",,7.8,"9/10 - 9/23","RCP average 9/10 - 9/23: Ossoff +7.8 (Ossoff vs Collins), fetched 2026-10-09"
