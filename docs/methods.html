@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Polls vs. Cash — Methods &amp; Assumptions</title>
+<meta name="description" content="How the Polls vs. Cash wedge is computed: data sources, poll-to-probability conversion, and the assumptions behind every number." />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0B2E24; --panel:#0E382B; --ink:#F2EFE6; --muted:#93B0A4;
+          --hair:rgba(242,239,230,0.14); --hope:#FFB52E; --doubt:#52D8C4; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: 'IBM Plex Mono', monospace; padding: 0 18px 60px; }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .display { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; }
+  header { border-bottom: 1px solid var(--hair); padding: 26px 0 18px; }
+  .eyebrow { font-size: 11px; letter-spacing: .22em; color: var(--muted); text-transform: uppercase; }
+  h1 { font-size: clamp(34px, 6vw, 54px); font-weight: 700; line-height: .95; margin-top: 6px; }
+  h1 .cash { color: var(--hope); text-shadow: 0 0 22px rgba(255,181,46,.45); }
+  a { color: var(--doubt); }
+  h2 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 18px;
+       font-weight: 600; letter-spacing: .08em; color: var(--hope); margin: 30px 0 8px; }
+  p { font-size: 13px; color: var(--ink); line-height: 1.75; margin-top: 10px; }
+  .m { color: var(--muted); }
+  .formula { background: var(--panel); border: 1px solid var(--hair); padding: 10px 14px;
+             font-size: 12.5px; margin: 12px 0; overflow-x: auto; white-space: nowrap; }
+  table { border-collapse: collapse; width: 100%; margin-top: 12px; font-size: 12px; }
+  th, td { border: 1px solid var(--hair); padding: 7px 10px; text-align: left; line-height: 1.5; }
+  th { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .06em;
+       font-size: 12.5px; color: var(--muted); font-weight: 600; }
+  td.k { color: var(--hope); white-space: nowrap; }
+  .back { display: inline-block; margin-top: 26px; font-size: 12px; }
+  @media print { body { background: #fff; color: #111; }
+                 :root { --ink:#111; --muted:#555; --hope:#8a5b00; --doubt:#0a6b5d; --panel:#f5f5f5; --hair:#ccc; } }
+</style>
+</head>
+<body><div class="wrap">
+
+<header>
+  <div class="eyebrow">methods &amp; assumptions · one page</div>
+  <h1 class="display">Polls vs. <span class="cash">Cash</span></h1>
+  <p class="m">Every number on the tracker comes from the pipeline below. Nothing is hand-tuned after the fact.</p>
+</header>
+
+<h2>What the wedge is</h2>
+<p>For each race we compare two probabilities: what current <b>polling</b> implies and what
+<b>prediction-market prices</b> imply. The wedge is their difference in percentage points:</p>
+<div class="formula">wedge&nbsp;=&nbsp;market price&nbsp;−&nbsp;poll-implied probability</div>
+<p>A positive (amber, “hope”) wedge means people betting real money are more optimistic than the
+survey data. A negative (teal, “doubt”) wedge means the money is more skeptical. The wedge deliberately
+conflates two things: <i>information</i> the polls haven't absorbed yet, and <i>sentiment</i> — the hopes,
+fears, and biases of the betting crowd. This page can't tell you which is which on any given day.
+Watching which one it turns out to be is the point of the tracker.</p>
+
+<h2>Market prices</h2>
+<p>Prices come from <a href="https://polymarket.com">Polymarket</a>'s public API, using the liquid
+party-level contract for each race (e.g., “Will the Democrats win the Maine Senate race in 2026?”).
+A price of 61.5¢ for a $1 payout is read as a 61.5% implied probability. Prices are last-trade prices,
+fetched once daily at ~06:30 UTC by an automated script.</p>
+
+<h2>Poll benchmarks</h2>
+<p>Poll benchmarks are hand-maintained (updated roughly weekly) from public polling averages and
+recent nonpartisan surveys, with the sources recorded next to each number in the repository. A polling
+margin is converted to a win probability with a normal (probit) model of historical polling error:</p>
+<div class="formula">P(win)&nbsp;=&nbsp;Φ(margin&nbsp;/&nbsp;σ),&nbsp;&nbsp;σ&nbsp;=&nbsp;5.5&nbsp;points</div>
+<p>σ = 5.5 reflects the typical error of state-level polling averages several months before an election.
+So a candidate up 5.5 points gets ~84%, and a tied race gets 50%. As the election nears, true σ shrinks
+and this conversion becomes conservative.</p>
+<p><b>Chamber control</b> has no single poll, so its benchmark comes from a deliberately simple seat
+simulation: each competitive race's polled margin is perturbed by a shared national swing
+(σ<sub>nat</sub> = 3) plus race-level error (σ<sub>race</sub> = 4.6 — together matching the 5.5 above),
+simulated 100,000 times, counting how often Democrats net the four seats they need (a 50–50 tie goes to
+the GOP via the Vice President). The House benchmark converts the generic-ballot average with the same
+probit. These are toy models — transparent, not sophisticated.</p>
+
+<h2>How to read the wedge (the assumptions that matter)</h2>
+<table>
+<tr><th>Assumption / artifact</th><th>What it does to the wedge</th></tr>
+<tr><td class="k">Favorite–longshot bias</td><td>Markets rarely price above ~90¢ or below ~10¢ even for near-certainties,
+because parking cash until November for a penny of upside isn't worth it. Big wedges on lopsided races
+(e.g., polls at 97%, market at 87%) are mostly this — mechanical, not sentiment.</td></tr>
+<tr><td class="k">Thin markets</td><td>Races flagged “thin market” trade on little money; one trader can move them.
+Their wedges are noisy.</td></tr>
+<tr><td class="k">Polls aren't ground truth</td><td>House effects, herding, and differential response mean the poll benchmark
+has its own error. Some of the wedge is poll error, not market opinion.</td></tr>
+<tr><td class="k">Who is betting</td><td>Prediction-market traders are not a representative sample of anyone. The wedge
+measures the mood of a particular moneyed, extremely online crowd — that's the object of interest here, not a bug.</td></tr>
+<tr><td class="k">σ = 5.5 is a choice</td><td>A bigger σ pulls poll probabilities toward 50 and shrinks wedges on lopsided
+races; a smaller σ does the reverse. The qualitative pattern is robust; exact wedge sizes are not.</td></tr>
+<tr><td class="k">Seeded history</td><td>Chart history before 2026-07-12 is reconstructed from the markets' reported
+1-day/1-week/1-month price changes, and poll benchmarks are held flat over those days. From launch onward,
+every point is a genuine daily snapshot.</td></tr>
+</table>
+
+<h2>Update cadence</h2>
+<p>A scheduled GitHub Action fetches market prices daily at ~06:30 UTC, recomputes the wedge, and
+republishes the data — no manual step. Poll benchmarks are edited by hand (~weekly), since polling
+averages barely move day to day. If a price fetch fails, yesterday's price is carried forward and logged.
+When a race resolves, it is kept in the data with its outcome, so over time the tracker accumulates a
+public track record of whether hope or doubt was right.</p>
+
+<p class="m" style="margin-top:26px">This is a data project about measuring public mood, not investment or voting advice.</p>
+<a class="back" href="index.html">← back to the tracker</a>
+
+</div></body>
+</html>
