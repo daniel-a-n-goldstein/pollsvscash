@@ -1,12 +1,12 @@
-id,name,sub,source,identifier,outcome,rcp_id,poll_party
-senate-gop,GOP keeps the Senate,2026 midterms · chamber control,polymarket,will-the-republican-party-control-the-senate-after-the-2026-midterm-elections,Yes,,
-house-dem,Dems take the House,2026 midterms · generic ballot vs control market,polymarket,will-the-democratic-party-control-the-house-after-the-2026-midterm-elections,Yes,8670,Democrat
-nc-senate,Cooper (D) flips NC,NC Senate · Cooper vs Whatley,polymarket,will-the-democrats-win-the-north-carolina-senate-race-in-2026,Yes,8753,Democrat
-ga-senate,Ossoff (D) holds GA,GA Senate · Ossoff vs Collins,polymarket,will-the-democrats-win-the-georgia-senate-race-in-2026,Yes,8718,Democrat
-me-senate,Jackson (D) flips ME,ME Senate · Jackson vs Collins,polymarket,will-the-democrats-win-the-maine-senate-race-in-2026,Yes,9100,Democrat
-mi-senate,El-Sayed (D) holds MI,MI Senate · El-Sayed vs Rogers,polymarket,will-the-democrats-win-the-michigan-senate-race-in-2026,Yes,8802,Democrat
-nh-senate,Pappas (D) holds NH,NH Senate · Pappas vs Sununu,polymarket,will-the-democrats-win-the-new-hampshire-senate-race-in-2026,Yes,8845,Democrat
-tx-senate,Talarico (D) flips TX,TX Senate · Talarico vs Paxton,polymarket,will-the-democrats-win-the-texas-senate-race-in-2026,Yes,8867,Democrat
-oh-senate,Brown (D) flips OH,OH Senate special · Brown vs Husted,polymarket,will-the-democrats-win-the-ohio-senate-race-in-2026,Yes,8689,Democrat
-ia-senate,Turek (D) flips IA,IA Senate · Turek vs Hinson,polymarket,will-the-democrats-win-the-iowa-senate-race-in-2026,Yes,8930,Democrat
-ak-senate,Peltola (D) flips AK,AK Senate · Peltola vs Sullivan · candidate market,polymarket,will-mary-peltola-win-the-alaska-senate-race-in-2026,Yes,8754,Democrat
+id,name,sub,source,identifier,outcome,rcp_id,poll_party,outcome
+senate-gop,GOP keeps the Senate,2026 midterms · chamber control,polymarket,will-the-republican-party-control-the-senate-after-the-2026-midterm-elections,Yes,,,
+house-dem,Dems take the House,2026 midterms · generic ballot vs control market,polymarket,will-the-democratic-party-control-the-house-after-the-2026-midterm-elections,Yes,8670,Democrat,
+nc-senate,Cooper (D) flips NC,NC Senate · Cooper vs Whatley,polymarket,will-the-democrats-win-the-north-carolina-senate-race-in-2026,Yes,8753,Democrat,
+ga-senate,Ossoff (D) holds GA,GA Senate · Ossoff vs Collins,polymarket,will-the-democrats-win-the-georgia-senate-race-in-2026,Yes,8718,Democrat,
+me-senate,Jackson (D) flips ME,ME Senate · Jackson vs Collins,polymarket,will-the-democrats-win-the-maine-senate-race-in-2026,Yes,9100,Democrat,
+mi-senate,El-Sayed (D) holds MI,MI Senate · El-Sayed vs Rogers,polymarket,will-the-democrats-win-the-michigan-senate-race-in-2026,Yes,8802,Democrat,
+nh-senate,Pappas (D) holds NH,NH Senate · Pappas vs Sununu,polymarket,will-the-democrats-win-the-new-hampshire-senate-race-in-2026,Yes,8845,Democrat,
+tx-senate,Talarico (D) flips TX,TX Senate · Talarico vs Paxton,polymarket,will-the-democrats-win-the-texas-senate-race-in-2026,Yes,8867,Democrat,
+oh-senate,Brown (D) flips OH,OH Senate special · Brown vs Husted,polymarket,will-the-democrats-win-the-ohio-senate-race-in-2026,Yes,8689,Democrat,
+ia-senate,Turek (D) flips IA,IA Senate · Turek vs Hinson,polymarket,will-the-democrats-win-the-iowa-senate-race-in-2026,Yes,8930,Democrat,
+ak-senate,Peltola (D) flips AK,AK Senate · Peltola vs Sullivan · candidate market,polymarket,will-mary-peltola-win-the-alaska-senate-race-in-2026,Yes,8754,Democrat,
