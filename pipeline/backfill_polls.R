@@ -5,8 +5,9 @@
 # lists every individual poll with field dates. For each pre-launch
 # day (points flagged est = TRUE in docs/data.json) this script
 # computes a transparent stand-in: the simple mean margin of polls
-# whose field period ended in the trailing 28 days; if there are
-# none (summer lulls), the mean of the last 3 polls before that day.
+# whose field period ended in the trailing 28 days, widened to the
+# most recent 3 polls whenever the window holds fewer than 3 (so a
+# single outlier poll never becomes "the average").
 # This is NOT RCP's average — expect a small seam at launch — and it
 # is only ever applied to points already flagged est = TRUE.
 #
@@ -16,6 +17,7 @@
 suppressMessages(library(jsonlite))
 
 WINDOW <- 28
+MIN_POLLS <- 3
 SIGMA  <- 5.5
 
 races <- read.csv("pipeline/races.csv", stringsAsFactors = FALSE)
@@ -44,7 +46,7 @@ est_margin <- function(polls, day) {
   elig <- polls[polls$end <= day, ]
   if (nrow(elig) == 0) return(NA_real_)
   win <- elig[elig$end > day - WINDOW, ]
-  if (nrow(win) == 0) win <- tail(elig, 3)
+  if (nrow(win) < MIN_POLLS) win <- tail(elig, MIN_POLLS)
   round(mean(win$margin), 1)
 }
 

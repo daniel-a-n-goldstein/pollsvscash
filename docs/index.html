@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Hope Index: Polls vs. Cash</title>
+<title>Polls vs. Cash: The Hope Index</title>
 <meta name="description" content="What bettors believe, minus what the polls say. Daily tracking of the wedge between prediction markets and polling." />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -109,8 +109,9 @@
     haven't caught up to, or it may be hope; this page can't tell you which. Wedges near
     0% or 100% are inflated by the favorite–longshot bias (markets rarely price above
     ~90¢), so read those loosely. Market history before launch (Oct 9) is backfilled
-    from Polymarket; the poll line before launch is a 28-day rolling average of the
-    individual RCP-listed polls (not RCP's own average), drawn dashed. Full
+    from Polymarket from mid-August; the poll line before launch is a 28-day rolling
+    average of the individual RCP-listed polls (at least three polls; not RCP's own
+    average), drawn dashed. Full
     details: <a href="methods.html" style="color:var(--doubt)">methods &amp;
     assumptions</a>. This is a data project, not investment or voting advice.</p>
   </section>
@@ -247,8 +248,7 @@ function chartSVG(hist, race) {
   let pollBand = "";
   const isMargin = race && /RCP average/i.test(race.poll_note || "");
   if (SHOW_BANDS && isMargin) {
-    const from = Math.max(launchIdx, 0);
-    const live = hist.map((d, i) => [d, i]).slice(from);
+    const live = hist.map((d, i) => [d, i]);
     const up = live.map(([d, i]) => [x(i), y(100 * Phi(PhiInv(Math.min(Math.max(d.polls, 0.5), 99.5) / 100) + 1))]);
     const lo = live.map(([d, i]) => [x(i), y(100 * Phi(PhiInv(Math.min(Math.max(d.polls, 0.5), 99.5) / 100) - 1))]).reverse();
     if (up.length < 2) { up.length = 0; }
