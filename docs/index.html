@@ -97,6 +97,8 @@
 
   <section id="detail"></section>
 
+  <section id="record" style="display:none;grid-column:1 / -1;position:relative;z-index:3"></section>
+
   <section class="methodology">
     <h2>How the wedge is computed</h2>
     <p>Market prices are Polymarket prices, fetched daily. The poll side is the
@@ -155,6 +157,41 @@ function render() {
   }).join("");
 
   renderDetail(races.find(r => r.id === selected));
+  renderRecord(races);
+}
+
+// --- post-election track record: for each resolved race, which side was closer on election eve?
+const ELECTION = "2026-11-03";
+function renderRecord(races) {
+  const done = races.filter(r => r.outcome === "Yes" || r.outcome === "No");
+  const el = document.getElementById("record");
+  if (!done.length) { el.style.display = "none"; return; }
+  let money = 0, polls = 0;
+  const rows = done.map(r => {
+    const eve = [...r.history].reverse().find(h => h.date <= ELECTION) || r.history[r.history.length - 1];
+    const y = r.outcome === "Yes" ? 100 : 0;
+    const em = Math.abs(y - eve.market), ep = Math.abs(y - eve.polls);
+    const winner = em < ep ? "money" : (ep < em ? "polls" : "tie");
+    if (winner === "money") money++; else if (winner === "polls") polls++;
+    return `<tr>
+      <td class="display" style="font-size:16px;font-weight:600">${r.name}</td>
+      <td>${r.outcome === "Yes" ? "happened" : "didn't"}</td>
+      <td style="color:var(--hope)">${eve.market}%</td>
+      <td style="color:var(--doubt)">${eve.polls}%</td>
+      <td style="color:${winner === "money" ? "var(--hope)" : winner === "polls" ? "var(--doubt)" : "var(--muted)"};font-weight:600">${winner === "tie" ? "tie" : winner + " (by " + Math.abs(em - ep).toFixed(1) + ")"}</td>
+    </tr>`;
+  }).join("");
+  el.style.display = "block";
+  el.innerHTML = `
+    <div class="sec-head"><span class="sec-title">Track record</span>
+      <span class="muted">election-eve numbers vs. what happened · money ${money} – polls ${polls}</span></div>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:11.5px">
+      <thead><tr style="color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:10px">
+        <th style="text-align:left;padding:8px 14px">race</th><th style="text-align:left;padding:8px 14px">result</th>
+        <th style="text-align:left;padding:8px 14px">money said</th><th style="text-align:left;padding:8px 14px">polls said</th>
+        <th style="text-align:left;padding:8px 14px">closer</th></tr></thead>
+      <tbody>${rows.replace(/<td/g, '<td style="padding:8px 14px;border-top:1px solid var(--hair)"').replace(/<td style="padding:8px 14px;border-top:1px solid var\(--hair\)" style=/g, '<td style="padding:8px 14px;border-top:1px solid var(--hair);')}</tbody></table></div>
+    <p class="detail-blurb" style="margin:8px 14px 14px">"Closer" compares each side's election-eve probability to the outcome (0 or 100). One race tells you little; the tally across the board is the point.</p>`;
 }
 
 function renderDetail(r) {

@@ -101,6 +101,7 @@ out_races <- lapply(seq_len(nrow(races)), function(i) {
     polls  = poll_prob,
     sigma  = 5.5,
     poll_note = if (nrow(p) > 0 && "note" %in% names(p)) p$note[1] else "",
+    outcome = if ("outcome" %in% names(r) && !is.na(r$outcome) && nzchar(r$outcome)) r$outcome else NULL,
     wedge  = round(as.numeric(market_prob) - poll_prob, 1),
     history = hist
   )
