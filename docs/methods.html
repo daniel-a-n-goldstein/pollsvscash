@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The Hope Index — Methods &amp; Assumptions</title>
-<meta name="description" content="How the Polls vs. Cash wedge is computed: data sources, poll-to-probability conversion, and the assumptions behind every number." />
+<meta name="description" content="How the Polls vs. Cash wedge is computed: data sources, poll-to-probability conversion, and the assumptions." />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root { --bg:#0B2E24; --panel:#0E382B; --ink:#F2EFE6; --muted:#93B0A4;
@@ -43,72 +43,69 @@
   <p class="m">Every number on the tracker comes from the pipeline below. Nothing is hand-tuned after the fact.</p>
 </header>
 
-<h2>What the wedge is</h2>
-<p>For each race we compare two probabilities: what current <b>polling</b> implies and what
+<h2>What the hope wedge is</h2>
+<p>For each race, two probabilities are compared: what current <b>polling</b> implies and what
 <b>prediction-market prices</b> imply. The wedge is their difference in percentage points:</p>
 <div class="formula">wedge&nbsp;=&nbsp;market price&nbsp;−&nbsp;poll-implied probability</div>
 <p>A positive (amber, “hope”) wedge means people betting real money are more optimistic than the
-survey data. A negative (teal, “doubt”) wedge means the money is more skeptical. The wedge deliberately
+polling data. A negative (teal, “doubt”) wedge means the money is more skeptical. The wedge 
 conflates two things: <i>information</i> the polls haven't absorbed yet, and <i>sentiment</i> — the hopes,
-fears, and biases of the betting crowd. This page can't tell you which is which on any given day.
-Watching which one it turns out to be is the point of the tracker.</p>
+fears, and biases of the betting crowd. The wedge can't tell the difference.
+An outcome of the tracker is which one turns out to be more accurate.</p>
 
 <h2>Market prices</h2>
 <p>Prices come from <a href="https://polymarket.com">Polymarket</a>'s public API, using the liquid
 party-level contract for each race (e.g., “Will the Democrats win the Maine Senate race in 2026?”).
-A price of 61.5¢ for a $1 payout is read as a 61.5% implied probability. Prices are last-trade prices,
+For example, a price of 61.5¢ for a $1 payout is read as a 61.5% implied probability. Prices are last-trade prices,
 fetched once daily at ~06:30 UTC by an automated script.</p>
 
 <h2>Poll benchmarks</h2>
 <p>The poll benchmark for each race is the <a href="https://www.realclearpolling.com">RealClearPolling</a>
-average, pulled automatically once a week (Sundays) from RCP's public data feed. I don't pick the polls
-or do any averaging myself; the one choice is RCP over the other aggregators, mostly because it has a
-page for every race on the board and its average is the one most people already quote. The source and
-date range of each benchmark are shown under the race on the tracker. The House row uses RCP's generic
+average, pulled automatically once a week on Sundays from RCP's public data feed. I don't pick the polls
+or do any averaging myself. RCP was used because it has a page for every race on the board.
+The source and date range of each benchmark are shown under the race on the tracker. The House row uses RCP's generic
 ballot average, which is a rough proxy for House control, not a model of it. A polling margin is
 converted to a win probability with a normal (probit) model of historical polling error:</p>
 <div class="formula">P(win)&nbsp;=&nbsp;Φ(margin&nbsp;/&nbsp;σ),&nbsp;&nbsp;σ&nbsp;=&nbsp;5.5&nbsp;points</div>
 <p>σ = 5.5 reflects the typical error of state-level polling averages several months before an election.
-So a candidate up 5.5 points gets ~84%, and a tied race gets 50%. As the election nears, true σ shrinks
+For example, a candidate up 5.5 points gets ~84%, and a tied race gets 50%. As the election nears, true σ shrinks
 and this conversion becomes conservative.</p>
 <p><b>Senate control</b> has no polling margin to convert, so its benchmark is a published model
 probability rather than a poll: currently <a href="https://votes.decisiondeskhq.com/forecast/2026">Decision
-Desk HQ</a>'s Senate forecast, entered by hand about once a week and dated in the data file. That row is
-the one place on the board where the "polls" side is someone else's model rather than a polling average,
-so read its wedge accordingly.</p>
+Desk HQ</a>'s Senate forecast, entered by hand about once a week and dated in the data file. This race is
+the only one where the "polls" side is a model rather than a polling average, so it should be read accordingly.</p>
 
-<h2>How to read the wedge (the assumptions that matter)</h2>
+<h2>How to read the hope wedge (the assumptions that matter)</h2>
 <table>
 <tr><th>Assumption / artifact</th><th>What it does to the wedge</th></tr>
 <tr><td class="k">Favorite–longshot bias</td><td>Markets rarely price above ~90¢ or below ~10¢ even for near-certainties,
-because parking cash until November for a penny of upside isn't worth it. Big wedges on lopsided races
-(e.g., polls at 97%, market at 87%) are mostly this — mechanical, not sentiment.</td></tr>
-<tr><td class="k">Thin markets</td><td>Races flagged “thin market” trade on little money; one trader can move them.
-Their wedges are noisy.</td></tr>
-<tr><td class="k">Polls aren't ground truth</td><td>House effects, herding, and differential response mean the poll benchmark
+because parking cash until November for a penny of upside isn't worth it (there are also fees, etc.). Big wedges on lopsided races
+(e.g., polls at 97%, market at 87%) are mostly this mechanical outcome rather than sentiment.</td></tr>
+<tr><td class="k">Thin markets</td><td>Races flagged “thin market” trade on little money, so their wedges are noisy.</td></tr>
+<tr><td class="k">Polls aren't "ground truth"</td><td>House effects, herding, and differential response mean the poll benchmark
 has its own error. Some of the wedge is poll error, not market opinion.</td></tr>
 <tr><td class="k">Who is betting</td><td>Prediction-market traders are not a representative sample of anyone. The wedge
-measures the mood of a particular moneyed, extremely online crowd — that's the object of interest here, not a bug.</td></tr>
+measures the mood of a certain segment of (potentially extremely online) crowd. But perhaps this means they read the sentiment quicker than polls?</td></tr>
 <tr><td class="k">σ = 5.5 is a choice</td><td>A bigger σ pulls poll probabilities toward 50 and shrinks wedges on lopsided
-races; a smaller σ does the reverse. The qualitative pattern is robust; exact wedge sizes are not.</td></tr>
+races. A smaller σ does the inverse. Hence, the qualitative pattern is more robust than exact wedge sizes.</td></tr>
 <tr><td class="k">Pre-launch history</td><td>Market prices before launch (October 9, 2026) are backfilled from
-Polymarket's daily price history back to August 15, so that part of the chart is real. The poll line before launch is an
+Polymarket's daily price history back to August 15. The poll line before launch is an
 estimate, drawn dashed: RCP doesn't publish its past averages, so for each pre-launch day I take the simple
 mean margin of the RCP-listed polls whose field period ended in the previous 28 days, widened to the most
 recent three polls whenever fewer than three fall in the window, and convert it with the same probit. It tracks RCP's current average to within
-about a point, but it is not the same thing, so expect a small seam at launch and read pre-launch wedges
-loosely. From launch onward, every point is a daily snapshot with RCP's own number.</td></tr>
+about a point, but it is not the same thing. This means that pre-launch wedges
+should be read loosely. From launch onward, every point is a daily snapshot with RCP's own number.</td></tr>
 </table>
 
 <h2>Update cadence</h2>
 <p>A scheduled GitHub Action fetches market prices daily at ~06:30 UTC, recomputes the wedge, and
-republishes the data — no manual step. A second script refreshes the RCP poll benchmarks every Sunday;
-polling averages barely move day to day, and a weekly step keeps the two lines visibly different kinds of
+republishes the data. A second script refreshes the RCP poll benchmarks every Sunday.
+Polling averages barely move day to day, and a weekly step keeps the two lines visibly different kinds of
 information. If a fetch fails, the previous value is carried forward and logged.
 When a race resolves, it is kept in the data with its outcome, so over time the tracker accumulates a
 public track record of whether hope or doubt was right.</p>
 
-<p class="m" style="margin-top:26px">This is a data project about measuring public mood, not investment or voting advice.</p>
+<p class="m" style="margin-top:26px">NOTE: this is a data project by Daniel A. N. Goldstein about measuring public mood, not investment or voting advice.</p>
 <a class="back" href="index.html">← back to the tracker</a>
 
 </div></body>
