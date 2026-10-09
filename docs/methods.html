@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Polls vs. Cash — Methods &amp; Assumptions</title>
+<title>Polls vs. Cash: The Hope Index — Methods &amp; Assumptions</title>
 <meta name="description" content="How the Polls vs. Cash wedge is computed: data sources, poll-to-probability conversion, and the assumptions behind every number." />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -39,6 +39,7 @@
 <header>
   <div class="eyebrow">methods &amp; assumptions · one page</div>
   <h1 class="display">Polls vs. <span class="cash">Cash</span></h1>
+  <div class="eyebrow" style="margin-top:6px">the hope index</div>
   <p class="m">Every number on the tracker comes from the pipeline below. Nothing is hand-tuned after the fact.</p>
 </header>
 
@@ -59,19 +60,22 @@ A price of 61.5¢ for a $1 payout is read as a 61.5% implied probability. Prices
 fetched once daily at ~06:30 UTC by an automated script.</p>
 
 <h2>Poll benchmarks</h2>
-<p>Poll benchmarks are hand-maintained (updated roughly weekly) from public polling averages and
-recent nonpartisan surveys, with the sources recorded next to each number in the repository. A polling
-margin is converted to a win probability with a normal (probit) model of historical polling error:</p>
+<p>The poll benchmark for each race is the <a href="https://www.realclearpolling.com">RealClearPolling</a>
+average, pulled automatically once a week (Sundays) from RCP's public data feed. I don't pick the polls
+or do any averaging myself; the one choice is RCP over the other aggregators, mostly because it has a
+page for every race on the board and its average is the one most people already quote. The source and
+date range of each benchmark are shown under the race on the tracker. The House row uses RCP's generic
+ballot average, which is a rough proxy for House control, not a model of it. A polling margin is
+converted to a win probability with a normal (probit) model of historical polling error:</p>
 <div class="formula">P(win)&nbsp;=&nbsp;Φ(margin&nbsp;/&nbsp;σ),&nbsp;&nbsp;σ&nbsp;=&nbsp;5.5&nbsp;points</div>
 <p>σ = 5.5 reflects the typical error of state-level polling averages several months before an election.
 So a candidate up 5.5 points gets ~84%, and a tied race gets 50%. As the election nears, true σ shrinks
 and this conversion becomes conservative.</p>
-<p><b>Chamber control</b> has no single poll, so its benchmark comes from a deliberately simple seat
-simulation: each competitive race's polled margin is perturbed by a shared national swing
-(σ<sub>nat</sub> = 3) plus race-level error (σ<sub>race</sub> = 4.6 — together matching the 5.5 above),
-simulated 100,000 times, counting how often Democrats net the four seats they need (a 50–50 tie goes to
-the GOP via the Vice President). The House benchmark converts the generic-ballot average with the same
-probit. These are toy models — transparent, not sophisticated.</p>
+<p><b>Senate control</b> has no polling margin to convert, so its benchmark is a published model
+probability rather than a poll: currently <a href="https://votes.decisiondeskhq.com/forecast/2026">Decision
+Desk HQ</a>'s Senate forecast, entered by hand about once a week and dated in the data file. That row is
+the one place on the board where the "polls" side is someone else's model rather than a polling average,
+so read its wedge accordingly.</p>
 
 <h2>How to read the wedge (the assumptions that matter)</h2>
 <table>
@@ -87,15 +91,17 @@ has its own error. Some of the wedge is poll error, not market opinion.</td></tr
 measures the mood of a particular moneyed, extremely online crowd — that's the object of interest here, not a bug.</td></tr>
 <tr><td class="k">σ = 5.5 is a choice</td><td>A bigger σ pulls poll probabilities toward 50 and shrinks wedges on lopsided
 races; a smaller σ does the reverse. The qualitative pattern is robust; exact wedge sizes are not.</td></tr>
-<tr><td class="k">Seeded history</td><td>Chart history before 2026-07-12 is reconstructed from the markets' reported
-1-day/1-week/1-month price changes, and poll benchmarks are held flat over those days. From launch onward,
-every point is a genuine daily snapshot.</td></tr>
+<tr><td class="k">Pre-launch history</td><td>Market prices before launch (October 9, 2026) are backfilled from
+Polymarket's daily price history, so that part of the chart is real. The poll line is not: I don't have
+RCP's averages for those dates, so it is held flat at the launch value and drawn dashed. Wedges before
+launch should be ignored. From launch onward, every point is a daily snapshot.</td></tr>
 </table>
 
 <h2>Update cadence</h2>
 <p>A scheduled GitHub Action fetches market prices daily at ~06:30 UTC, recomputes the wedge, and
-republishes the data — no manual step. Poll benchmarks are edited by hand (~weekly), since polling
-averages barely move day to day. If a price fetch fails, yesterday's price is carried forward and logged.
+republishes the data — no manual step. A second script refreshes the RCP poll benchmarks every Sunday;
+polling averages barely move day to day, and a weekly step keeps the two lines visibly different kinds of
+information. If a fetch fails, the previous value is carried forward and logged.
 When a race resolves, it is kept in the data with its outcome, so over time the tracker accumulates a
 public track record of whether hope or doubt was right.</p>
 

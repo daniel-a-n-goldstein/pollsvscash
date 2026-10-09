@@ -34,7 +34,13 @@ fetch_polymarket <- function(slug, outcome) {
   prices   <- as.numeric(fromJSON(m$outcomePrices[1]))
   idx <- match(tolower(outcome), tolower(outcomes))
   if (is.na(idx)) return(NA_real_)
-  round(100 * prices[idx], 1)
+  p <- round(100 * prices[idx], 1)
+  # best bid/ask are quoted for the first (Yes) outcome; flip for No
+  bid <- suppressWarnings(as.numeric(m$bestBid[1])); ask <- suppressWarnings(as.numeric(m$bestAsk[1]))
+  if (idx != 1 && !is.na(bid) && !is.na(ask)) { tmp <- bid; bid <- 1 - ask; ask <- 1 - tmp }
+  attr(p, "bid") <- if (is.na(bid)) NA else round(100 * bid, 1)
+  attr(p, "ask") <- if (is.na(ask)) NA else round(100 * ask, 1)
+  p
 }
 
 fetch_kalshi <- function(ticker, outcome = "yes") {
@@ -79,7 +85,11 @@ out_races <- lapply(seq_len(nrow(races)), function(i) {
 
   # replace today's entry if the script runs twice in one day
   hist <- Filter(function(h) h$date != today, hist)
-  hist <- c(hist, list(list(date = today, market = market_prob, polls = poll_prob)))
+  pt <- list(date = today, market = as.numeric(market_prob), polls = poll_prob)
+  if (!is.null(attr(market_prob, "bid")) && !is.na(attr(market_prob, "bid"))) {
+    pt$bid <- attr(market_prob, "bid"); pt$ask <- attr(market_prob, "ask")
+  }
+  hist <- c(hist, list(pt))
   # keep at most 365 days
   if (length(hist) > 365) hist <- tail(hist, 365)
 
@@ -87,10 +97,11 @@ out_races <- lapply(seq_len(nrow(races)), function(i) {
     id     = r$id,
     name   = r$name,
     sub    = r$sub,
-    market = market_prob,
+    market = as.numeric(market_prob),
     polls  = poll_prob,
+    sigma  = 5.5,
     poll_note = if (nrow(p) > 0 && "note" %in% names(p)) p$note[1] else "",
-    wedge  = round(market_prob - poll_prob, 1),
+    wedge  = round(as.numeric(market_prob) - poll_prob, 1),
     history = hist
   )
 })
