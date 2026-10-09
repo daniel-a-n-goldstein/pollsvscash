@@ -1,9 +1,9 @@
-id,poll_prob,poll_margin,note
-senate-gop,75.6,,toy seat sim from race-level polls (shared national swing sd=3 + race error sd=4.6; Dems need net +4; tie broken by VP) — 2026-07-12
-house-dem,,6.3,Dem generic-ballot average D+6.3 (Silver Bulletin 2026-07-10); converted via probit
-nc-senate,,11,Cooper margin avg: Catawba +14 (late Jun) / Carolina Journal +11 (May) / RightCount +9 (May)
-ga-senate,,8,Ossoff margin avg: Fox +13 (Jun 23-27) / Echelon +7 / Wick +4
-me-senate,,0,effectively tied: NYT-Siena Platner +2 (Jun 19-26) / Quantus +1 / Fox Collins +3
-mi-senate,,0.9,PollingSource avg El-Sayed +0.9 vs Rogers (10 polls last 90d; Dem primary Aug 4)
-nh-senate,,4,Pappas: UNH +7 (Apr) / Emerson +1 (Jun); UNH Jul calls it tight
-tx-senate,,0,tied: UT-Austin Paxton +1 (Jun 5-12) / Texas Pulse tie / NYT-Siena tie (Jun 19-27)
+"id","poll_prob","poll_margin","poll_date","note"
+"senate-gop",75.6,,"2026-07-12","PLACEHOLDER — replace with a published model probability (e.g. DDHQ Senate forecast) and date it"
+"house-dem",,7.9,"9/16 - 10/5","RCP average 9/16 - 10/5: Democrats +7.9 (Democrats vs Republicans), fetched 2026-10-09"
+"nc-senate",,8.8,"9/6 - 10/3","RCP average 9/6 - 10/3: Cooper +8.8 (Cooper vs Whatley), fetched 2026-10-09"
+"ga-senate",,7.8,"9/10 - 9/23","RCP average 9/10 - 9/23: Ossoff +7.8 (Ossoff vs Collins), fetched 2026-10-09"
+"me-senate",,1,"9/14 - 10/5","RCP average 9/14 - 10/5: Jackson +1.0 (Jackson vs Collins), fetched 2026-10-09"
+"mi-senate",,3.2,"9/15 - 10/6","RCP average 9/15 - 10/6: El-Sayed +3.2 (El-Sayed vs Rogers), fetched 2026-10-09"
+"nh-senate",,5.9,"9/9 - 10/5","RCP average 9/9 - 10/5: Pappas +5.9 (Pappas vs Sununu), fetched 2026-10-09"
+"tx-senate",,2.8,"9/12 - 10/5","RCP average 9/12 - 10/5: Talarico +2.8 (Talarico vs Paxton), fetched 2026-10-09"
