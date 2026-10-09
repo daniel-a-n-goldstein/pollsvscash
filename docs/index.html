@@ -171,6 +171,7 @@ function renderDetail(r) {
         <span>market <b style="color:var(--hope)">${r.market}%</b> · polls <b style="color:var(--doubt)">${r.polls}%</b></span>
       </div>
       <p class="detail-blurb">${blurb}</p>
+      ${r.poll_note ? `<p class="detail-blurb" style="margin-top:0;opacity:.8">Poll benchmark: ${r.poll_note}</p>` : ""}
     </div>
     ${chartSVG(r.history)}
     <div class="legend"><span><span style="color:var(--hope)">━</span> market price</span>

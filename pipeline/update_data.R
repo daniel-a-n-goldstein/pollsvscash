@@ -89,6 +89,7 @@ out_races <- lapply(seq_len(nrow(races)), function(i) {
     sub    = r$sub,
     market = market_prob,
     polls  = poll_prob,
+    poll_note = if (nrow(p) > 0 && "note" %in% names(p)) p$note[1] else "",
     wedge  = round(market_prob - poll_prob, 1),
     history = hist
   )

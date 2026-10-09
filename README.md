@@ -16,18 +16,23 @@ for the assumptions.
 ## How it works
 
 ```
-pipeline/races.csv       which markets are tracked (Polymarket slugs / Kalshi tickers)
-pipeline/polls.csv       poll benchmarks, with source notes — updated by hand
-pipeline/update_data.R   pulls market prices, computes the wedge, writes docs/data.json
-docs/                    the site (static HTML, served by GitHub Pages)
-.github/workflows/       runs the pipeline daily at 06:30 UTC and commits the result
+pipeline/races.csv        which markets are tracked (Polymarket slugs) and which RCP race id benchmarks each
+pipeline/update_polls.R   weekly: fetches RealClearPolling averages into pipeline/polls.csv
+pipeline/polls_manual.csv benchmarks that have no RCP average (chamber control uses a model probability)
+pipeline/update_data.R    daily: pulls market prices, computes the wedge, writes docs/data.json
+docs/                     the site (static HTML, served by GitHub Pages)
+.github/workflows/        daily market run (06:30 UTC) and weekly poll refresh (Sundays 06:00 UTC)
 ```
 
 - **Market prices** are last-trade prices from the Polymarket Gamma API and the
   Kalshi API. No liquidity weighting; thin markets can show noisy numbers.
-- **Poll-implied probabilities** come either straight from a published model or
-  from a polling margin converted via a normal error model
-  (`pnorm(margin / sigma)`, sigma = 5.5 points).
+- **Poll-implied probabilities** come from the RealClearPolling average for each
+  race (refreshed weekly, so the poll series is a step function by design),
+  converted to a win probability via a normal error model
+  (`pnorm(margin / sigma)`, sigma = 5.5 points). The House row uses the RCP
+  generic-ballot average, which is a loose proxy for chamber control. Senate
+  control has no polling margin, so it uses a published model probability,
+  entered by hand and dated in `polls_manual.csv`.
 - **Wedge** = market − polls, in percentage points.
 
 Data is in [`docs/data.json`](docs/data.json) if you want to use it; a daily
