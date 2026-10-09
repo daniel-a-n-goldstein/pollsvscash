@@ -163,19 +163,19 @@ function render() {
 // --- post-election track record: for each resolved race, which side was closer on election eve?
 const ELECTION = "2026-11-03";
 function renderRecord(races) {
-  const done = races.filter(r => r.outcome === "Yes" || r.outcome === "No");
+  const done = races.filter(r => r.result === "Yes" || r.result === "No");
   const el = document.getElementById("record");
   if (!done.length) { el.style.display = "none"; return; }
   let money = 0, polls = 0;
   const rows = done.map(r => {
     const eve = [...r.history].reverse().find(h => h.date <= ELECTION) || r.history[r.history.length - 1];
-    const y = r.outcome === "Yes" ? 100 : 0;
+    const y = r.result === "Yes" ? 100 : 0;
     const em = Math.abs(y - eve.market), ep = Math.abs(y - eve.polls);
     const winner = em < ep ? "money" : (ep < em ? "polls" : "tie");
     if (winner === "money") money++; else if (winner === "polls") polls++;
     return `<tr>
       <td class="display" style="font-size:16px;font-weight:600">${r.name}</td>
-      <td>${r.outcome === "Yes" ? "happened" : "didn't"}</td>
+      <td>${r.result === "Yes" ? "happened" : "didn't"}</td>
       <td style="color:var(--hope)">${eve.market}%</td>
       <td style="color:var(--doubt)">${eve.polls}%</td>
       <td style="color:${winner === "money" ? "var(--hope)" : winner === "polls" ? "var(--doubt)" : "var(--muted)"};font-weight:600">${winner === "tie" ? "tie" : winner + " (by " + Math.abs(em - ep).toFixed(1) + ")"}</td>
