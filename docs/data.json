@@ -6,9 +6,9 @@
       "name": "GOP keeps the Senate",
       "sub": "2026 midterms · chamber control",
       "market": 36.5,
-      "polls": 75.6,
-      "poll_note": "PLACEHOLDER — replace with a published model probability (e.g. DDHQ Senate forecast) and date it",
-      "wedge": -39.1,
+      "polls": 44,
+      "poll_note": "DDHQ Senate forecast and date it, fetched 2026-10-09",
+      "wedge": -7.5,
       "history": [
         {
           "date": "2026-06-12",
@@ -33,7 +33,7 @@
         {
           "date": "2026-10-09",
           "market": 36.5,
-          "polls": 75.6
+          "polls": 44
         }
       ]
     },
@@ -257,10 +257,10 @@
       "id": "tx-senate",
       "name": "Talarico (D) flips TX",
       "sub": "TX Senate · Talarico vs Paxton",
-      "market": 61.5,
+      "market": 60.5,
       "polls": 69.5,
       "poll_note": "RCP average 9/12 - 10/5: Talarico +2.8 (Talarico vs Paxton), fetched 2026-10-09",
-      "wedge": -8,
+      "wedge": -9,
       "history": [
         {
           "date": "2026-06-12",
@@ -284,7 +284,7 @@
         },
         {
           "date": "2026-10-09",
-          "market": 61.5,
+          "market": 60.5,
           "polls": 69.5
         }
       ]
