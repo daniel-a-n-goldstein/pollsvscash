@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Polls vs. Cash</title>
+<title>Polls vs. Cash: The Hope Index</title>
 <meta name="description" content="What bettors believe, minus what the polls say. Daily tracking of the wedge between prediction markets and polling." />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -72,9 +72,10 @@
 <header><div class="wrap">
   <div class="masthead">
     <div>
-      <div class="eyebrow">polls vs. the money · updated daily</div>
+      <div class="eyebrow">the hope index · updated daily</div>
       <h1 class="display">Polls vs. <span class="cash">Cash</span></h1>
-      <p class="tagline">What bettors believe, minus what the polls say. Amber means the money is more hopeful than the data. Teal means it's more doubtful.</p>
+      <p class="tagline">The audacity to hope the polls are wrong. People are putting real money on elections where the polling updates almost daily, and sometimes the money and the polls disagree. Polls are cheap talk; bets cost something, so maybe the money is the real sentiment. Or maybe it's partisan cheerleading with a wallet. The Hope Index tracks the spread, race by race, until November. After the election we'll see where the smart money was.</p>
+      <p class="tagline" style="margin-top:6px">Amber: the money is more hopeful than the polls. Teal: more doubtful.</p>
     </div>
     <div class="statline" id="stats"></div>
   </div>
@@ -98,18 +99,17 @@
 
   <section class="methodology">
     <h2>How the wedge is computed</h2>
-    <p>Market prices are prediction-market prices (Polymarket and Kalshi). Poll-implied
-    probabilities convert aggregated polling into win probabilities via a simple
-    historical-error model. Wedge = market − polls, in percentage points. A positive
-    wedge means the money is more optimistic than the survey data; it may reflect real
-    information the polls miss — or pure hope. Wedges near 0% or 100% are inflated by
-    the favorite-longshot bias (markets rarely price above ~90¢), and races marked
-    "thin market" trade on little money, so read those wedges loosely. Chamber-control
-    "poll" numbers come from a simple seat-by-seat simulation of current race polling,
-    not a single survey. Chart history before 2026-07-12 is seeded from the markets'
-    reported 1-day/1-week/1-month price changes; poll benchmarks are held flat over
-    seeded days. Full details: <a href="methods.html" style="color:var(--doubt)">methods
-    &amp; assumptions</a>. This is a data project, not investment or voting advice.</p>
+    <p>Market prices are Polymarket prices, fetched daily. The poll side is the
+    RealClearPolling average for each race, refreshed weekly and converted to a win
+    probability with a simple polling-error model (σ = 5.5 points); Senate control uses
+    Decision Desk HQ's forecast instead, since there is no margin to convert. Wedge =
+    market − polls, in percentage points. A positive wedge may be information the polls
+    haven't caught up to, or it may be hope; this page can't tell you which. Wedges near
+    0% or 100% are inflated by the favorite–longshot bias (markets rarely price above
+    ~90¢), so read those loosely. Market history before launch (Oct 9) is backfilled
+    from Polymarket; the poll line before launch is held flat and drawn dashed. Full
+    details: <a href="methods.html" style="color:var(--doubt)">methods &amp;
+    assumptions</a>. This is a data project, not investment or voting advice.</p>
   </section>
 </main></div>
 
@@ -173,30 +173,76 @@ function renderDetail(r) {
       <p class="detail-blurb">${blurb}</p>
       ${r.poll_note ? `<p class="detail-blurb" style="margin-top:0;opacity:.8">Poll benchmark: ${r.poll_note}</p>` : ""}
     </div>
-    ${chartSVG(r.history)}
+    ${chartSVG(r.history, r)}
     <div class="legend"><span><span style="color:var(--hope)">━</span> market price</span>
-    <span><span style="color:var(--doubt)">━</span> poll-implied</span></div>`;
+    <span><span style="color:var(--doubt)">━</span> poll-implied</span>
+    <span><span style="color:var(--doubt)">┄</span> held flat pre-launch</span>
+    <button onclick="toggleBands()" style="margin-left:auto;background:none;border:1px solid var(--hair);color:var(--muted);font:inherit;font-size:10.5px;padding:2px 8px;cursor:pointer">${SHOW_BANDS ? "hide" : "show"} uncertainty</button></div>
+    ${SHOW_BANDS ? '<p class="detail-blurb" style="margin:0 16px 12px;font-size:10.5px">Teal band: ±1 standard error of polling error (σ = 5.5 points) around the poll benchmark. Amber band: the market\'s bid–ask spread, where recorded. The band is wide on purpose: a few-point polling lead is well within historical error.</p>' : ''}`;
 }
 
-function chartSVG(hist) {
+// --- normal CDF / inverse, for the poll band (±1σ of polling error, in probit space)
+function Phi(x){ const t=1/(1+0.2316419*Math.abs(x)); const d=0.3989423*Math.exp(-x*x/2);
+  let p=d*t*(0.3193815+t*(-0.3565638+t*(1.781478+t*(-1.821256+t*1.330274)))); return x>0?1-p:p; }
+function PhiInv(p){ let lo=-6,hi=6; for(let i=0;i<60;i++){const m=(lo+hi)/2; if(Phi(m)<p) lo=m; else hi=m;} return (lo+hi)/2; }
+let SHOW_BANDS = false;
+try { SHOW_BANDS = localStorage.getItem('pvc_bands') === '1'; } catch (e) {}
+
+function chartSVG(hist, race) {
   const W = 520, H = 230, L = 38, R = 12, T = 14, B = 26;
   const n = hist.length;
   const x = i => L + (n === 1 ? 0 : i / (n - 1) * (W - L - R));
   const y = v => T + (1 - v / 100) * (H - T - B);
-  const path = key => hist.map((d, i) => (i ? "L" : "M") + x(i).toFixed(1) + " " + y(d[key]).toFixed(1)).join(" ");
+  const seg = (pts) => pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
   const grid = [0, 25, 50, 75, 100].map(v =>
     `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="rgba(242,239,230,0.08)" ${v === 50 ? 'stroke-dasharray="3 3" stroke="rgba(242,239,230,0.2)"' : ""}/>
      <text x="${L - 6}" y="${y(v) + 3}" text-anchor="end">${v}%</text>`).join("");
   const xticks = [0, Math.floor(n / 2), n - 1].map(i =>
     `<text x="${x(i)}" y="${H - 8}" text-anchor="middle">${hist[i].date.slice(5)}</text>`).join("");
+
+  // launch marker: first non-estimated point
+  const launchIdx = hist.findIndex(d => !d.est);
+  const launch = launchIdx > 0 ? `<line x1="${x(launchIdx)}" x2="${x(launchIdx)}" y1="${T}" y2="${H - B}" stroke="rgba(242,239,230,0.25)" stroke-dasharray="2 3"/>
+     <text x="${x(launchIdx) + (x(launchIdx) > W - 60 ? -4 : 4)}" y="${T + 9}" text-anchor="${x(launchIdx) > W - 60 ? "end" : "start"}" fill="rgba(242,239,230,0.5)">launch</text>` : "";
+
+  // poll band: Φ(Φ⁻¹(p) ± 1) — only meaningful when the benchmark is a polling margin
+  let pollBand = "";
+  const isMargin = race && /RCP average/i.test(race.poll_note || "");
+  if (SHOW_BANDS && isMargin) {
+    const from = Math.max(launchIdx, 0);
+    const live = hist.map((d, i) => [d, i]).slice(from);
+    const up = live.map(([d, i]) => [x(i), y(100 * Phi(PhiInv(Math.min(Math.max(d.polls, 0.5), 99.5) / 100) + 1))]);
+    const lo = live.map(([d, i]) => [x(i), y(100 * Phi(PhiInv(Math.min(Math.max(d.polls, 0.5), 99.5) / 100) - 1))]).reverse();
+    if (up.length < 2) { up.length = 0; }
+    if (up.length) pollBand = `<path d="${seg(up)} ${seg(lo).replace(/^M/, "L")} Z" fill="#52D8C4" fill-opacity="0.12" stroke="none"/>`;
+  }
+  // market band: bid–ask where recorded
+  let mktBand = "";
+  const withBA = hist.map((d, i) => [i, d]).filter(([i, d]) => d.bid != null && d.ask != null);
+  if (SHOW_BANDS && withBA.length > 1) {
+    const up = withBA.map(([i, d]) => [x(i), y(d.ask)]);
+    const lo = withBA.map(([i, d]) => [x(i), y(d.bid)]).reverse();
+    mktBand = `<path d="${seg(up)} ${seg(lo).replace(/^M/, "L")} Z" fill="#FFB52E" fill-opacity="0.18" stroke="none"/>`;
+  }
+
+  // poll line: dashed while estimated, solid after
+  const est = hist.map((d, i) => [x(i), y(d.polls), !!d.est]);
+  let pollPaths = "";
+  if (launchIdx > 0) {
+    pollPaths += `<path d="${seg(est.slice(0, launchIdx + 1))}" fill="none" stroke="#52D8C4" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>`;
+    pollPaths += `<path d="${seg(est.slice(launchIdx))}" fill="none" stroke="#52D8C4" stroke-width="2"/>`;
+  } else {
+    pollPaths = `<path d="${seg(est)}" fill="none" stroke="#52D8C4" stroke-width="2"/>`;
+  }
+  const mktPath = `<path d="${seg(hist.map((d, i) => [x(i), y(d.market)]))}" fill="none" stroke="#FFB52E" stroke-width="2"/>`;
+
   return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block;padding:6px 6px 0">
-    ${grid}${xticks}
-    <path d="${path("polls")}" fill="none" stroke="#52D8C4" stroke-width="2"/>
-    <path d="${path("market")}" fill="none" stroke="#FFB52E" stroke-width="2"/>
+    ${grid}${xticks}${launch}${pollBand}${mktBand}${pollPaths}${mktPath}
   </svg>`;
 }
 
 window.select = id => { selected = id; render(); };
+window.toggleBands = () => { SHOW_BANDS = !SHOW_BANDS; try { localStorage.setItem('pvc_bands', SHOW_BANDS ? '1' : '0'); } catch (e) {} render(); };
 load().catch(() => {
   document.getElementById("updated").textContent = "could not load data.json";
 });
