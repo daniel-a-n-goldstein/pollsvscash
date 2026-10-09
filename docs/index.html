@@ -109,7 +109,8 @@
     haven't caught up to, or it may be hope; this page can't tell you which. Wedges near
     0% or 100% are inflated by the favorite–longshot bias (markets rarely price above
     ~90¢), so read those loosely. Market history before launch (Oct 9) is backfilled
-    from Polymarket; the poll line before launch is held flat and drawn dashed. Full
+    from Polymarket; the poll line before launch is a 28-day rolling average of the
+    individual RCP-listed polls (not RCP's own average), drawn dashed. Full
     details: <a href="methods.html" style="color:var(--doubt)">methods &amp;
     assumptions</a>. This is a data project, not investment or voting advice.</p>
   </section>
@@ -213,7 +214,7 @@ function renderDetail(r) {
     ${chartSVG(r.history, r)}
     <div class="legend"><span><span style="color:var(--hope)">━</span> market price</span>
     <span><span style="color:var(--doubt)">━</span> poll-implied</span>
-    <span><span style="color:var(--doubt)">┄</span> held flat pre-launch</span>
+    <span><span style="color:var(--doubt)">┄</span> estimated pre-launch</span>
     <button onclick="toggleBands()" style="margin-left:auto;background:none;border:1px solid var(--hair);color:var(--muted);font:inherit;font-size:10.5px;padding:2px 8px;cursor:pointer">${SHOW_BANDS ? "hide" : "show"} uncertainty</button></div>
     ${SHOW_BANDS ? '<p class="detail-blurb" style="margin:0 16px 12px;font-size:10.5px">Teal band: ±1 standard error of polling error (σ = 5.5 points) around the poll benchmark. Amber band: the market\'s bid–ask spread, where recorded. The band is wide on purpose: a few-point polling lead is well within historical error.</p>' : ''}`;
 }

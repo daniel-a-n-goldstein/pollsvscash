@@ -22,10 +22,12 @@ jobs:
         run: Rscript pipeline/update_data.R
       - name: Backfill market history
         run: Rscript pipeline/backfill_markets.R
+      - name: Estimate pre-launch poll line from individual polls
+        run: Rscript pipeline/backfill_polls.R
       - name: Commit
         run: |
           git config user.name "pollsvscash-bot"
           git config user.email "actions@github.com"
           git add pipeline/polls.csv docs/data.json
-          git diff --cached --quiet || git commit -m "Backfill market history from Polymarket"
+          git diff --cached --quiet || git commit -m "Backfill pre-launch market and poll history"
           git push
