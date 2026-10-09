@@ -86,7 +86,7 @@
   <section id="board">
     <div class="sec-head">
       <span class="sec-title">The board</span>
-      <span class="muted">sorted by |wedge|</span>
+      <span class="muted">most hopeful → most doubtful</span>
     </div>
     <div class="axis-labels">
       <span style="color:var(--doubt)">◂ doubt</span>
@@ -124,7 +124,7 @@ let DATA = null, selected = null;
 async function load() {
   const res = await fetch("data.json", { cache: "no-store" });
   DATA = await res.json();
-  DATA.races.sort((a, b) => Math.abs(b.wedge) - Math.abs(a.wedge));
+  DATA.races.sort((a, b) => b.wedge - a.wedge);
   selected = DATA.races[0].id;
   render();
 }
@@ -217,6 +217,7 @@ function renderDetail(r) {
     <span><span style="color:var(--doubt)">━</span> poll-implied</span>
     <span><span style="color:var(--doubt)">┄</span> estimated pre-launch</span>
     <button onclick="toggleBands()" style="margin-left:auto;background:none;border:1px solid var(--hair);color:var(--muted);font:inherit;font-size:10.5px;padding:2px 8px;cursor:pointer">${SHOW_BANDS ? "hide" : "show"} uncertainty</button></div>
+    ${SHOW_BANDS && !/RCP average/i.test(r.poll_note || "") ? '<p class="detail-blurb" style="margin:0 16px 12px;font-size:10.5px">No teal band here: this benchmark is a model probability, not a polling margin, so there is no polling error to draw.</p>' : ''}
     ${SHOW_BANDS ? '<p class="detail-blurb" style="margin:0 16px 12px;font-size:10.5px">Teal band: ±1 standard error of polling error (σ = 5.5 points) around the poll benchmark. Amber band: the market\'s bid–ask spread, where recorded. The band is wide on purpose: a few-point polling lead is well within historical error.</p>' : ''}`;
 }
 
