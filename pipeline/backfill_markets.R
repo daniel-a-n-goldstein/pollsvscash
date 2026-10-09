@@ -15,7 +15,7 @@
 suppressMessages(library(jsonlite))
 
 LAUNCH <- as.Date("2026-10-09")
-START  <- as.Date("2026-06-01")
+START  <- as.Date("2026-08-15")
 
 races <- read.csv("pipeline/races.csv", stringsAsFactors = FALSE)
 data_path <- "docs/data.json"
