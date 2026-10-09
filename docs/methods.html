@@ -67,9 +67,10 @@ The source and date range of each benchmark are shown under the race on the trac
 ballot average, which is a rough proxy for House control, not a model of it. A polling margin is
 converted to a win probability with a normal (probit) model of historical polling error:</p>
 <div class="formula">P(win)&nbsp;=&nbsp;Φ(margin&nbsp;/&nbsp;σ),&nbsp;&nbsp;σ&nbsp;=&nbsp;5.5&nbsp;points</div>
-<p>σ = 5.5 reflects the typical error of state-level polling averages several months before an election.
-For example, a candidate up 5.5 points gets ~84%, and a tied race gets 50%. As the election nears, true σ shrinks
-and this conversion becomes conservative.</p>
+<p>σ = 5.5 is roughly the historical error of state-level polling averages against the result, and it is held
+fixed through election day so the wedge series stays comparable over time rather than shifting with the knob.
+For example, a candidate up 5.5 points gets ~84%, and a tied race gets 50%. If anything it is slightly conservative
+for the final weeks, which pulls poll probabilities toward 50 and makes wedges on lopsided races look a little larger.</p>
 <p><b>Senate control</b> has no polling margin to convert, so its benchmark is a published model
 probability rather than a poll: currently <a href="https://votes.decisiondeskhq.com/forecast/2026">Decision
 Desk HQ</a>'s Senate forecast, entered by hand about once a week and dated in the data file. This row is
