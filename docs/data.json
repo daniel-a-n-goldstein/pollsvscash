@@ -1,0 +1,117 @@
+{
+  "updated": "2026-07-12",
+  "races": [
+    {
+      "id": "senate-gop",
+      "name": "GOP keeps the Senate",
+      "sub": "2026 midterms · chamber control",
+      "market": 55.5,
+      "polls": 75.6,
+      "wedge": -20.1,
+      "history": [
+        { "date": "2026-06-12", "market": 52.5, "polls": 75.6 },
+        { "date": "2026-07-05", "market": 53.5, "polls": 75.6 },
+        { "date": "2026-07-11", "market": 54.5, "polls": 75.6 },
+        { "date": "2026-07-12", "market": 55.5, "polls": 75.6 }
+      ]
+    },
+    {
+      "id": "house-dem",
+      "name": "Dems take the House",
+      "sub": "2026 midterms · chamber control",
+      "market": 80.5,
+      "polls": 87.4,
+      "wedge": -6.9,
+      "history": [
+        { "date": "2026-06-12", "market": 83.5, "polls": 87.4 },
+        { "date": "2026-07-05", "market": 80.5, "polls": 87.4 },
+        { "date": "2026-07-11", "market": 80.5, "polls": 87.4 },
+        { "date": "2026-07-12", "market": 80.5, "polls": 87.4 }
+      ]
+    },
+    {
+      "id": "nc-senate",
+      "name": "Cooper (D) flips NC",
+      "sub": "NC Senate · Cooper vs Whatley",
+      "market": 87,
+      "polls": 97.7,
+      "wedge": -10.7,
+      "history": [
+        { "date": "2026-06-12", "market": 85, "polls": 97.7 },
+        { "date": "2026-07-05", "market": 87, "polls": 97.7 },
+        { "date": "2026-07-11", "market": 87, "polls": 97.7 },
+        { "date": "2026-07-12", "market": 87, "polls": 97.7 }
+      ]
+    },
+    {
+      "id": "ga-senate",
+      "name": "Ossoff (D) holds GA",
+      "sub": "GA Senate · Ossoff vs Collins",
+      "market": 86.5,
+      "polls": 92.7,
+      "wedge": -6.2,
+      "history": [
+        { "date": "2026-06-12", "market": 84.5, "polls": 92.7 },
+        { "date": "2026-07-05", "market": 86.5, "polls": 92.7 },
+        { "date": "2026-07-11", "market": 85.5, "polls": 92.7 },
+        { "date": "2026-07-12", "market": 86.5, "polls": 92.7 }
+      ]
+    },
+    {
+      "id": "me-senate",
+      "name": "Platner (D) flips ME",
+      "sub": "ME Senate · Platner vs Collins",
+      "market": 61.5,
+      "polls": 50,
+      "wedge": 11.5,
+      "history": [
+        { "date": "2026-06-12", "market": 66.5, "polls": 50 },
+        { "date": "2026-07-05", "market": 53.5, "polls": 50 },
+        { "date": "2026-07-11", "market": 63, "polls": 50 },
+        { "date": "2026-07-12", "market": 61.5, "polls": 50 }
+      ]
+    },
+    {
+      "id": "mi-senate",
+      "name": "Dems hold MI",
+      "sub": "MI Senate · open seat · thin market",
+      "market": 73.5,
+      "polls": 56.5,
+      "wedge": 17,
+      "history": [
+        { "date": "2026-06-12", "market": 71.5, "polls": 56.5 },
+        { "date": "2026-07-05", "market": 70, "polls": 56.5 },
+        { "date": "2026-07-11", "market": 72.5, "polls": 56.5 },
+        { "date": "2026-07-12", "market": 73.5, "polls": 56.5 }
+      ]
+    },
+    {
+      "id": "nh-senate",
+      "name": "Pappas (D) holds NH",
+      "sub": "NH Senate · Pappas vs Sununu",
+      "market": 84.5,
+      "polls": 76.6,
+      "wedge": 7.9,
+      "history": [
+        { "date": "2026-06-12", "market": 78.5, "polls": 76.6 },
+        { "date": "2026-07-05", "market": 83, "polls": 76.6 },
+        { "date": "2026-07-11", "market": 84, "polls": 76.6 },
+        { "date": "2026-07-12", "market": 84.5, "polls": 76.6 }
+      ]
+    },
+    {
+      "id": "tx-senate",
+      "name": "Talarico (D) flips TX",
+      "sub": "TX Senate · Talarico vs Paxton",
+      "market": 44.5,
+      "polls": 50,
+      "wedge": -5.5,
+      "history": [
+        { "date": "2026-06-12", "market": 43.5, "polls": 50 },
+        { "date": "2026-07-05", "market": 43.5, "polls": 50 },
+        { "date": "2026-07-11", "market": 44.5, "polls": 50 },
+        { "date": "2026-07-12", "market": 44.5, "polls": 50 }
+      ]
+    }
+  ]
+}
