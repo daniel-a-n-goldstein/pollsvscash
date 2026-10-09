@@ -9,6 +9,7 @@
       "polls": 44,
       "sigma": 5.5,
       "poll_note": "DDHQ 2026 Senate forecast: GOP control 44% (Dem 56%), read 2026-10-09",
+      "result": {},
       "wedge": -7.5,
       "history": [
         {
@@ -802,6 +803,7 @@
       "polls": 92.5,
       "sigma": 5.5,
       "poll_note": "RCP average 9/16 - 10/5: Democrats +7.9 (Democrats vs Republicans), fetched 2026-10-09",
+      "result": {},
       "wedge": -2,
       "history": [
         {
@@ -1601,6 +1603,7 @@
       "polls": 94.5,
       "sigma": 5.5,
       "poll_note": "RCP average 9/6 - 10/3: Cooper +8.8 (Cooper vs Whatley), fetched 2026-10-09",
+      "result": {},
       "wedge": 1.9,
       "history": [
         {
@@ -2400,6 +2403,7 @@
       "polls": 92.2,
       "sigma": 5.5,
       "poll_note": "RCP average 9/10 - 9/23: Ossoff +7.8 (Ossoff vs Collins), fetched 2026-10-09",
+      "result": {},
       "wedge": 4.5,
       "history": [
         {
@@ -3193,6 +3197,7 @@
       "polls": 57.2,
       "sigma": 5.5,
       "poll_note": "RCP average 9/14 - 10/5: Jackson +1.0 (Jackson vs Collins), fetched 2026-10-09",
+      "result": {},
       "wedge": 1.3,
       "history": [
         {
@@ -3986,6 +3991,7 @@
       "polls": 72,
       "sigma": 5.5,
       "poll_note": "RCP average 9/15 - 10/6: El-Sayed +3.2 (El-Sayed vs Rogers), fetched 2026-10-09",
+      "result": {},
       "wedge": -3.5,
       "history": [
         {
@@ -4785,6 +4791,7 @@
       "polls": 85.8,
       "sigma": 5.5,
       "poll_note": "RCP average 9/9 - 10/5: Pappas +5.9 (Pappas vs Sununu), fetched 2026-10-09",
+      "result": {},
       "wedge": 3.7,
       "history": [
         {
@@ -5566,6 +5573,7 @@
       "polls": 69.5,
       "sigma": 5.5,
       "poll_note": "RCP average 9/12 - 10/5: Talarico +2.8 (Talarico vs Paxton), fetched 2026-10-09",
+      "result": {},
       "wedge": -9,
       "history": [
         {
@@ -6359,6 +6367,7 @@
       "polls": 71.3,
       "sigma": 5.5,
       "poll_note": "RCP average 9/1 - 10/6: Brown +3.1 (Brown vs Husted), fetched 2026-10-09",
+      "result": {},
       "wedge": -8.8,
       "history": [
         {
@@ -7158,6 +7167,7 @@
       "polls": 53.6,
       "sigma": 5.5,
       "poll_note": "RCP average 9/9 - 10/6: Turek +0.5 (Turek vs Hinson), fetched 2026-10-09",
+      "result": {},
       "wedge": -10.1,
       "history": [
         {
@@ -7951,6 +7961,7 @@
       "polls": 58.6,
       "sigma": 5.5,
       "poll_note": "RCP average 9/14 - 10/3: Peltola +1.2 (Peltola vs Sullivan), fetched 2026-10-09",
+      "result": {},
       "wedge": 14.9,
       "history": [
         {
