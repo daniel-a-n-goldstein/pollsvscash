@@ -9,6 +9,7 @@
 <meta property="og:description" content="What bettors believe, minus what the polls say. Tracked daily, race by race, until November." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://daniel-a-n-goldstein.github.io/pollsvscash/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230B2E24%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%279%27 fill=%27%23FFB52E%27/%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -284,7 +285,7 @@ function chartSVG(hist, race) {
   </svg>`;
 }
 
-window.select = id => { selected = id; render(); };
+window.select = id => { selected = id; render(); if (window.innerWidth < 720) { const d = document.getElementById('detail'); if (d) d.scrollIntoView({ behavior: 'smooth', block: 'start' }); } };
 window.toggleBands = () => { SHOW_BANDS = !SHOW_BANDS; try { localStorage.setItem('pvc_bands', SHOW_BANDS ? '1' : '0'); } catch (e) {} render(); };
 load().catch(() => {
   document.getElementById("updated").textContent = "could not load data.json";
