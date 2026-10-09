@@ -51,7 +51,7 @@
 polling data. A negative (teal, “doubt”) wedge means the money is more skeptical. The wedge 
 conflates two things: <i>information</i> the polls haven't absorbed yet, and <i>sentiment</i> — the hopes,
 fears, and biases of the betting crowd. The wedge can't tell the difference.
-An outcome of the tracker is which one turns out to be more accurate.</p>
+Seeing which one it turns out to be is what the tracker is for.</p>
 
 <h2>Market prices</h2>
 <p>Prices come from <a href="https://polymarket.com">Polymarket</a>'s public API, using the liquid
@@ -72,22 +72,22 @@ For example, a candidate up 5.5 points gets ~84%, and a tied race gets 50%. As t
 and this conversion becomes conservative.</p>
 <p><b>Senate control</b> has no polling margin to convert, so its benchmark is a published model
 probability rather than a poll: currently <a href="https://votes.decisiondeskhq.com/forecast/2026">Decision
-Desk HQ</a>'s Senate forecast, entered by hand about once a week and dated in the data file. This race is
+Desk HQ</a>'s Senate forecast, entered by hand about once a week and dated in the data file. This row is
 the only one where the "polls" side is a model rather than a polling average, so it should be read accordingly.</p>
 
 <h2>How to read the hope wedge (the assumptions that matter)</h2>
 <table>
 <tr><th>Assumption / artifact</th><th>What it does to the wedge</th></tr>
 <tr><td class="k">Favorite–longshot bias</td><td>Markets rarely price above ~90¢ or below ~10¢ even for near-certainties,
-because parking cash until November for a penny of upside isn't worth it (there are also fees, etc.). Big wedges on lopsided races
+because parking cash until November for a penny of upside isn't worth it. Big wedges on lopsided races
 (e.g., polls at 97%, market at 87%) are mostly this mechanical outcome rather than sentiment.</td></tr>
-<tr><td class="k">Thin markets</td><td>Races flagged “thin market” trade on little money, so their wedges are noisy.</td></tr>
+<tr><td class="k">Thin markets</td><td>Some of these markets trade on little money (a few hundred thousand dollars over a year), so one trader can move the price and their wedges are noisy.</td></tr>
 <tr><td class="k">Polls aren't "ground truth"</td><td>House effects, herding, and differential response mean the poll benchmark
 has its own error. Some of the wedge is poll error, not market opinion.</td></tr>
 <tr><td class="k">Who is betting</td><td>Prediction-market traders are not a representative sample of anyone. The wedge
-measures the mood of a certain segment of (potentially extremely online) crowd. But perhaps this means they read the sentiment quicker than polls?</td></tr>
+measures the mood of a particular, probably extremely online, crowd. But perhaps that crowd reads sentiment faster than the polls do?</td></tr>
 <tr><td class="k">σ = 5.5 is a choice</td><td>A bigger σ pulls poll probabilities toward 50 and shrinks wedges on lopsided
-races. A smaller σ does the inverse. Hence, the qualitative pattern is more robust than exact wedge sizes.</td></tr>
+races. A smaller σ does the reverse. Hence, the qualitative pattern is more robust than exact wedge sizes.</td></tr>
 <tr><td class="k">Pre-launch history</td><td>Market prices before launch (October 9, 2026) are backfilled from
 Polymarket's daily price history back to August 15. The poll line before launch is an
 estimate, drawn dashed: RCP doesn't publish its past averages, so for each pre-launch day I take the simple

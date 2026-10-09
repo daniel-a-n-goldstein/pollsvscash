@@ -22,7 +22,7 @@
   .eyebrow { font-size: 11px; letter-spacing: .22em; color: var(--muted); text-transform: uppercase; }
   h1 { font-size: clamp(44px, 7vw, 72px); font-weight: 700; line-height: .95; margin-top: 6px; }
   h1 .cash { color: var(--hope); text-shadow: 0 0 22px rgba(255,181,46,.45); }
-  .tagline { font-size: 12.5px; color: var(--muted); margin-top: 10px; max-width: 460px; line-height: 1.55; }
+  .tagline { font-size: 12.5px; color: var(--muted); margin-top: 10px; max-width: 620px; line-height: 1.55; }
   .statline { text-align: right; font-size: 11px; color: var(--muted); line-height: 1.8; }
   .statline b { color: var(--ink); font-weight: 500; }
   .updated { margin-top: 14px; display: inline-block; font-size: 10.5px; color: var(--bg); background: var(--hope); padding: 3px 8px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
@@ -74,7 +74,7 @@
     <div>
       <div class="eyebrow">polls vs. cash · updated daily</div>
       <h1 class="display">The <span class="cash">Hope</span> Index</h1>
-      <p class="tagline">The audacity to hope the polls are wrong. People are putting real money on elections where the polling updates almost daily, and sometimes the money and the polls disagree. Polls are cheap talk. Bets cost something. The money could be the real sentiment, or it could be partisan cheerleading with a wallet. The Hope Index tracks the spread, race by race, until November. After the election we'll see where the smart money was.</p>
+      <p class="tagline">The audacity to hope the polls are wrong. People are putting real money on races that are polled almost daily, and sometimes the money and the polls disagree. Polls are cheap talk; bets cost something. Is the money real sentiment, or partisan cheerleading with a wallet? The Hope Index tracks the spread, race by race, until November. Then we'll see where the smart money was.</p>
       <p class="tagline" style="margin-top:6px">Amber: the money is more hopeful than the polls. Teal: more doubtful.</p>
     </div>
     <div class="statline" id="stats"></div>
@@ -101,14 +101,14 @@
 
   <section class="methodology">
     <h2>How the hope wedge is computed</h2>
-    <p>Market prices are Polymarket prices that are fetched daily. The poll side is the
+    <p>Market prices are Polymarket prices, fetched daily. The poll side is the
     RealClearPolling average for each race, refreshed weekly and converted to a win
     probability with a simple polling-error model (σ = 5.5 points). Senate control uses
-    Decision Desk HQ's forecast instead as there is no margin to convert. Wedge =
+    Decision Desk HQ's forecast instead, since there is no margin to convert. Wedge =
     market − polls, in percentage points. A positive wedge may be information the polls
     haven't caught up to, or it may be bettors' hope. The wedge can't differentiate the two. Wedges near
-    0% or 100% are inflated by the favorite–longshot bias (i.e., markets rarely price above
-    ~90¢), so those should be read loosely. Market history before launch (Oct 9) is backfilled
+    0% or 100% are inflated by the favorite–longshot bias, since markets rarely price above
+    ~90¢, so those should be read loosely. Market history before launch (Oct 9) is backfilled
     from Polymarket from mid-August. The poll line before launch is a 28-day rolling
     average of the individual RCP-listed polls (using at least three polls and not RCP's own
     average), drawn dashed. Full
