@@ -1,4 +1,4 @@
-id,name,sub,source,identifier,outcome,rcp_id,poll_party,outcome
+id,name,sub,source,identifier,outcome,rcp_id,poll_party,result
 senate-gop,GOP keeps the Senate,2026 midterms · chamber control,polymarket,will-the-republican-party-control-the-senate-after-the-2026-midterm-elections,Yes,,,
 house-dem,Dems take the House,2026 midterms · generic ballot vs control market,polymarket,will-the-democratic-party-control-the-house-after-the-2026-midterm-elections,Yes,8670,Democrat,
 nc-senate,Cooper (D) flips NC,NC Senate · Cooper vs Whatley,polymarket,will-the-democrats-win-the-north-carolina-senate-race-in-2026,Yes,8753,Democrat,
