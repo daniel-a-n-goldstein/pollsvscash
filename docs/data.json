@@ -1,16 +1,16 @@
 {
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "races": [
     {
       "id": "senate-gop",
       "name": "GOP keeps the Senate",
       "sub": "2026 midterms · chamber control",
-      "market": 36.5,
+      "market": 37.5,
       "polls": 44,
       "sigma": 5.5,
       "poll_note": "DDHQ 2026 Senate forecast: GOP control 44% (Dem 56%), read 2026-10-09",
       "result": {},
-      "wedge": -7.5,
+      "wedge": -6.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -348,6 +348,13 @@
           "polls": 44,
           "bid": 36,
           "ask": 37
+        },
+        {
+          "date": "2026-10-10",
+          "market": 37.5,
+          "polls": 44,
+          "bid": 37,
+          "ask": 38
         }
       ]
     },
@@ -749,6 +756,13 @@
         },
         {
           "date": "2026-10-09",
+          "market": 90.5,
+          "polls": 92.5,
+          "bid": 90,
+          "ask": 91
+        },
+        {
+          "date": "2026-10-10",
           "market": 90.5,
           "polls": 92.5,
           "bid": 90,
@@ -1158,6 +1172,13 @@
           "polls": 94.5,
           "bid": 96.2,
           "ask": 96.5
+        },
+        {
+          "date": "2026-10-10",
+          "market": 96.4,
+          "polls": 94.5,
+          "bid": 96.2,
+          "ask": 96.5
         }
       ]
     },
@@ -1165,12 +1186,12 @@
       "id": "ga-senate",
       "name": "Ossoff (D) holds GA",
       "sub": "GA Senate · Ossoff vs Collins",
-      "market": 96.7,
+      "market": 96.6,
       "polls": 92.2,
       "sigma": 5.5,
       "poll_note": "RCP average 9/10 - 9/23: Ossoff +7.8 (Ossoff vs Collins), fetched 2026-10-09",
       "result": {},
-      "wedge": 4.5,
+      "wedge": 4.4,
       "history": [
         {
           "date": "2026-08-15",
@@ -1562,6 +1583,13 @@
           "market": 96.7,
           "polls": 92.2,
           "bid": 96.4,
+          "ask": 97
+        },
+        {
+          "date": "2026-10-10",
+          "market": 96.6,
+          "polls": 92.2,
+          "bid": 96.2,
           "ask": 97
         }
       ]
@@ -1968,6 +1996,13 @@
           "polls": 57.2,
           "bid": 58,
           "ask": 59
+        },
+        {
+          "date": "2026-10-10",
+          "market": 58.5,
+          "polls": 57.2,
+          "bid": 58,
+          "ask": 59
         }
       ]
     },
@@ -1975,12 +2010,12 @@
       "id": "mi-senate",
       "name": "El-Sayed (D) holds MI",
       "sub": "MI Senate · El-Sayed vs Rogers",
-      "market": 68.5,
+      "market": 71.5,
       "polls": 72,
       "sigma": 5.5,
       "poll_note": "RCP average 9/15 - 10/6: El-Sayed +3.2 (El-Sayed vs Rogers), fetched 2026-10-09",
       "result": {},
-      "wedge": -3.5,
+      "wedge": -0.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -2373,6 +2408,13 @@
           "polls": 72,
           "bid": 68,
           "ask": 69
+        },
+        {
+          "date": "2026-10-10",
+          "market": 71.5,
+          "polls": 72,
+          "bid": 71,
+          "ask": 72
         }
       ]
     },
@@ -2771,6 +2813,13 @@
           "polls": 85.8,
           "bid": 89,
           "ask": 90
+        },
+        {
+          "date": "2026-10-10",
+          "market": 89.5,
+          "polls": 85.8,
+          "bid": 89,
+          "ask": 90
         }
       ]
     },
@@ -2778,12 +2827,12 @@
       "id": "tx-senate",
       "name": "Talarico (D) flips TX",
       "sub": "TX Senate · Talarico vs Paxton",
-      "market": 62.5,
+      "market": 63.5,
       "polls": 69.5,
       "sigma": 5.5,
       "poll_note": "RCP average 9/12 - 10/5: Talarico +2.8 (Talarico vs Paxton), fetched 2026-10-09",
       "result": {},
-      "wedge": -7,
+      "wedge": -6,
       "history": [
         {
           "date": "2026-08-15",
@@ -3176,6 +3225,13 @@
           "polls": 69.5,
           "bid": 62,
           "ask": 63
+        },
+        {
+          "date": "2026-10-10",
+          "market": 63.5,
+          "polls": 69.5,
+          "bid": 63,
+          "ask": 64
         }
       ]
     },
@@ -3183,12 +3239,12 @@
       "id": "oh-senate",
       "name": "Brown (D) flips OH",
       "sub": "OH Senate special · Brown vs Husted",
-      "market": 62.5,
+      "market": 61.5,
       "polls": 71.3,
       "sigma": 5.5,
       "poll_note": "RCP average 9/1 - 10/6: Brown +3.1 (Brown vs Husted), fetched 2026-10-09",
       "result": {},
-      "wedge": -8.8,
+      "wedge": -9.8,
       "history": [
         {
           "date": "2026-08-15",
@@ -3581,6 +3637,13 @@
           "polls": 71.3,
           "bid": 62,
           "ask": 63
+        },
+        {
+          "date": "2026-10-10",
+          "market": 61.5,
+          "polls": 71.3,
+          "bid": 61,
+          "ask": 62
         }
       ]
     },
@@ -3986,6 +4049,13 @@
           "polls": 53.6,
           "bid": 43,
           "ask": 44
+        },
+        {
+          "date": "2026-10-10",
+          "market": 43.5,
+          "polls": 53.6,
+          "bid": 43,
+          "ask": 44
         }
       ]
     },
@@ -4387,6 +4457,13 @@
         },
         {
           "date": "2026-10-09",
+          "market": 73.5,
+          "polls": 58.6,
+          "bid": 73,
+          "ask": 74
+        },
+        {
+          "date": "2026-10-10",
           "market": 73.5,
           "polls": 58.6,
           "bid": 73,
