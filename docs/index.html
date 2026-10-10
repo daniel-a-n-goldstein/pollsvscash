@@ -80,7 +80,7 @@
       <div class="eyebrow">polls vs. cash · updated daily</div>
       <h1 class="display">The <span class="cash">Hope</span> Index</h1>
       <p class="tagline">The audacity to hope the polls are wrong. People are putting real money on races that are polled almost daily, and sometimes the money and the polls disagree. Polls are cheap talk. Bets cost something. Is the money real sentiment, or partisan cheerleading with a wallet? The Hope Index tracks the spread, race by race, until November. Then we'll see where the smart money was.</p>
-      <p class="tagline" style="margin-top:6px">Amber: the money is more hopeful than the polls. Teal: more doubtful.</p>
+      <p class="tagline" style="margin-top:6px">Every race is read from the Democratic side. Amber: the money is more Democratic than the polls. Teal: more Republican. Either way, someone is hoping the polls are wrong.</p>
     </div>
     <div class="statline" id="stats"></div>
   </div>
@@ -91,11 +91,11 @@
   <section id="board">
     <div class="sec-head">
       <span class="sec-title">The board</span>
-      <span class="muted">most hopeful → most doubtful</span>
+      <span class="muted">money leans D → money leans R, relative to the polls</span>
     </div>
     <div class="axis-labels">
-      <span style="color:var(--doubt)">◂ doubt</span>
-      <span style="color:var(--hope)">hope ▸</span>
+      <span style="color:var(--doubt)">◂ money leans R</span>
+      <span style="color:var(--hope)">money leans D ▸</span>
     </div>
     <div id="rows"></div>
   </section>
@@ -105,13 +105,16 @@
   <section id="record" style="display:none;grid-column:1 / -1;position:relative;z-index:3"></section>
 
   <section class="methodology">
-    <h2>How the hope wedge is computed</h2>
+    <h2>How the wedge is computed</h2>
     <p>Market prices are Polymarket prices, fetched daily. The poll side is the
     RealClearPolling average for each race, refreshed weekly and converted to a win
     probability with a simple polling-error model (σ = 5.5 points). Senate control uses
     Decision Desk HQ's forecast instead, since there is no margin to convert. Wedge =
-    market − polls, in percentage points. A positive wedge may be information the polls
-    haven't caught up to, or it may be bettors' hope. The wedge can't differentiate the two. Wedges near
+    market − polls, in percentage points. Every row is read from the Democratic side, so a positive wedge
+    means the money leans more Democratic than the polls and a negative one more Republican. The
+    size of the wedge is the hope (someone is betting the polls are wrong); the sign is whose hope
+    it is. Either could be information the polls haven't caught up to, or wishful thinking; the
+    wedge can't differentiate the two. Wedges near
     0% or 100% are inflated by the favorite–longshot bias, since markets rarely price above
     ~90¢, so those should be read loosely. Market history before launch (Oct 9) is backfilled
     from Polymarket from mid-August. The poll line before launch is a 28-day rolling
@@ -138,13 +141,13 @@ function render() {
   const races = DATA.races;
   const maxW = Math.max(...races.map(r => Math.abs(r.wedge)), 1);
   const meanAbs = (races.reduce((s, r) => s + Math.abs(r.wedge), 0) / races.length).toFixed(1);
-  const hopeful = races.filter(r => r.wedge > 0).length;
+  const leanD = races.filter(r => r.wedge > 0).length, leanR = races.filter(r => r.wedge < 0).length;
 
   document.getElementById("updated").textContent = "last updated " + DATA.updated;
   document.getElementById("stats").innerHTML =
     `<div><b>${races.length}</b> tracked races</div>
-     <div>mean |wedge| <b>${meanAbs} pts</b></div>
-     <div>markets hopeful in <b style="color:var(--hope)">${hopeful}/${races.length}</b></div>`;
+     <div>hope index (mean |wedge|) <b>${meanAbs} pts</b></div>
+     <div>money leans <b style="color:var(--hope)">D in ${leanD}</b> · <b style="color:var(--doubt)">R in ${leanR}</b></div>`;
 
   document.getElementById("rows").innerHTML = races.map(r => {
     const pos = r.wedge >= 0, cls = pos ? "hope" : "doubt";
@@ -204,8 +207,8 @@ function renderRecord(races) {
 function renderDetail(r) {
   const pos = r.wedge >= 0, cls = pos ? "hope" : "doubt";
   const blurb = pos
-    ? `Bettors price this ${Math.abs(r.wedge).toFixed(1)} points above the poll-implied probability — the money sees something the surveys don't, or it's pure hope.`
-    : `Bettors price this ${Math.abs(r.wedge).toFixed(1)} points below the poll-implied probability — the money doubts the polls.`;
+    ? `The money is ${Math.abs(r.wedge).toFixed(1)} points more Democratic than the polls here — either it knows something the surveys don't, or Democrats are hoping.`
+    : `The money is ${Math.abs(r.wedge).toFixed(1)} points more Republican than the polls here — either it knows something the surveys don't, or Republicans are hoping.`;
   document.getElementById("detail").innerHTML = `
     <div class="detail-pad">
       <div class="detail-sub">${r.sub}</div>
