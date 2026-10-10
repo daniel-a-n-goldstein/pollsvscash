@@ -4,13 +4,13 @@
     {
       "id": "senate-dem",
       "name": "Dems take the Senate",
-      "sub": "2026 midterms \u00b7 chamber control",
-      "market": 62.5,
+      "sub": "2026 midterms · chamber control",
+      "market": 63.5,
       "polls": 56,
       "sigma": 5.5,
       "poll_note": "DDHQ 2026 Senate forecast: Dem control 56% (GOP 44%), read 2026-10-09",
       "result": {},
-      "wedge": 6.5,
+      "wedge": 7.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -351,17 +351,17 @@
         },
         {
           "date": "2026-10-10",
-          "market": 62.5,
+          "market": 63.5,
           "polls": 56,
-          "bid": 62,
-          "ask": 63
+          "bid": 63,
+          "ask": 64
         }
       ]
     },
     {
       "id": "house-dem",
       "name": "Dems take the House",
-      "sub": "2026 midterms \u00b7 generic ballot vs control market",
+      "sub": "2026 midterms · generic ballot vs control market",
       "market": 90.5,
       "polls": 92.5,
       "sigma": 5.5,
@@ -773,7 +773,7 @@
     {
       "id": "nc-senate",
       "name": "Cooper (D) flips NC",
-      "sub": "NC Senate \u00b7 Cooper vs Whatley",
+      "sub": "NC Senate · Cooper vs Whatley",
       "market": 96.4,
       "polls": 94.5,
       "sigma": 5.5,
@@ -1185,7 +1185,7 @@
     {
       "id": "ga-senate",
       "name": "Ossoff (D) holds GA",
-      "sub": "GA Senate \u00b7 Ossoff vs Collins",
+      "sub": "GA Senate · Ossoff vs Collins",
       "market": 96.6,
       "polls": 92.2,
       "sigma": 5.5,
@@ -1590,14 +1590,14 @@
           "market": 96.6,
           "polls": 92.2,
           "bid": 96.2,
-          "ask": 97
+          "ask": 96.9
         }
       ]
     },
     {
       "id": "me-senate",
       "name": "Jackson (D) flips ME",
-      "sub": "ME Senate \u00b7 Jackson vs Collins",
+      "sub": "ME Senate · Jackson vs Collins",
       "market": 58.5,
       "polls": 57.2,
       "sigma": 5.5,
@@ -2009,13 +2009,13 @@
     {
       "id": "mi-senate",
       "name": "El-Sayed (D) holds MI",
-      "sub": "MI Senate \u00b7 El-Sayed vs Rogers",
-      "market": 71.5,
+      "sub": "MI Senate · El-Sayed vs Rogers",
+      "market": 69.5,
       "polls": 72,
       "sigma": 5.5,
       "poll_note": "RCP average 9/15 - 10/6: El-Sayed +3.2 (El-Sayed vs Rogers), fetched 2026-10-09",
       "result": {},
-      "wedge": -0.5,
+      "wedge": -2.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -2411,17 +2411,17 @@
         },
         {
           "date": "2026-10-10",
-          "market": 71.5,
+          "market": 69.5,
           "polls": 72,
-          "bid": 71,
-          "ask": 72
+          "bid": 69,
+          "ask": 70
         }
       ]
     },
     {
       "id": "nh-senate",
       "name": "Pappas (D) holds NH",
-      "sub": "NH Senate \u00b7 Pappas vs Sununu",
+      "sub": "NH Senate · Pappas vs Sununu",
       "market": 89.5,
       "polls": 85.8,
       "sigma": 5.5,
@@ -2826,7 +2826,7 @@
     {
       "id": "tx-senate",
       "name": "Talarico (D) flips TX",
-      "sub": "TX Senate \u00b7 Talarico vs Paxton",
+      "sub": "TX Senate · Talarico vs Paxton",
       "market": 63.5,
       "polls": 69.5,
       "sigma": 5.5,
@@ -3238,7 +3238,7 @@
     {
       "id": "oh-senate",
       "name": "Brown (D) flips OH",
-      "sub": "OH Senate special \u00b7 Brown vs Husted",
+      "sub": "OH Senate special · Brown vs Husted",
       "market": 61.5,
       "polls": 71.3,
       "sigma": 5.5,
@@ -3650,13 +3650,13 @@
     {
       "id": "ia-senate",
       "name": "Turek (D) flips IA",
-      "sub": "IA Senate \u00b7 Turek vs Hinson",
-      "market": 43.5,
+      "sub": "IA Senate · Turek vs Hinson",
+      "market": 42.5,
       "polls": 53.6,
       "sigma": 5.5,
       "poll_note": "RCP average 9/9 - 10/6: Turek +0.5 (Turek vs Hinson), fetched 2026-10-09",
       "result": {},
-      "wedge": -10.1,
+      "wedge": -11.1,
       "history": [
         {
           "date": "2026-08-15",
@@ -4052,17 +4052,17 @@
         },
         {
           "date": "2026-10-10",
-          "market": 43.5,
+          "market": 42.5,
           "polls": 53.6,
-          "bid": 43,
-          "ask": 44
+          "bid": 42,
+          "ask": 43
         }
       ]
     },
     {
       "id": "ak-senate",
       "name": "Peltola (D) flips AK",
-      "sub": "AK Senate \u00b7 Peltola vs Sullivan \u00b7 candidate market",
+      "sub": "AK Senate · Peltola vs Sullivan · candidate market",
       "market": 73.5,
       "polls": 58.6,
       "sigma": 5.5,
