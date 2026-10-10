@@ -44,13 +44,15 @@
   <p class="m">Every number on the tracker comes from the pipeline below. Nothing is hand-tuned after the fact.</p>
 </header>
 
-<h2>What the hope wedge is</h2>
+<h2>What the wedge is</h2>
 <p>For each race, two probabilities are compared: what current <b>polling</b> implies and what
 <b>prediction-market prices</b> imply. The wedge is their difference in percentage points:</p>
 <div class="formula">wedge&nbsp;=&nbsp;market price&nbsp;−&nbsp;poll-implied probability</div>
-<p>A positive (amber, “hope”) wedge means people betting real money are more optimistic than the
-polling data. A negative (teal, “doubt”) wedge means the money is more skeptical. The wedge 
-conflates two things: <i>information</i> the polls haven't absorbed yet, and <i>sentiment</i> — the hopes,
+<p>Every race is read from the Democratic side (the chamber-control rows included), so a positive
+(amber) wedge means the money leans more Democratic than the polls and a negative (teal) wedge means
+it leans more Republican. The <i>size</i> of the wedge is the hope: someone with money on the line is
+betting the polls are wrong. The <i>sign</i> says whose hope it is. The Hope Index on the front page is
+the average absolute wedge across the board. The wedge conflates two things: <i>information</i> the polls haven't absorbed yet, and <i>sentiment</i> — the hopes,
 fears, and biases of the betting crowd. The wedge can't tell the difference.
 Seeing which one it turns out to be is what the tracker is for.</p>
 
@@ -77,7 +79,7 @@ probability rather than a poll: currently <a href="https://votes.decisiondeskhq.
 Desk HQ</a>'s Senate forecast, entered by hand about once a week and dated in the data file. This row is
 the only one where the "polls" side is a model rather than a polling average, so it should be read accordingly.</p>
 
-<h2>How to read the hope wedge (the assumptions that matter)</h2>
+<h2>How to read the wedge (the assumptions that matter)</h2>
 <table>
 <tr><th>Assumption / artifact</th><th>What it does to the wedge</th></tr>
 <tr><td class="k">Favorite–longshot bias</td><td>Markets rarely price above ~90¢ or below ~10¢ even for near-certainties,

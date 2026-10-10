@@ -2,366 +2,366 @@
   "updated": "2026-10-10",
   "races": [
     {
-      "id": "senate-gop",
-      "name": "GOP keeps the Senate",
-      "sub": "2026 midterms · chamber control",
-      "market": 37.5,
-      "polls": 44,
+      "id": "senate-dem",
+      "name": "Dems take the Senate",
+      "sub": "2026 midterms \u00b7 chamber control",
+      "market": 62.5,
+      "polls": 56,
       "sigma": 5.5,
-      "poll_note": "DDHQ 2026 Senate forecast: GOP control 44% (Dem 56%), read 2026-10-09",
+      "poll_note": "DDHQ 2026 Senate forecast: Dem control 56% (GOP 44%), read 2026-10-09",
       "result": {},
-      "wedge": -6.5,
+      "wedge": 6.5,
       "history": [
         {
           "date": "2026-08-15",
-          "market": 47.5,
-          "polls": 44,
+          "market": 52.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-16",
-          "market": 47.5,
-          "polls": 44,
+          "market": 52.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-17",
-          "market": 48.5,
-          "polls": 44,
+          "market": 51.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-18",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-19",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-20",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-21",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-22",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-23",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-24",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-25",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-26",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-27",
-          "market": 50.5,
-          "polls": 44,
+          "market": 49.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-28",
-          "market": 50.5,
-          "polls": 44,
+          "market": 49.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-29",
-          "market": 50.5,
-          "polls": 44,
+          "market": 49.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-30",
-          "market": 50.5,
-          "polls": 44,
+          "market": 49.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-08-31",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-01",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-02",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-03",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-04",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-05",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-06",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-07",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-08",
-          "market": 49.5,
-          "polls": 44,
+          "market": 50.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-09",
-          "market": 48.5,
-          "polls": 44,
+          "market": 51.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-10",
-          "market": 48.5,
-          "polls": 44,
+          "market": 51.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-11",
-          "market": 48.5,
-          "polls": 44,
+          "market": 51.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-12",
-          "market": 48.5,
-          "polls": 44,
+          "market": 51.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-13",
-          "market": 47.5,
-          "polls": 44,
+          "market": 52.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-14",
-          "market": 46.5,
-          "polls": 44,
+          "market": 53.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-15",
-          "market": 47.5,
-          "polls": 44,
+          "market": 52.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-16",
-          "market": 41.5,
-          "polls": 44,
+          "market": 58.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-17",
-          "market": 41.5,
-          "polls": 44,
+          "market": 58.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-18",
-          "market": 40.5,
-          "polls": 44,
+          "market": 59.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-19",
-          "market": 40.5,
-          "polls": 44,
+          "market": 59.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-20",
-          "market": 39.5,
-          "polls": 44,
+          "market": 60.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-21",
-          "market": 38.5,
-          "polls": 44,
+          "market": 61.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-22",
-          "market": 36.5,
-          "polls": 44,
+          "market": 63.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-23",
-          "market": 34.5,
-          "polls": 44,
+          "market": 65.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-24",
-          "market": 34.5,
-          "polls": 44,
+          "market": 65.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-25",
-          "market": 37.5,
-          "polls": 44,
+          "market": 62.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-26",
-          "market": 37.5,
-          "polls": 44,
+          "market": 62.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-27",
-          "market": 37.5,
-          "polls": 44,
+          "market": 62.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-28",
-          "market": 37.5,
-          "polls": 44,
+          "market": 62.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-29",
-          "market": 38.5,
-          "polls": 44,
+          "market": 61.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-09-30",
-          "market": 37.5,
-          "polls": 44,
+          "market": 62.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-10-01",
-          "market": 37.5,
-          "polls": 44,
+          "market": 62.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-10-02",
-          "market": 36.5,
-          "polls": 44,
+          "market": 63.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-10-03",
-          "market": 35.5,
-          "polls": 44,
+          "market": 64.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-10-04",
-          "market": 35.5,
-          "polls": 44,
+          "market": 64.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-10-05",
-          "market": 33.5,
-          "polls": 44,
+          "market": 66.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-10-06",
-          "market": 34.5,
-          "polls": 44,
+          "market": 65.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-10-07",
-          "market": 35.5,
-          "polls": 44,
+          "market": 64.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-10-08",
-          "market": 35.5,
-          "polls": 44,
+          "market": 64.5,
+          "polls": 56,
           "est": true
         },
         {
           "date": "2026-10-09",
-          "market": 36.5,
-          "polls": 44,
-          "bid": 36,
-          "ask": 37
+          "market": 63.5,
+          "polls": 56,
+          "bid": 63,
+          "ask": 64
         },
         {
           "date": "2026-10-10",
-          "market": 37.5,
-          "polls": 44,
-          "bid": 37,
-          "ask": 38
+          "market": 62.5,
+          "polls": 56,
+          "bid": 62,
+          "ask": 63
         }
       ]
     },
     {
       "id": "house-dem",
       "name": "Dems take the House",
-      "sub": "2026 midterms · generic ballot vs control market",
+      "sub": "2026 midterms \u00b7 generic ballot vs control market",
       "market": 90.5,
       "polls": 92.5,
       "sigma": 5.5,
@@ -773,7 +773,7 @@
     {
       "id": "nc-senate",
       "name": "Cooper (D) flips NC",
-      "sub": "NC Senate · Cooper vs Whatley",
+      "sub": "NC Senate \u00b7 Cooper vs Whatley",
       "market": 96.4,
       "polls": 94.5,
       "sigma": 5.5,
@@ -1185,7 +1185,7 @@
     {
       "id": "ga-senate",
       "name": "Ossoff (D) holds GA",
-      "sub": "GA Senate · Ossoff vs Collins",
+      "sub": "GA Senate \u00b7 Ossoff vs Collins",
       "market": 96.6,
       "polls": 92.2,
       "sigma": 5.5,
@@ -1597,7 +1597,7 @@
     {
       "id": "me-senate",
       "name": "Jackson (D) flips ME",
-      "sub": "ME Senate · Jackson vs Collins",
+      "sub": "ME Senate \u00b7 Jackson vs Collins",
       "market": 58.5,
       "polls": 57.2,
       "sigma": 5.5,
@@ -2009,7 +2009,7 @@
     {
       "id": "mi-senate",
       "name": "El-Sayed (D) holds MI",
-      "sub": "MI Senate · El-Sayed vs Rogers",
+      "sub": "MI Senate \u00b7 El-Sayed vs Rogers",
       "market": 71.5,
       "polls": 72,
       "sigma": 5.5,
@@ -2421,7 +2421,7 @@
     {
       "id": "nh-senate",
       "name": "Pappas (D) holds NH",
-      "sub": "NH Senate · Pappas vs Sununu",
+      "sub": "NH Senate \u00b7 Pappas vs Sununu",
       "market": 89.5,
       "polls": 85.8,
       "sigma": 5.5,
@@ -2826,7 +2826,7 @@
     {
       "id": "tx-senate",
       "name": "Talarico (D) flips TX",
-      "sub": "TX Senate · Talarico vs Paxton",
+      "sub": "TX Senate \u00b7 Talarico vs Paxton",
       "market": 63.5,
       "polls": 69.5,
       "sigma": 5.5,
@@ -3238,7 +3238,7 @@
     {
       "id": "oh-senate",
       "name": "Brown (D) flips OH",
-      "sub": "OH Senate special · Brown vs Husted",
+      "sub": "OH Senate special \u00b7 Brown vs Husted",
       "market": 61.5,
       "polls": 71.3,
       "sigma": 5.5,
@@ -3650,7 +3650,7 @@
     {
       "id": "ia-senate",
       "name": "Turek (D) flips IA",
-      "sub": "IA Senate · Turek vs Hinson",
+      "sub": "IA Senate \u00b7 Turek vs Hinson",
       "market": 43.5,
       "polls": 53.6,
       "sigma": 5.5,
@@ -4062,7 +4062,7 @@
     {
       "id": "ak-senate",
       "name": "Peltola (D) flips AK",
-      "sub": "AK Senate · Peltola vs Sullivan · candidate market",
+      "sub": "AK Senate \u00b7 Peltola vs Sullivan \u00b7 candidate market",
       "market": 73.5,
       "polls": 58.6,
       "sigma": 5.5,
