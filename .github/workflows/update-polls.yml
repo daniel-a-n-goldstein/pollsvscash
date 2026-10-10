@@ -2,7 +2,7 @@ name: Refresh poll benchmarks (weekly)
 
 on:
   schedule:
-    - cron: "0 6 * * 0"    # Sundays 06:00 UTC, before the daily 06:30 market run
+    - cron: "47 5 * * 0"   # Sundays 05:47 UTC, before the daily market run
   workflow_dispatch:
 
 permissions:
