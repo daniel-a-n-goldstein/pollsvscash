@@ -788,12 +788,12 @@
       "id": "nc-senate",
       "name": "Cooper (D) flips NC",
       "sub": "NC Senate · Cooper vs Whatley",
-      "market": 96,
+      "market": 96.3,
       "polls": 94.5,
       "sigma": 5.5,
       "poll_note": "RCP average 9/6 - 10/3: Cooper +8.8 (Cooper vs Whatley), fetched 2026-10-11",
       "result": {},
-      "wedge": 1.5,
+      "wedge": 1.8,
       "history": [
         {
           "date": "2026-08-15",
@@ -1196,10 +1196,10 @@
         },
         {
           "date": "2026-10-11",
-          "market": 96,
+          "market": 96.3,
           "polls": 94.5,
-          "bid": 95.8,
-          "ask": 96.2
+          "bid": 96.2,
+          "ask": 96.4
         }
       ]
     },
@@ -2045,12 +2045,12 @@
       "id": "mi-senate",
       "name": "El-Sayed (D) holds MI",
       "sub": "MI Senate · El-Sayed vs Rogers",
-      "market": 68.5,
+      "market": 67.5,
       "polls": 72,
       "sigma": 5.5,
       "poll_note": "RCP average 9/15 - 10/6: El-Sayed +3.2 (El-Sayed vs Rogers), fetched 2026-10-11",
       "result": {},
-      "wedge": -3.5,
+      "wedge": -4.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -2453,10 +2453,10 @@
         },
         {
           "date": "2026-10-11",
-          "market": 68.5,
+          "market": 67.5,
           "polls": 72,
-          "bid": 68,
-          "ask": 69
+          "bid": 67,
+          "ask": 68
         }
       ]
     },
@@ -2876,12 +2876,12 @@
       "id": "tx-senate",
       "name": "Talarico (D) flips TX",
       "sub": "TX Senate · Talarico vs Paxton",
-      "market": 63.5,
+      "market": 62.5,
       "polls": 70.7,
       "sigma": 5.5,
       "poll_note": "RCP average 9/12 - 10/8: Talarico +3.0 (Talarico vs Paxton), fetched 2026-10-11",
       "result": {},
-      "wedge": -7.2,
+      "wedge": -8.2,
       "history": [
         {
           "date": "2026-08-15",
@@ -3284,10 +3284,10 @@
         },
         {
           "date": "2026-10-11",
-          "market": 63.5,
+          "market": 62.5,
           "polls": 70.7,
-          "bid": 63,
-          "ask": 64
+          "bid": 62,
+          "ask": 63
         }
       ]
     },
@@ -4133,12 +4133,12 @@
       "id": "ak-senate",
       "name": "Peltola (D) flips AK",
       "sub": "AK Senate · Peltola vs Sullivan · candidate market",
-      "market": 72.5,
+      "market": 73.5,
       "polls": 58.6,
       "sigma": 5.5,
       "poll_note": "RCP average 9/14 - 10/3: Peltola +1.2 (Peltola vs Sullivan), fetched 2026-10-11",
       "result": {},
-      "wedge": 13.9,
+      "wedge": 14.9,
       "history": [
         {
           "date": "2026-08-15",
@@ -4541,10 +4541,10 @@
         },
         {
           "date": "2026-10-11",
-          "market": 72.5,
+          "market": 73.5,
           "polls": 58.6,
-          "bid": 72,
-          "ask": 73
+          "bid": 73,
+          "ask": 74
         }
       ]
     }
