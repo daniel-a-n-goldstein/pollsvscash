@@ -788,12 +788,12 @@
       "id": "nc-senate",
       "name": "Cooper (D) flips NC",
       "sub": "NC Senate · Cooper vs Whatley",
-      "market": 96.4,
+      "market": 96,
       "polls": 94.5,
       "sigma": 5.5,
       "poll_note": "RCP average 9/6 - 10/3: Cooper +8.8 (Cooper vs Whatley), fetched 2026-10-11",
       "result": {},
-      "wedge": 1.9,
+      "wedge": 1.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -1196,10 +1196,10 @@
         },
         {
           "date": "2026-10-11",
-          "market": 96.4,
+          "market": 96,
           "polls": 94.5,
-          "bid": 96.2,
-          "ask": 96.5
+          "bid": 95.7,
+          "ask": 96.2
         }
       ]
     },
