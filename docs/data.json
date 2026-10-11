@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "races": [
     {
       "id": "senate-dem",
@@ -8,7 +8,7 @@
       "market": 63.5,
       "polls": 56,
       "sigma": 5.5,
-      "poll_note": "DDHQ 2026 Senate forecast: Dem control 56% (GOP 44%), read 2026-10-09",
+      "poll_note": "DDHQ 2026 Senate forecast: Dem control 56% (GOP 44%), read 2026-10-11",
       "result": {},
       "wedge": 7.5,
       "history": [
@@ -355,6 +355,13 @@
           "polls": 56,
           "bid": 63,
           "ask": 64
+        },
+        {
+          "date": "2026-10-11",
+          "market": 63.5,
+          "polls": 56,
+          "bid": 63,
+          "ask": 64
         }
       ]
     },
@@ -365,7 +372,7 @@
       "market": 90.5,
       "polls": 92.5,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/16 - 10/5: Democrats +7.9 (Democrats vs Republicans), fetched 2026-10-09",
+      "poll_note": "RCP average 9/16 - 10/5: Democrats +7.9 (Democrats vs Republicans), fetched 2026-10-11",
       "result": {},
       "wedge": -2,
       "history": [
@@ -767,6 +774,13 @@
           "polls": 92.5,
           "bid": 90,
           "ask": 91
+        },
+        {
+          "date": "2026-10-11",
+          "market": 90.5,
+          "polls": 92.5,
+          "bid": 90,
+          "ask": 91
         }
       ]
     },
@@ -777,7 +791,7 @@
       "market": 96.4,
       "polls": 94.5,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/6 - 10/3: Cooper +8.8 (Cooper vs Whatley), fetched 2026-10-09",
+      "poll_note": "RCP average 9/6 - 10/3: Cooper +8.8 (Cooper vs Whatley), fetched 2026-10-11",
       "result": {},
       "wedge": 1.9,
       "history": [
@@ -1179,6 +1193,13 @@
           "polls": 94.5,
           "bid": 96.2,
           "ask": 96.5
+        },
+        {
+          "date": "2026-10-11",
+          "market": 96.4,
+          "polls": 94.5,
+          "bid": 96.2,
+          "ask": 96.5
         }
       ]
     },
@@ -1186,12 +1207,12 @@
       "id": "ga-senate",
       "name": "Ossoff (D) holds GA",
       "sub": "GA Senate · Ossoff vs Collins",
-      "market": 96.6,
-      "polls": 92.2,
+      "market": 96.2,
+      "polls": 93,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/10 - 9/23: Ossoff +7.8 (Ossoff vs Collins), fetched 2026-10-09",
+      "poll_note": "RCP average 9/14 - 10/9: Ossoff +8.1 (Ossoff vs Collins), fetched 2026-10-11",
       "result": {},
-      "wedge": 4.4,
+      "wedge": 3.2,
       "history": [
         {
           "date": "2026-08-15",
@@ -1591,6 +1612,13 @@
           "polls": 92.2,
           "bid": 96.2,
           "ask": 96.9
+        },
+        {
+          "date": "2026-10-11",
+          "market": 96.2,
+          "polls": 93,
+          "bid": 95.6,
+          "ask": 96.8
         }
       ]
     },
@@ -1601,7 +1629,7 @@
       "market": 58.5,
       "polls": 57.2,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/14 - 10/5: Jackson +1.0 (Jackson vs Collins), fetched 2026-10-09",
+      "poll_note": "RCP average 9/14 - 10/5: Jackson +1.0 (Jackson vs Collins), fetched 2026-10-11",
       "result": {},
       "wedge": 1.3,
       "history": [
@@ -2003,6 +2031,13 @@
           "polls": 57.2,
           "bid": 58,
           "ask": 59
+        },
+        {
+          "date": "2026-10-11",
+          "market": 58.5,
+          "polls": 57.2,
+          "bid": 58,
+          "ask": 59
         }
       ]
     },
@@ -2010,12 +2045,12 @@
       "id": "mi-senate",
       "name": "El-Sayed (D) holds MI",
       "sub": "MI Senate · El-Sayed vs Rogers",
-      "market": 69.5,
+      "market": 68.5,
       "polls": 72,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/15 - 10/6: El-Sayed +3.2 (El-Sayed vs Rogers), fetched 2026-10-09",
+      "poll_note": "RCP average 9/15 - 10/6: El-Sayed +3.2 (El-Sayed vs Rogers), fetched 2026-10-11",
       "result": {},
-      "wedge": -2.5,
+      "wedge": -3.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -2415,6 +2450,13 @@
           "polls": 72,
           "bid": 69,
           "ask": 70
+        },
+        {
+          "date": "2026-10-11",
+          "market": 68.5,
+          "polls": 72,
+          "bid": 68,
+          "ask": 69
         }
       ]
     },
@@ -2425,7 +2467,7 @@
       "market": 89.5,
       "polls": 85.8,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/9 - 10/5: Pappas +5.9 (Pappas vs Sununu), fetched 2026-10-09",
+      "poll_note": "RCP average 9/9 - 10/5: Pappas +5.9 (Pappas vs Sununu), fetched 2026-10-11",
       "result": {},
       "wedge": 3.7,
       "history": [
@@ -2820,6 +2862,13 @@
           "polls": 85.8,
           "bid": 89,
           "ask": 90
+        },
+        {
+          "date": "2026-10-11",
+          "market": 89.5,
+          "polls": 85.8,
+          "bid": 89,
+          "ask": 90
         }
       ]
     },
@@ -2828,11 +2877,11 @@
       "name": "Talarico (D) flips TX",
       "sub": "TX Senate · Talarico vs Paxton",
       "market": 63.5,
-      "polls": 69.5,
+      "polls": 70.7,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/12 - 10/5: Talarico +2.8 (Talarico vs Paxton), fetched 2026-10-09",
+      "poll_note": "RCP average 9/12 - 10/8: Talarico +3.0 (Talarico vs Paxton), fetched 2026-10-11",
       "result": {},
-      "wedge": -6,
+      "wedge": -7.2,
       "history": [
         {
           "date": "2026-08-15",
@@ -3232,6 +3281,13 @@
           "polls": 69.5,
           "bid": 63,
           "ask": 64
+        },
+        {
+          "date": "2026-10-11",
+          "market": 63.5,
+          "polls": 70.7,
+          "bid": 63,
+          "ask": 64
         }
       ]
     },
@@ -3242,7 +3298,7 @@
       "market": 61.5,
       "polls": 71.3,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/1 - 10/6: Brown +3.1 (Brown vs Husted), fetched 2026-10-09",
+      "poll_note": "RCP average 9/1 - 10/6: Brown +3.1 (Brown vs Husted), fetched 2026-10-11",
       "result": {},
       "wedge": -9.8,
       "history": [
@@ -3644,6 +3700,13 @@
           "polls": 71.3,
           "bid": 61,
           "ask": 62
+        },
+        {
+          "date": "2026-10-11",
+          "market": 61.5,
+          "polls": 71.3,
+          "bid": 61,
+          "ask": 62
         }
       ]
     },
@@ -3654,7 +3717,7 @@
       "market": 42.5,
       "polls": 53.6,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/9 - 10/6: Turek +0.5 (Turek vs Hinson), fetched 2026-10-09",
+      "poll_note": "RCP average 9/9 - 10/6: Turek +0.5 (Turek vs Hinson), fetched 2026-10-11",
       "result": {},
       "wedge": -11.1,
       "history": [
@@ -4056,6 +4119,13 @@
           "polls": 53.6,
           "bid": 42,
           "ask": 43
+        },
+        {
+          "date": "2026-10-11",
+          "market": 42.5,
+          "polls": 53.6,
+          "bid": 42,
+          "ask": 43
         }
       ]
     },
@@ -4063,12 +4133,12 @@
       "id": "ak-senate",
       "name": "Peltola (D) flips AK",
       "sub": "AK Senate · Peltola vs Sullivan · candidate market",
-      "market": 73.5,
+      "market": 72.5,
       "polls": 58.6,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/14 - 10/3: Peltola +1.2 (Peltola vs Sullivan), fetched 2026-10-09",
+      "poll_note": "RCP average 9/14 - 10/3: Peltola +1.2 (Peltola vs Sullivan), fetched 2026-10-11",
       "result": {},
-      "wedge": 14.9,
+      "wedge": 13.9,
       "history": [
         {
           "date": "2026-08-15",
@@ -4468,6 +4538,13 @@
           "polls": 58.6,
           "bid": 73,
           "ask": 74
+        },
+        {
+          "date": "2026-10-11",
+          "market": 72.5,
+          "polls": 58.6,
+          "bid": 72,
+          "ask": 73
         }
       ]
     }
