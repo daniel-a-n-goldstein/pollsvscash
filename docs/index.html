@@ -220,6 +220,7 @@ function renderDetail(r) {
       </div>
       <p class="detail-blurb">${blurb}</p>
       ${r.poll_note ? `<p class="detail-blurb" style="margin-top:0;opacity:.8">Poll benchmark: ${r.poll_note}</p>` : ""}
+      ${(r.history && r.history.length && r.history[r.history.length - 1].carried) ? `<p class="detail-blurb" style="margin-top:0;opacity:.8">Today's market fetch failed; the price shown is the last one recorded (${r.history[r.history.length - 1].carried_from}).</p>` : ""}
     </div>
     ${chartSVG(r.history, r)}
     <div class="legend"><span><span style="color:var(--hope)">━</span> market price</span>
@@ -240,14 +241,19 @@ try { SHOW_BANDS = localStorage.getItem('pvc_bands') === '1'; } catch (e) {}
 function chartSVG(hist, race) {
   const W = 520, H = 230, L = 38, R = 12, T = 14, B = 26;
   const n = hist.length;
-  const x = i => L + (n === 1 ? 0 : i / (n - 1) * (W - L - R));
+  // x is scaled by calendar date, not by array index, so a missed day (a failed
+  // fetch is skipped, not filled) does not compress the axis or shift the launch line.
+  const day = d => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +d.slice(8, 10)) / 86400000;
+  const d0 = day(hist[0].date), span = Math.max(day(hist[n - 1].date) - d0, 1);
+  const x = i => L + (n === 1 ? 0 : (day(hist[i].date) - d0) / span * (W - L - R));
   const y = v => T + (1 - v / 100) * (H - T - B);
   const seg = (pts) => pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
   const grid = [0, 25, 50, 75, 100].map(v =>
     `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="rgba(242,239,230,0.08)" ${v === 50 ? 'stroke-dasharray="3 3" stroke="rgba(242,239,230,0.2)"' : ""}/>
      <text x="${L - 6}" y="${y(v) + 3}" text-anchor="end">${v}%</text>`).join("");
-  const xticks = [0, Math.floor(n / 2), n - 1].map(i =>
-    `<text x="${x(i)}" y="${H - 8}" text-anchor="middle">${hist[i].date.slice(5)}</text>`).join("");
+  // end labels are anchored inward so the last date is not clipped at the right edge
+  const xticks = [[0, "start"], [Math.floor(n / 2), "middle"], [n - 1, "end"]].map(([i, a]) =>
+    `<text x="${x(i)}" y="${H - 8}" text-anchor="${a}">${hist[i].date.slice(5)}</text>`).join("");
 
   // launch marker: first non-estimated point
   const launchIdx = hist.findIndex(d => !d.est);
@@ -282,7 +288,14 @@ function chartSVG(hist, race) {
   } else {
     pollPaths = `<path d="${seg(est)}" fill="none" stroke="#52D8C4" stroke-width="2"/>`;
   }
-  const mktPath = `<path d="${seg(hist.map((d, i) => [x(i), y(d.market)]))}" fill="none" stroke="#FFB52E" stroke-width="2"/>`;
+  // market line: a point whose fetch failed (carried forward by the pipeline) is drawn as a gap,
+  // so a stale price never looks like a fresh quote
+  const mktRuns = []; let run = [];
+  hist.forEach((d, i) => { if (d.carried || d.market == null) { if (run.length) mktRuns.push(run); run = []; } else run.push([x(i), y(d.market)]); });
+  if (run.length) mktRuns.push(run);
+  const mktPath = mktRuns.map(pts => pts.length > 1
+    ? `<path d="${seg(pts)}" fill="none" stroke="#FFB52E" stroke-width="2"/>`
+    : `<circle cx="${pts[0][0].toFixed(1)}" cy="${pts[0][1].toFixed(1)}" r="2" fill="#FFB52E"/>`).join("");
 
   return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block;padding:6px 6px 0">
     ${grid}${xticks}${launch}${pollBand}${mktBand}${pollPaths}${mktPath}
