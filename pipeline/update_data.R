@@ -44,13 +44,21 @@ fetch_polymarket <- function(slug, outcome) {
 }
 
 fetch_kalshi <- function(ticker, outcome = "yes") {
+  # Same measure as Polymarket: the bid-ask midpoint, not the last trade.
+  # Kalshi quotes yes_bid / yes_ask in cents for the YES side; a NO price is 100 - YES.
   url <- paste0("https://api.elections.kalshi.com/trade-api/v2/markets/", ticker)
   m <- tryCatch(fromJSON(url), error = function(e) NULL)
   if (is.null(m$market)) return(NA_real_)
-  # last_price is in cents for the YES side
-  p <- as.numeric(m$market$last_price)
-  if (tolower(outcome) == "no") p <- 100 - p
-  round(p, 1)
+  bid <- suppressWarnings(as.numeric(m$market$yes_bid)); ask <- suppressWarnings(as.numeric(m$market$yes_ask))
+  if (is.na(bid) || is.na(ask)) {                     # no quotes: fall back to last trade, with no band
+    p <- as.numeric(m$market$last_price); if (is.na(p)) return(NA_real_)
+    if (tolower(outcome) == "no") p <- 100 - p
+    return(round(p, 1))
+  }
+  if (tolower(outcome) == "no") { tmp <- bid; bid <- 100 - ask; ask <- 100 - tmp }
+  p <- round((bid + ask) / 2, 1)
+  attr(p, "bid") <- round(bid, 1); attr(p, "ask") <- round(ask, 1)
+  p
 }
 
 # ---- load existing history ---------------------------------------
@@ -76,16 +84,21 @@ out_races <- lapply(seq_len(nrow(races)), function(i) {
     else if (!is.na(p$poll_margin[1]) && p$poll_margin[1] != "") margin_to_prob(as.numeric(p$poll_margin[1]))
     else NA_real_
 
-  # carry over history; carry forward last price if today's fetch failed
+  # carry over history. If today's fetch failed, carry forward the last REAL price
+  # so the board still shows a number, but mark the row as carried (and record
+  # which date it came from) so the site can show it as stale rather than fresh.
   hist <- if (!is.null(old_by_id[[r$id]])) old_by_id[[r$id]]$history else list()
+  carried_from <- NULL
   if (is.na(market_prob) && length(hist) > 0) {
-    market_prob <- hist[[length(hist)]]$market
-    message("WARN: fetch failed for ", r$id, " — carrying forward last price")
+    last_real <- Find(function(h) is.null(h$carried) && !is.null(h$market) && !is.na(h$market), rev(hist))
+    if (!is.null(last_real)) { market_prob <- last_real$market; carried_from <- last_real$date }
+    message("WARN: fetch failed for ", r$id, " — carrying forward price from ", carried_from)
   }
 
   # replace today's entry if the script runs twice in one day
   hist <- Filter(function(h) h$date != today, hist)
   pt <- list(date = today, market = as.numeric(market_prob), polls = poll_prob)
+  if (!is.null(carried_from)) { pt$carried <- TRUE; pt$carried_from <- carried_from }
   if (!is.null(attr(market_prob, "bid")) && !is.na(attr(market_prob, "bid"))) {
     pt$bid <- attr(market_prob, "bid"); pt$ask <- attr(market_prob, "ask")
   }
