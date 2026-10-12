@@ -29,6 +29,9 @@ docs/                     the site (static HTML, served by GitHub Pages)
   same measure). No liquidity weighting; a thin market can sit at the same
   midpoint for days without a trade. A failed fetch carries the last price forward with a
   `carried` flag so it is drawn as a gap, not a quote.
+- **Second venue.** Each race also records Kalshi's midpoint (`market_kalshi`),
+  shown behind a "compare venues" toggle and never averaged with Polymarket.
+  `pipeline/backfill_kalshi.R` (manual workflow) fills its history.
 - **Poll-implied probabilities** come from the RealClearPolling average for each
   race (refreshed weekly, so the poll series is a step function by design),
   converted to a win probability via a normal error model

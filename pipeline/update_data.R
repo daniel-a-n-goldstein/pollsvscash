@@ -45,15 +45,20 @@ fetch_polymarket <- function(slug, outcome) {
 
 fetch_kalshi <- function(ticker, outcome = "yes") {
   # Same measure as Polymarket: the bid-ask midpoint, not the last trade.
-  # Kalshi quotes yes_bid / yes_ask in cents for the YES side; a NO price is 100 - YES.
+  # Kalshi's API reports yes_bid_dollars / yes_ask_dollars (0-1) for the YES
+  # side; older fields yes_bid / yes_ask are in cents. A NO price is 100 - YES.
   url <- paste0("https://api.elections.kalshi.com/trade-api/v2/markets/", ticker)
   m <- tryCatch(fromJSON(url), error = function(e) NULL)
   if (is.null(m$market)) return(NA_real_)
-  bid <- suppressWarnings(as.numeric(m$market$yes_bid)); ask <- suppressWarnings(as.numeric(m$market$yes_ask))
-  if (is.na(bid) || is.na(ask)) {                     # no quotes: fall back to last trade, with no band
-    p <- as.numeric(m$market$last_price); if (is.na(p)) return(NA_real_)
+  mk <- m$market
+  num <- function(x) suppressWarnings(as.numeric(x))
+  bid <- if (!is.null(mk$yes_bid_dollars)) 100 * num(mk$yes_bid_dollars) else num(mk$yes_bid)
+  ask <- if (!is.null(mk$yes_ask_dollars)) 100 * num(mk$yes_ask_dollars) else num(mk$yes_ask)
+  if (length(bid) == 0 || length(ask) == 0 || is.na(bid) || is.na(ask) || (bid == 0 && ask == 0)) {
+    p <- if (!is.null(mk$last_price_dollars)) 100 * num(mk$last_price_dollars) else num(mk$last_price)
+    if (length(p) == 0 || is.na(p)) return(NA_real_)
     if (tolower(outcome) == "no") p <- 100 - p
-    return(round(p, 1))
+    return(round(p, 1))                               # no quotes: last trade, no band
   }
   if (tolower(outcome) == "no") { tmp <- bid; bid <- 100 - ask; ask <- 100 - tmp }
   p <- round((bid + ask) / 2, 1)
@@ -95,12 +100,23 @@ out_races <- lapply(seq_len(nrow(races)), function(i) {
     message("WARN: fetch failed for ", r$id, " — carrying forward price from ", carried_from)
   }
 
+  # second venue (Kalshi), kept separate: never blended into `market`
+  kalshi_prob <- NA_real_
+  if ("kalshi_ticker" %in% names(r) && !is.na(r$kalshi_ticker) && nzchar(r$kalshi_ticker))
+    kalshi_prob <- fetch_kalshi(r$kalshi_ticker, "yes")
+
   # replace today's entry if the script runs twice in one day
   hist <- Filter(function(h) h$date != today, hist)
   pt <- list(date = today, market = as.numeric(market_prob), polls = poll_prob)
   if (!is.null(carried_from)) { pt$carried <- TRUE; pt$carried_from <- carried_from }
   if (!is.null(attr(market_prob, "bid")) && !is.na(attr(market_prob, "bid"))) {
     pt$bid <- attr(market_prob, "bid"); pt$ask <- attr(market_prob, "ask")
+  }
+  if (!is.na(kalshi_prob)) {
+    pt$market_kalshi <- as.numeric(kalshi_prob)
+    if (!is.null(attr(kalshi_prob, "bid")) && !is.na(attr(kalshi_prob, "bid"))) {
+      pt$kalshi_bid <- attr(kalshi_prob, "bid"); pt$kalshi_ask <- attr(kalshi_prob, "ask")
+    }
   }
   hist <- c(hist, list(pt))
   # keep at most 365 days
@@ -116,6 +132,8 @@ out_races <- lapply(seq_len(nrow(races)), function(i) {
     poll_note = if (nrow(p) > 0 && "note" %in% names(p)) p$note[1] else "",
     result = if ("result" %in% names(r) && !is.na(r$result) && nzchar(r$result)) r$result else NULL,
     wedge  = round(as.numeric(market_prob) - poll_prob, 1),
+    market_kalshi = if (is.na(kalshi_prob)) NULL else as.numeric(kalshi_prob),
+    wedge_kalshi  = if (is.na(kalshi_prob)) NULL else round(as.numeric(kalshi_prob) - poll_prob, 1),
     history = hist
   )
 })
