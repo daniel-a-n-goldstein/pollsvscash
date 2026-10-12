@@ -228,9 +228,9 @@ function renderDetail(r) {
     <div class="legend"><span><span style="color:var(--hope)">━</span> market price</span>
     <span><span style="color:var(--doubt)">━</span> poll-implied</span>
     <span><span style="color:var(--doubt)">┄</span> estimated pre-launch</span>
-    ${SHOW_VENUES ? '<span><span style="color:var(--hope);opacity:.8">┈</span> Kalshi</span>' : ""}
+    ${SHOW_VENUES ? '<span><span style="color:#F2EFE6;opacity:.9">━</span> Kalshi</span>' : ""}
     <button onclick="toggleBands()" style="margin-left:auto;background:none;border:1px solid var(--hair);color:var(--muted);font:inherit;font-size:10.5px;padding:2px 8px;cursor:pointer">${SHOW_BANDS ? "hide" : "show"} uncertainty</button>
-    ${r.market_kalshi != null || (r.history || []).some(h => h.market_kalshi != null) ? `<button onclick="toggleVenues()" style="background:none;border:1px solid var(--hair);color:var(--muted);font:inherit;font-size:10.5px;padding:2px 8px;cursor:pointer;margin-left:6px">${SHOW_VENUES ? "hide" : "compare"} venues</button>` : ""}</div>
+    ${r.market_kalshi != null || (r.history || []).some(h => h.market_kalshi != null) ? `<button onclick="toggleVenues()" style="background:none;border:1px solid var(--hair);color:var(--muted);font:inherit;font-size:10.5px;padding:2px 8px;cursor:pointer;margin-left:6px">${SHOW_VENUES ? "hide" : "add"} Kalshi</button>` : ""}</div>
     ${SHOW_VENUES ? '<p class="detail-blurb" style="margin:0 16px 12px;font-size:10.5px">Kalshi is a CFTC-regulated US exchange; Polymarket is crypto-settled with a global crowd.</p>' : ''}
     ${SHOW_BANDS && !/RCP average/i.test(r.poll_note || "") ? '<p class="detail-blurb" style="margin:0 16px 12px;font-size:10.5px">No teal band here: this benchmark is a model probability, not a polling margin, so there is no polling error to draw.</p>' : ''}
     ${SHOW_BANDS ? '<p class="detail-blurb" style="margin:0 16px 12px;font-size:10.5px">Teal band: ±1 standard error of polling error (σ = 5.5 points) around the poll benchmark. Amber band: the market\'s bid–ask spread, where recorded. The band is wide on purpose: a few-point polling lead is well within historical error.</p>' : ''}`;
@@ -302,15 +302,22 @@ function chartSVG(hist, race) {
     ? `<path d="${seg(pts)}" fill="none" stroke="#FFB52E" stroke-width="2"/>`
     : `<circle cx="${pts[0][0].toFixed(1)}" cy="${pts[0][1].toFixed(1)}" r="2" fill="#FFB52E"/>`).join("");
 
-  // second venue (Kalshi): same measure, different crowd; opt-in, never blended into the main line
+  // second venue (Kalshi): drawn as the GAP between venues — a cream ribbon between the two
+  // lines plus a thin cream line on Kalshi's edge. Where the venues agree, nothing shows.
   let kalshiPath = "";
   if (SHOW_VENUES) {
-    const kRuns = []; let kr = [];
-    hist.forEach((d, i) => { if (d.market_kalshi == null) { if (kr.length) kRuns.push(kr); kr = []; } else kr.push([x(i), y(d.market_kalshi)]); });
-    if (kr.length) kRuns.push(kr);
-    kalshiPath = kRuns.map(pts => pts.length > 1
-      ? `<path d="${seg(pts)}" fill="none" stroke="#FFB52E" stroke-width="1.5" stroke-dasharray="1 3" opacity="0.8"/>`
-      : `<circle cx="${pts[0][0].toFixed(1)}" cy="${pts[0][1].toFixed(1)}" r="1.5" fill="#FFB52E" opacity="0.8"/>`).join("");
+    const runs = []; let run = [];
+    hist.forEach((d, i) => {
+      if (d.market_kalshi == null || d.market == null || d.carried) { if (run.length) runs.push(run); run = []; }
+      else run.push({ x: x(i), yk: y(d.market_kalshi), ym: y(d.market) });
+    });
+    if (run.length) runs.push(run);
+    kalshiPath = runs.map(r => {
+      if (r.length < 2) return `<circle cx="${r[0].x.toFixed(1)}" cy="${r[0].yk.toFixed(1)}" r="2" fill="#F2EFE6"/>`;
+      const top = r.map(p => [p.x, p.yk]), back = r.map(p => [p.x, p.ym]).reverse();
+      return `<path d="${seg(top)} ${seg(back).replace(/^M/, "L")} Z" fill="#F2EFE6" fill-opacity="0.22" stroke="none"/>
+        <path d="${seg(top)}" fill="none" stroke="#F2EFE6" stroke-width="1.2" opacity="0.9"/>`;
+    }).join("");
   }
 
   return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block;padding:6px 6px 0">
