@@ -11,364 +11,543 @@
       "poll_note": "DDHQ 2026 Senate forecast: Dem control 56% (GOP 44%), read 2026-10-11",
       "result": {},
       "wedge": 7.5,
+      "market_kalshi": 60.5,
+      "wedge_kalshi": 4.5,
       "history": [
         {
           "date": "2026-08-15",
           "market": 52.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-08-16",
           "market": 52.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-08-17",
           "market": 51.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-08-18",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-08-19",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 46.5,
+          "kalshi_bid": 46,
+          "kalshi_ask": 47
         },
         {
           "date": "2026-08-20",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 46.5,
+          "kalshi_bid": 46,
+          "kalshi_ask": 47
         },
         {
           "date": "2026-08-21",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 46.5,
+          "kalshi_bid": 46,
+          "kalshi_ask": 47
         },
         {
           "date": "2026-08-22",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 46.5,
+          "kalshi_bid": 46,
+          "kalshi_ask": 47
         },
         {
           "date": "2026-08-23",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 46.5,
+          "kalshi_bid": 46,
+          "kalshi_ask": 47
         },
         {
           "date": "2026-08-24",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 46.5,
+          "kalshi_bid": 46,
+          "kalshi_ask": 47
         },
         {
           "date": "2026-08-25",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-08-26",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-08-27",
           "market": 49.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-08-28",
           "market": 49.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-08-29",
           "market": 49.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-08-30",
           "market": 49.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-08-31",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-09-01",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-09-02",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-03",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-04",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-05",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 46.5,
+          "kalshi_bid": 46,
+          "kalshi_ask": 47
         },
         {
           "date": "2026-09-06",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-07",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-08",
           "market": 50.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-09",
           "market": 51.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-10",
           "market": 51.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-11",
           "market": 51.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-09-12",
           "market": 51.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-09-13",
           "market": 52.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-09-14",
           "market": 53.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 52.5,
+          "kalshi_bid": 52,
+          "kalshi_ask": 53
         },
         {
           "date": "2026-09-15",
           "market": 52.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 54.5,
+          "kalshi_bid": 54,
+          "kalshi_ask": 55
         },
         {
           "date": "2026-09-16",
           "market": 58.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 55.5,
+          "kalshi_bid": 55,
+          "kalshi_ask": 56
         },
         {
           "date": "2026-09-17",
           "market": 58.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-09-18",
           "market": 59.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-19",
           "market": 59.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-20",
           "market": 60.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-21",
           "market": 61.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-09-22",
           "market": 63.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-09-23",
           "market": 65.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-24",
           "market": 65.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-09-25",
           "market": 62.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-09-26",
           "market": 62.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-09-27",
           "market": 62.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-09-28",
           "market": 62.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-09-29",
           "market": 61.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-09-30",
           "market": 62.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-10-01",
           "market": 62.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-10-02",
           "market": 63.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-10-03",
           "market": 64.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-10-04",
           "market": 64.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-10-05",
           "market": 66.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-10-06",
           "market": 65.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-10-07",
           "market": 64.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-10-08",
           "market": 64.5,
           "polls": 56,
-          "est": true
+          "est": true,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-10-09",
           "market": 63.5,
           "polls": 56,
           "bid": 63,
-          "ask": 64
+          "ask": 64,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-10-10",
           "market": 63.5,
           "polls": 56,
           "bid": 63,
-          "ask": 64
+          "ask": 64,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-10-11",
           "market": 63.5,
           "polls": 56,
           "bid": 63,
-          "ask": 64
+          "ask": 64,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-10-12",
           "market": 63.5,
           "polls": 56,
           "bid": 63,
-          "ask": 64
+          "ask": 64,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         }
       ]
     },
@@ -382,419 +561,598 @@
       "poll_note": "RCP average 9/16 - 10/5: Democrats +7.9 (Democrats vs Republicans), fetched 2026-10-11",
       "result": {},
       "wedge": -2,
+      "market_kalshi": 89.5,
+      "wedge_kalshi": -3,
       "history": [
         {
           "date": "2026-08-15",
           "market": 87.5,
           "polls": 85.4,
           "est": true,
-          "poll_margin_est": 5.8
+          "poll_margin_est": 5.8,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-08-16",
           "market": 87.5,
           "polls": 85.4,
           "est": true,
-          "poll_margin_est": 5.8
+          "poll_margin_est": 5.8,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-08-17",
           "market": 87.5,
           "polls": 84.1,
           "est": true,
-          "poll_margin_est": 5.5
+          "poll_margin_est": 5.5,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-08-18",
           "market": 87.5,
           "polls": 84.1,
           "est": true,
-          "poll_margin_est": 5.5
+          "poll_margin_est": 5.5,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-08-19",
           "market": 87.5,
           "polls": 84.1,
           "est": true,
-          "poll_margin_est": 5.5
+          "poll_margin_est": 5.5,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-20",
           "market": 87.5,
           "polls": 84.1,
           "est": true,
-          "poll_margin_est": 5.5
+          "poll_margin_est": 5.5,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-21",
           "market": 87.5,
           "polls": 84.1,
           "est": true,
-          "poll_margin_est": 5.5
+          "poll_margin_est": 5.5,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-22",
           "market": 87.5,
           "polls": 84.1,
           "est": true,
-          "poll_margin_est": 5.5
+          "poll_margin_est": 5.5,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-23",
           "market": 88.5,
           "polls": 85.4,
           "est": true,
-          "poll_margin_est": 5.8
+          "poll_margin_est": 5.8,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-24",
           "market": 88.5,
           "polls": 85.4,
           "est": true,
-          "poll_margin_est": 5.8
+          "poll_margin_est": 5.8,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-08-25",
           "market": 88.5,
           "polls": 85.4,
           "est": true,
-          "poll_margin_est": 5.8
+          "poll_margin_est": 5.8,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-08-26",
           "market": 87.5,
           "polls": 83.7,
           "est": true,
-          "poll_margin_est": 5.4
+          "poll_margin_est": 5.4,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-27",
           "market": 87.5,
           "polls": 83.7,
           "est": true,
-          "poll_margin_est": 5.4
+          "poll_margin_est": 5.4,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-28",
           "market": 88.5,
           "polls": 84.1,
           "est": true,
-          "poll_margin_est": 5.5
+          "poll_margin_est": 5.5,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-29",
           "market": 88.5,
           "polls": 84.1,
           "est": true,
-          "poll_margin_est": 5.5
+          "poll_margin_est": 5.5,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-30",
           "market": 88.5,
           "polls": 82.3,
           "est": true,
-          "poll_margin_est": 5.1
+          "poll_margin_est": 5.1,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-31",
           "market": 89.5,
           "polls": 82.8,
           "est": true,
-          "poll_margin_est": 5.2
+          "poll_margin_est": 5.2,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-01",
           "market": 88.5,
           "polls": 84.6,
           "est": true,
-          "poll_margin_est": 5.6
+          "poll_margin_est": 5.6,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-02",
           "market": 88.5,
           "polls": 85.8,
           "est": true,
-          "poll_margin_est": 5.9
+          "poll_margin_est": 5.9,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-03",
           "market": 88.5,
           "polls": 85.8,
           "est": true,
-          "poll_margin_est": 5.9
+          "poll_margin_est": 5.9,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-04",
           "market": 89.5,
           "polls": 85.4,
           "est": true,
-          "poll_margin_est": 5.8
+          "poll_margin_est": 5.8,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-05",
           "market": 88.5,
           "polls": 85.4,
           "est": true,
-          "poll_margin_est": 5.8
+          "poll_margin_est": 5.8,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-06",
           "market": 87.5,
           "polls": 86.2,
           "est": true,
-          "poll_margin_est": 6
+          "poll_margin_est": 6,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-07",
           "market": 87.5,
           "polls": 86.2,
           "est": true,
-          "poll_margin_est": 6
+          "poll_margin_est": 6,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-08",
           "market": 86.5,
           "polls": 87.4,
           "est": true,
-          "poll_margin_est": 6.3
+          "poll_margin_est": 6.3,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-09",
           "market": 86.5,
           "polls": 88.1,
           "est": true,
-          "poll_margin_est": 6.5
+          "poll_margin_est": 6.5,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-10",
           "market": 87.5,
           "polls": 88.1,
           "est": true,
-          "poll_margin_est": 6.5
+          "poll_margin_est": 6.5,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-11",
           "market": 86.5,
           "polls": 88.1,
           "est": true,
-          "poll_margin_est": 6.5
+          "poll_margin_est": 6.5,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-12",
           "market": 87.5,
           "polls": 88.1,
           "est": true,
-          "poll_margin_est": 6.5
+          "poll_margin_est": 6.5,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-13",
           "market": 86.5,
           "polls": 89.2,
           "est": true,
-          "poll_margin_est": 6.8
+          "poll_margin_est": 6.8,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-14",
           "market": 86.5,
           "polls": 90.2,
           "est": true,
-          "poll_margin_est": 7.1
+          "poll_margin_est": 7.1,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-15",
           "market": 87.5,
           "polls": 90.8,
           "est": true,
-          "poll_margin_est": 7.3
+          "poll_margin_est": 7.3,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-16",
           "market": 86.5,
           "polls": 90.8,
           "est": true,
-          "poll_margin_est": 7.3
+          "poll_margin_est": 7.3,
+          "market_kalshi": 88.5,
+          "kalshi_bid": 88,
+          "kalshi_ask": 89
         },
         {
           "date": "2026-09-17",
           "market": 88.5,
           "polls": 91.1,
           "est": true,
-          "poll_margin_est": 7.4
+          "poll_margin_est": 7.4,
+          "market_kalshi": 89.5,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90
         },
         {
           "date": "2026-09-18",
           "market": 89.5,
           "polls": 91.1,
           "est": true,
-          "poll_margin_est": 7.4
+          "poll_margin_est": 7.4,
+          "market_kalshi": 89.5,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90
         },
         {
           "date": "2026-09-19",
           "market": 89.5,
           "polls": 91.1,
           "est": true,
-          "poll_margin_est": 7.4
+          "poll_margin_est": 7.4,
+          "market_kalshi": 90.2,
+          "kalshi_bid": 90.2,
+          "kalshi_ask": 90.3
         },
         {
           "date": "2026-09-20",
           "market": 90.5,
           "polls": 91.1,
           "est": true,
-          "poll_margin_est": 7.4
+          "poll_margin_est": 7.4,
+          "market_kalshi": 91.2,
+          "kalshi_bid": 91.1,
+          "kalshi_ask": 91.4
         },
         {
           "date": "2026-09-21",
           "market": 92.5,
           "polls": 91.9,
           "est": true,
-          "poll_margin_est": 7.7
+          "poll_margin_est": 7.7,
+          "market_kalshi": 90.6,
+          "kalshi_bid": 90.4,
+          "kalshi_ask": 90.7
         },
         {
           "date": "2026-09-22",
           "market": 92.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 91.1,
+          "kalshi_bid": 91,
+          "kalshi_ask": 91.2
         },
         {
           "date": "2026-09-23",
           "market": 92.5,
           "polls": 91.9,
           "est": true,
-          "poll_margin_est": 7.7
+          "poll_margin_est": 7.7,
+          "market_kalshi": 91.7,
+          "kalshi_bid": 91.5,
+          "kalshi_ask": 91.8
         },
         {
           "date": "2026-09-24",
           "market": 92.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 91.3,
+          "kalshi_bid": 91.3,
+          "kalshi_ask": 91.4
         },
         {
           "date": "2026-09-25",
           "market": 92.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 91.8,
+          "kalshi_bid": 91.8,
+          "kalshi_ask": 91.9
         },
         {
           "date": "2026-09-26",
           "market": 92.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 91.8,
+          "kalshi_bid": 91.7,
+          "kalshi_ask": 91.8
         },
         {
           "date": "2026-09-27",
           "market": 92.5,
           "polls": 93,
           "est": true,
-          "poll_margin_est": 8.1
+          "poll_margin_est": 8.1,
+          "market_kalshi": 91.7,
+          "kalshi_bid": 91.6,
+          "kalshi_ask": 91.7
         },
         {
           "date": "2026-09-28",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.4,
+          "kalshi_bid": 91.4,
+          "kalshi_ask": 91.5
         },
         {
           "date": "2026-09-29",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.4,
+          "kalshi_bid": 91.3,
+          "kalshi_ask": 91.5
         },
         {
           "date": "2026-09-30",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.4,
+          "kalshi_bid": 91.4,
+          "kalshi_ask": 91.5
         },
         {
           "date": "2026-10-01",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.6,
+          "kalshi_bid": 91.5,
+          "kalshi_ask": 91.6
         },
         {
           "date": "2026-10-02",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.8,
+          "kalshi_bid": 91.7,
+          "kalshi_ask": 91.8
         },
         {
           "date": "2026-10-03",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.8,
+          "kalshi_bid": 91.8,
+          "kalshi_ask": 91.9
         },
         {
           "date": "2026-10-04",
           "market": 93.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.4,
+          "kalshi_bid": 91.3,
+          "kalshi_ask": 91.5
         },
         {
           "date": "2026-10-05",
           "market": 92.5,
           "polls": 93.7,
           "est": true,
-          "poll_margin_est": 8.4
+          "poll_margin_est": 8.4,
+          "market_kalshi": 91.4,
+          "kalshi_bid": 91.4,
+          "kalshi_ask": 91.5
         },
         {
           "date": "2026-10-06",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91,
+          "kalshi_bid": 90.9,
+          "kalshi_ask": 91.1
         },
         {
           "date": "2026-10-07",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 89.5,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90
         },
         {
           "date": "2026-10-08",
           "market": 91.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 90.1,
+          "kalshi_bid": 90,
+          "kalshi_ask": 90.1
         },
         {
           "date": "2026-10-09",
           "market": 90.5,
           "polls": 92.5,
           "bid": 90,
-          "ask": 91
+          "ask": 91,
+          "market_kalshi": 89.5,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90
         },
         {
           "date": "2026-10-10",
           "market": 90.5,
           "polls": 92.5,
           "bid": 90,
-          "ask": 91
+          "ask": 91,
+          "market_kalshi": 90.2,
+          "kalshi_bid": 90.1,
+          "kalshi_ask": 90.3
         },
         {
           "date": "2026-10-11",
           "market": 90.5,
           "polls": 92.5,
           "bid": 90,
-          "ask": 91
+          "ask": 91,
+          "market_kalshi": 89.5,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90
         },
         {
           "date": "2026-10-12",
           "market": 90.5,
           "polls": 92.5,
           "bid": 90,
-          "ask": 91
+          "ask": 91,
+          "market_kalshi": 89.5,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90
         }
       ]
     },
@@ -802,425 +1160,604 @@
       "id": "nc-senate",
       "name": "Cooper (D) flips NC",
       "sub": "NC Senate · Cooper vs Whatley",
-      "market": 95.9,
+      "market": 96,
       "polls": 94.5,
       "sigma": 5.5,
       "poll_note": "RCP average 9/6 - 10/3: Cooper +8.8 (Cooper vs Whatley), fetched 2026-10-11",
       "result": {},
-      "wedge": 1.4,
+      "wedge": 1.5,
+      "market_kalshi": 95.5,
+      "wedge_kalshi": 1,
       "history": [
         {
           "date": "2026-08-15",
           "market": 92.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92.3,
+          "kalshi_bid": 91.8,
+          "kalshi_ask": 92.8
         },
         {
           "date": "2026-08-16",
           "market": 92.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92.5,
+          "kalshi_bid": 92.2,
+          "kalshi_ask": 92.8
         },
         {
           "date": "2026-08-17",
           "market": 92.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92.2,
+          "kalshi_bid": 91.9,
+          "kalshi_ask": 92.6
         },
         {
           "date": "2026-08-18",
           "market": 91.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92.3,
+          "kalshi_bid": 92,
+          "kalshi_ask": 92.6
         },
         {
           "date": "2026-08-19",
           "market": 92,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92.8,
+          "kalshi_bid": 92.4,
+          "kalshi_ask": 93.2
         },
         {
           "date": "2026-08-20",
           "market": 93.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92.7,
+          "kalshi_bid": 92.5,
+          "kalshi_ask": 92.9
         },
         {
           "date": "2026-08-21",
           "market": 91.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 91.4,
+          "kalshi_bid": 90.8,
+          "kalshi_ask": 92.1
         },
         {
           "date": "2026-08-22",
           "market": 91.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 91.6,
+          "kalshi_bid": 91.2,
+          "kalshi_ask": 92
         },
         {
           "date": "2026-08-23",
           "market": 91.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92.1,
+          "kalshi_bid": 92,
+          "kalshi_ask": 92.2
         },
         {
           "date": "2026-08-24",
           "market": 92,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 91.7,
+          "kalshi_bid": 91.3,
+          "kalshi_ask": 92.1
         },
         {
           "date": "2026-08-25",
           "market": 92.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92.3,
+          "kalshi_bid": 91.9,
+          "kalshi_ask": 92.7
         },
         {
           "date": "2026-08-26",
           "market": 92.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92.2,
+          "kalshi_bid": 91.7,
+          "kalshi_ask": 92.8
         },
         {
           "date": "2026-08-27",
           "market": 91.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92.2,
+          "kalshi_bid": 91.5,
+          "kalshi_ask": 92.9
         },
         {
           "date": "2026-08-28",
           "market": 91.5,
           "polls": 93.9,
           "est": true,
-          "poll_margin_est": 8.5
+          "poll_margin_est": 8.5,
+          "market_kalshi": 92.1,
+          "kalshi_bid": 91.7,
+          "kalshi_ask": 92.5
         },
         {
           "date": "2026-08-29",
           "market": 91.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.1,
+          "kalshi_bid": 91,
+          "kalshi_ask": 91.2
         },
         {
           "date": "2026-08-30",
           "market": 91.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 92.2,
+          "kalshi_bid": 92,
+          "kalshi_ask": 92.5
         },
         {
           "date": "2026-08-31",
           "market": 91.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 91.2,
+          "kalshi_bid": 91.1,
+          "kalshi_ask": 91.2
         },
         {
           "date": "2026-09-01",
           "market": 92,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 91.2,
+          "kalshi_bid": 91.1,
+          "kalshi_ask": 91.2
         },
         {
           "date": "2026-09-02",
           "market": 91.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 91.2,
+          "kalshi_bid": 91.1,
+          "kalshi_ask": 91.2
         },
         {
           "date": "2026-09-03",
           "market": 91.5,
           "polls": 95.3,
           "est": true,
-          "poll_margin_est": 9.2
+          "poll_margin_est": 9.2,
+          "market_kalshi": 91.1,
+          "kalshi_bid": 91,
+          "kalshi_ask": 91.2
         },
         {
           "date": "2026-09-04",
           "market": 91.5,
           "polls": 95.3,
           "est": true,
-          "poll_margin_est": 9.2
+          "poll_margin_est": 9.2,
+          "market_kalshi": 91.2,
+          "kalshi_bid": 91,
+          "kalshi_ask": 91.5
         },
         {
           "date": "2026-09-05",
           "market": 91.5,
           "polls": 95.3,
           "est": true,
-          "poll_margin_est": 9.2
+          "poll_margin_est": 9.2,
+          "market_kalshi": 91.2,
+          "kalshi_bid": 91,
+          "kalshi_ask": 91.5
         },
         {
           "date": "2026-09-06",
           "market": 91.5,
           "polls": 95.3,
           "est": true,
-          "poll_margin_est": 9.2
+          "poll_margin_est": 9.2,
+          "market_kalshi": 91.4,
+          "kalshi_bid": 91.1,
+          "kalshi_ask": 91.7
         },
         {
           "date": "2026-09-07",
           "market": 91.5,
           "polls": 92.7,
           "est": true,
-          "poll_margin_est": 8
+          "poll_margin_est": 8,
+          "market_kalshi": 91.3,
+          "kalshi_bid": 91,
+          "kalshi_ask": 91.6
         },
         {
           "date": "2026-09-08",
           "market": 91.5,
           "polls": 92.7,
           "est": true,
-          "poll_margin_est": 8
+          "poll_margin_est": 8,
+          "market_kalshi": 91.2,
+          "kalshi_bid": 91,
+          "kalshi_ask": 91.3
         },
         {
           "date": "2026-09-09",
           "market": 91.5,
           "polls": 92.7,
           "est": true,
-          "poll_margin_est": 8
+          "poll_margin_est": 8,
+          "market_kalshi": 91,
+          "kalshi_bid": 90.8,
+          "kalshi_ask": 91.2
         },
         {
           "date": "2026-09-10",
           "market": 91.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91,
+          "kalshi_bid": 90.9,
+          "kalshi_ask": 91
         },
         {
           "date": "2026-09-11",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.3,
+          "kalshi_bid": 91,
+          "kalshi_ask": 91.7
         },
         {
           "date": "2026-09-12",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.6,
+          "kalshi_bid": 91.2,
+          "kalshi_ask": 91.9
         },
         {
           "date": "2026-09-13",
           "market": 92.5,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 91.9,
+          "kalshi_bid": 91.5,
+          "kalshi_ask": 92.3
         },
         {
           "date": "2026-09-14",
           "market": 92,
           "polls": 93.4,
           "est": true,
-          "poll_margin_est": 8.3
+          "poll_margin_est": 8.3,
+          "market_kalshi": 92,
+          "kalshi_bid": 91.6,
+          "kalshi_ask": 92.3
         },
         {
           "date": "2026-09-15",
           "market": 90.5,
           "polls": 96.8,
           "est": true,
-          "poll_margin_est": 10.2
+          "poll_margin_est": 10.2,
+          "market_kalshi": 92,
+          "kalshi_bid": 91.8,
+          "kalshi_ask": 92.2
         },
         {
           "date": "2026-09-16",
           "market": 91.5,
           "polls": 94.9,
           "est": true,
-          "poll_margin_est": 9
+          "poll_margin_est": 9,
+          "market_kalshi": 92,
+          "kalshi_bid": 91.9,
+          "kalshi_ask": 92
         },
         {
           "date": "2026-09-17",
           "market": 91.5,
           "polls": 93.9,
           "est": true,
-          "poll_margin_est": 8.5
+          "poll_margin_est": 8.5,
+          "market_kalshi": 92.4,
+          "kalshi_bid": 92.2,
+          "kalshi_ask": 92.7
         },
         {
           "date": "2026-09-18",
           "market": 91.5,
           "polls": 94.7,
           "est": true,
-          "poll_margin_est": 8.9
+          "poll_margin_est": 8.9,
+          "market_kalshi": 92.4,
+          "kalshi_bid": 92.1,
+          "kalshi_ask": 92.7
         },
         {
           "date": "2026-09-19",
           "market": 92.5,
           "polls": 94.7,
           "est": true,
-          "poll_margin_est": 8.9
+          "poll_margin_est": 8.9,
+          "market_kalshi": 92.4,
+          "kalshi_bid": 92.2,
+          "kalshi_ask": 92.7
         },
         {
           "date": "2026-09-20",
           "market": 92.5,
           "polls": 95.1,
           "est": true,
-          "poll_margin_est": 9.1
+          "poll_margin_est": 9.1,
+          "market_kalshi": 92.4,
+          "kalshi_bid": 92.1,
+          "kalshi_ask": 92.7
         },
         {
           "date": "2026-09-21",
           "market": 93.5,
           "polls": 95.1,
           "est": true,
-          "poll_margin_est": 9.1
+          "poll_margin_est": 9.1,
+          "market_kalshi": 92.4,
+          "kalshi_bid": 92.1,
+          "kalshi_ask": 92.6
         },
         {
           "date": "2026-09-22",
           "market": 92.5,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 93.2,
+          "kalshi_bid": 93,
+          "kalshi_ask": 93.4
         },
         {
           "date": "2026-09-23",
           "market": 94.5,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 93.5,
+          "kalshi_bid": 93.3,
+          "kalshi_ask": 93.6
         },
         {
           "date": "2026-09-24",
           "market": 94.5,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 93.4,
+          "kalshi_bid": 93.3,
+          "kalshi_ask": 93.5
         },
         {
           "date": "2026-09-25",
           "market": 94.5,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 93.8,
+          "kalshi_bid": 93.7,
+          "kalshi_ask": 93.8
         },
         {
           "date": "2026-09-26",
           "market": 94.5,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 93.7,
+          "kalshi_bid": 93.6,
+          "kalshi_ask": 93.7
         },
         {
           "date": "2026-09-27",
           "market": 95.5,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 93.7,
+          "kalshi_bid": 93.5,
+          "kalshi_ask": 93.8
         },
         {
           "date": "2026-09-28",
           "market": 95.5,
           "polls": 93.7,
           "est": true,
-          "poll_margin_est": 8.4
+          "poll_margin_est": 8.4,
+          "market_kalshi": 94.2,
+          "kalshi_bid": 94.2,
+          "kalshi_ask": 94.3
         },
         {
           "date": "2026-09-29",
           "market": 95.5,
           "polls": 94.3,
           "est": true,
-          "poll_margin_est": 8.7
+          "poll_margin_est": 8.7,
+          "market_kalshi": 94.4,
+          "kalshi_bid": 94.2,
+          "kalshi_ask": 94.6
         },
         {
           "date": "2026-09-30",
           "market": 95.5,
           "polls": 94.3,
           "est": true,
-          "poll_margin_est": 8.7
+          "poll_margin_est": 8.7,
+          "market_kalshi": 94.3,
+          "kalshi_bid": 94.1,
+          "kalshi_ask": 94.6
         },
         {
           "date": "2026-10-01",
           "market": 95.5,
           "polls": 94.3,
           "est": true,
-          "poll_margin_est": 8.7
+          "poll_margin_est": 8.7,
+          "market_kalshi": 94.1,
+          "kalshi_bid": 94.1,
+          "kalshi_ask": 94.2
         },
         {
           "date": "2026-10-02",
           "market": 95.5,
           "polls": 94.3,
           "est": true,
-          "poll_margin_est": 8.7
+          "poll_margin_est": 8.7,
+          "market_kalshi": 94.9,
+          "kalshi_bid": 94.9,
+          "kalshi_ask": 95
         },
         {
           "date": "2026-10-03",
           "market": 95.5,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 95.1,
+          "kalshi_bid": 95,
+          "kalshi_ask": 95.2
         },
         {
           "date": "2026-10-04",
           "market": 96.2,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 95.2,
+          "kalshi_bid": 95.2,
+          "kalshi_ask": 95.3
         },
         {
           "date": "2026-10-05",
           "market": 96.1,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 96.8,
+          "kalshi_bid": 96.6,
+          "kalshi_ask": 97
         },
         {
           "date": "2026-10-06",
           "market": 96.2,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 96.8,
+          "kalshi_bid": 96.6,
+          "kalshi_ask": 96.9
         },
         {
           "date": "2026-10-07",
           "market": 96.2,
           "polls": 94.1,
           "est": true,
-          "poll_margin_est": 8.6
+          "poll_margin_est": 8.6,
+          "market_kalshi": 96.9,
+          "kalshi_bid": 96.8,
+          "kalshi_ask": 97
         },
         {
           "date": "2026-10-08",
           "market": 96.3,
           "polls": 94.5,
           "est": true,
-          "poll_margin_est": 8.8
+          "poll_margin_est": 8.8,
+          "market_kalshi": 96.8,
+          "kalshi_bid": 96.8,
+          "kalshi_ask": 96.9
         },
         {
           "date": "2026-10-09",
           "market": 96.4,
           "polls": 94.5,
           "bid": 96.2,
-          "ask": 96.5
+          "ask": 96.5,
+          "market_kalshi": 96.3,
+          "kalshi_bid": 96.3,
+          "kalshi_ask": 96.4
         },
         {
           "date": "2026-10-10",
           "market": 96.4,
           "polls": 94.5,
           "bid": 96.2,
-          "ask": 96.5
+          "ask": 96.5,
+          "market_kalshi": 95.6,
+          "kalshi_bid": 95.1,
+          "kalshi_ask": 96
         },
         {
           "date": "2026-10-11",
           "market": 96.3,
           "polls": 94.5,
           "bid": 96.2,
-          "ask": 96.4
+          "ask": 96.4,
+          "market_kalshi": 95.3,
+          "kalshi_bid": 95.3,
+          "kalshi_ask": 95.4
         },
         {
           "date": "2026-10-12",
-          "market": 95.9,
+          "market": 96,
           "polls": 94.5,
-          "bid": 95.7,
-          "ask": 96
+          "bid": 95.8,
+          "ask": 96.2,
+          "market_kalshi": 95.5,
+          "kalshi_bid": 95.2,
+          "kalshi_ask": 95.9
         }
       ]
     },
@@ -1228,425 +1765,604 @@
       "id": "ga-senate",
       "name": "Ossoff (D) holds GA",
       "sub": "GA Senate · Ossoff vs Collins",
-      "market": 96.2,
+      "market": 96.1,
       "polls": 93,
       "sigma": 5.5,
       "poll_note": "RCP average 9/14 - 10/9: Ossoff +8.1 (Ossoff vs Collins), fetched 2026-10-11",
       "result": {},
-      "wedge": 3.2,
+      "wedge": 3.1,
+      "market_kalshi": 95.3,
+      "wedge_kalshi": 2.3,
       "history": [
         {
           "date": "2026-08-15",
           "market": 93,
           "polls": 94.3,
           "est": true,
-          "poll_margin_est": 8.7
+          "poll_margin_est": 8.7,
+          "market_kalshi": 91.9,
+          "kalshi_bid": 91.5,
+          "kalshi_ask": 92.3
         },
         {
           "date": "2026-08-16",
           "market": 93,
           "polls": 94.3,
           "est": true,
-          "poll_margin_est": 8.7
+          "poll_margin_est": 8.7,
+          "market_kalshi": 91.9,
+          "kalshi_bid": 91.5,
+          "kalshi_ask": 92.3
         },
         {
           "date": "2026-08-17",
           "market": 93,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92,
+          "kalshi_bid": 91.6,
+          "kalshi_ask": 92.3
         },
         {
           "date": "2026-08-18",
           "market": 92.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 91.8,
+          "kalshi_bid": 91.4,
+          "kalshi_ask": 92.2
         },
         {
           "date": "2026-08-19",
           "market": 92.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92,
+          "kalshi_bid": 91.8,
+          "kalshi_ask": 92.1
         },
         {
           "date": "2026-08-20",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.4,
+          "kalshi_bid": 92.2,
+          "kalshi_ask": 92.7
         },
         {
           "date": "2026-08-21",
           "market": 93,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.2,
+          "kalshi_bid": 92.1,
+          "kalshi_ask": 92.3
         },
         {
           "date": "2026-08-22",
           "market": 93,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.1,
+          "kalshi_bid": 92,
+          "kalshi_ask": 92.1
         },
         {
           "date": "2026-08-23",
           "market": 92.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 91.7,
+          "kalshi_bid": 91.5,
+          "kalshi_ask": 91.9
         },
         {
           "date": "2026-08-24",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 91.7,
+          "kalshi_bid": 91.5,
+          "kalshi_ask": 91.8
         },
         {
           "date": "2026-08-25",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.2,
+          "kalshi_bid": 91.9,
+          "kalshi_ask": 92.4
         },
         {
           "date": "2026-08-26",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.2,
+          "kalshi_bid": 91.9,
+          "kalshi_ask": 92.6
         },
         {
           "date": "2026-08-27",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.4,
+          "kalshi_bid": 92.2,
+          "kalshi_ask": 92.7
         },
         {
           "date": "2026-08-28",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.4,
+          "kalshi_bid": 92.1,
+          "kalshi_ask": 92.7
         },
         {
           "date": "2026-08-29",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.4,
+          "kalshi_bid": 92.1,
+          "kalshi_ask": 92.6
         },
         {
           "date": "2026-08-30",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.7,
+          "kalshi_bid": 92.3,
+          "kalshi_ask": 93
         },
         {
           "date": "2026-08-31",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.6,
+          "kalshi_bid": 92.2,
+          "kalshi_ask": 93
         },
         {
           "date": "2026-09-01",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 93.2,
+          "kalshi_bid": 93,
+          "kalshi_ask": 93.4
         },
         {
           "date": "2026-09-02",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 93.2,
+          "kalshi_bid": 92.8,
+          "kalshi_ask": 93.6
         },
         {
           "date": "2026-09-03",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 93.1,
+          "kalshi_bid": 92.5,
+          "kalshi_ask": 93.7
         },
         {
           "date": "2026-09-04",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.6,
+          "kalshi_bid": 92.1,
+          "kalshi_ask": 93.1
         },
         {
           "date": "2026-09-05",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 93.2,
+          "kalshi_bid": 93,
+          "kalshi_ask": 93.4
         },
         {
           "date": "2026-09-06",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.7,
+          "kalshi_bid": 92.1,
+          "kalshi_ask": 93.2
         },
         {
           "date": "2026-09-07",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.9,
+          "kalshi_bid": 92.4,
+          "kalshi_ask": 93.4
         },
         {
           "date": "2026-09-08",
           "market": 92,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.7,
+          "kalshi_bid": 92.4,
+          "kalshi_ask": 93
         },
         {
           "date": "2026-09-09",
           "market": 93.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.7,
+          "kalshi_bid": 92.3,
+          "kalshi_ask": 93.1
         },
         {
           "date": "2026-09-10",
           "market": 92.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.7,
+          "kalshi_bid": 92.3,
+          "kalshi_ask": 93.1
         },
         {
           "date": "2026-09-11",
           "market": 92.5,
           "polls": 88.8,
           "est": true,
-          "poll_margin_est": 6.7
+          "poll_margin_est": 6.7,
+          "market_kalshi": 92.7,
+          "kalshi_bid": 92.3,
+          "kalshi_ask": 93.1
         },
         {
           "date": "2026-09-12",
           "market": 91.5,
           "polls": 90.8,
           "est": true,
-          "poll_margin_est": 7.3
+          "poll_margin_est": 7.3,
+          "market_kalshi": 92.7,
+          "kalshi_bid": 92.3,
+          "kalshi_ask": 93.1
         },
         {
           "date": "2026-09-13",
           "market": 92.5,
           "polls": 90.8,
           "est": true,
-          "poll_margin_est": 7.3
+          "poll_margin_est": 7.3,
+          "market_kalshi": 92.8,
+          "kalshi_bid": 92.5,
+          "kalshi_ask": 93.1
         },
         {
           "date": "2026-09-14",
           "market": 92.5,
           "polls": 90.8,
           "est": true,
-          "poll_margin_est": 7.3
+          "poll_margin_est": 7.3,
+          "market_kalshi": 93.7,
+          "kalshi_bid": 93.5,
+          "kalshi_ask": 93.8
         },
         {
           "date": "2026-09-15",
           "market": 93.5,
           "polls": 90.8,
           "est": true,
-          "poll_margin_est": 7.3
+          "poll_margin_est": 7.3,
+          "market_kalshi": 93.4,
+          "kalshi_bid": 93,
+          "kalshi_ask": 93.8
         },
         {
           "date": "2026-09-16",
           "market": 92.5,
           "polls": 87.4,
           "est": true,
-          "poll_margin_est": 6.3
+          "poll_margin_est": 6.3,
+          "market_kalshi": 93.4,
+          "kalshi_bid": 93.1,
+          "kalshi_ask": 93.6
         },
         {
           "date": "2026-09-17",
           "market": 93,
           "polls": 87.4,
           "est": true,
-          "poll_margin_est": 6.3
+          "poll_margin_est": 6.3,
+          "market_kalshi": 93.5,
+          "kalshi_bid": 93.4,
+          "kalshi_ask": 93.6
         },
         {
           "date": "2026-09-18",
           "market": 93.5,
           "polls": 90.5,
           "est": true,
-          "poll_margin_est": 7.2
+          "poll_margin_est": 7.2,
+          "market_kalshi": 93.7,
+          "kalshi_bid": 93.3,
+          "kalshi_ask": 94
         },
         {
           "date": "2026-09-19",
           "market": 93.5,
           "polls": 90.5,
           "est": true,
-          "poll_margin_est": 7.2
+          "poll_margin_est": 7.2,
+          "market_kalshi": 93.6,
+          "kalshi_bid": 93.2,
+          "kalshi_ask": 93.9
         },
         {
           "date": "2026-09-20",
           "market": 94,
           "polls": 90.5,
           "est": true,
-          "poll_margin_est": 7.2
+          "poll_margin_est": 7.2,
+          "market_kalshi": 93.5,
+          "kalshi_bid": 93.3,
+          "kalshi_ask": 93.6
         },
         {
           "date": "2026-09-21",
           "market": 93.5,
           "polls": 90.5,
           "est": true,
-          "poll_margin_est": 7.2
+          "poll_margin_est": 7.2,
+          "market_kalshi": 93.6,
+          "kalshi_bid": 93.2,
+          "kalshi_ask": 93.9
         },
         {
           "date": "2026-09-22",
           "market": 93.5,
           "polls": 90.5,
           "est": true,
-          "poll_margin_est": 7.2
+          "poll_margin_est": 7.2,
+          "market_kalshi": 93.7,
+          "kalshi_bid": 93.3,
+          "kalshi_ask": 94.1
         },
         {
           "date": "2026-09-23",
           "market": 94.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 94.4,
+          "kalshi_bid": 94.2,
+          "kalshi_ask": 94.6
         },
         {
           "date": "2026-09-24",
           "market": 94.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 94.3,
+          "kalshi_bid": 94.3,
+          "kalshi_ask": 94.4
         },
         {
           "date": "2026-09-25",
           "market": 94.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 94.5,
+          "kalshi_bid": 94.1,
+          "kalshi_ask": 94.9
         },
         {
           "date": "2026-09-26",
           "market": 94.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 94.3,
+          "kalshi_bid": 94.1,
+          "kalshi_ask": 94.5
         },
         {
           "date": "2026-09-27",
           "market": 95.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 94.2,
+          "kalshi_bid": 94.2,
+          "kalshi_ask": 94.3
         },
         {
           "date": "2026-09-28",
           "market": 95.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 95.8,
+          "kalshi_bid": 94.8,
+          "kalshi_ask": 96.8
         },
         {
           "date": "2026-09-29",
           "market": 95.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 95.5,
+          "kalshi_bid": 95.1,
+          "kalshi_ask": 95.9
         },
         {
           "date": "2026-09-30",
           "market": 95.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 95.3,
+          "kalshi_bid": 95,
+          "kalshi_ask": 95.7
         },
         {
           "date": "2026-10-01",
           "market": 95.5,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 96,
+          "kalshi_bid": 95.3,
+          "kalshi_ask": 96.8
         },
         {
           "date": "2026-10-02",
           "market": 97.3,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 96,
+          "kalshi_bid": 95.8,
+          "kalshi_ask": 96.3
         },
         {
           "date": "2026-10-03",
           "market": 97.2,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 95.9,
+          "kalshi_bid": 95.6,
+          "kalshi_ask": 96.2
         },
         {
           "date": "2026-10-04",
           "market": 97.2,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 95.5,
+          "kalshi_bid": 95.1,
+          "kalshi_ask": 95.9
         },
         {
           "date": "2026-10-05",
           "market": 97.2,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 96.2,
+          "kalshi_bid": 96.1,
+          "kalshi_ask": 96.2
         },
         {
           "date": "2026-10-06",
           "market": 96.2,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 96.3,
+          "kalshi_bid": 96.1,
+          "kalshi_ask": 96.5
         },
         {
           "date": "2026-10-07",
           "market": 96.7,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 96.1,
+          "kalshi_bid": 96,
+          "kalshi_ask": 96.2
         },
         {
           "date": "2026-10-08",
           "market": 96.8,
           "polls": 92.2,
           "est": true,
-          "poll_margin_est": 7.8
+          "poll_margin_est": 7.8,
+          "market_kalshi": 95.8,
+          "kalshi_bid": 95.6,
+          "kalshi_ask": 95.9
         },
         {
           "date": "2026-10-09",
           "market": 96.7,
           "polls": 92.2,
           "bid": 96.4,
-          "ask": 97
+          "ask": 97,
+          "market_kalshi": 95.4,
+          "kalshi_bid": 95.3,
+          "kalshi_ask": 95.5
         },
         {
           "date": "2026-10-10",
           "market": 96.6,
           "polls": 92.2,
           "bid": 96.2,
-          "ask": 96.9
+          "ask": 96.9,
+          "market_kalshi": 95.4,
+          "kalshi_bid": 95.4,
+          "kalshi_ask": 95.5
         },
         {
           "date": "2026-10-11",
           "market": 96.2,
           "polls": 93,
           "bid": 95.6,
-          "ask": 96.8
+          "ask": 96.8,
+          "market_kalshi": 95.3,
+          "kalshi_bid": 95.3,
+          "kalshi_ask": 95.4
         },
         {
           "date": "2026-10-12",
-          "market": 96.2,
+          "market": 96.1,
           "polls": 93,
           "bid": 95.7,
-          "ask": 96.7
+          "ask": 96.5,
+          "market_kalshi": 95.3,
+          "kalshi_bid": 95.3,
+          "kalshi_ask": 95.4
         }
       ]
     },
@@ -1660,419 +2376,598 @@
       "poll_note": "RCP average 9/14 - 10/5: Jackson +1.0 (Jackson vs Collins), fetched 2026-10-11",
       "result": {},
       "wedge": 1.3,
+      "market_kalshi": 57.5,
+      "wedge_kalshi": 0.3,
       "history": [
         {
           "date": "2026-08-15",
           "market": 69.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-08-16",
           "market": 69.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-08-17",
           "market": 69.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-08-18",
           "market": 69.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-08-19",
           "market": 69.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-08-20",
           "market": 69.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-08-21",
           "market": 69.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 66.5,
+          "kalshi_bid": 66,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-08-22",
           "market": 69.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-08-23",
           "market": 70.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-08-24",
           "market": 70.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-08-25",
           "market": 70.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-08-26",
           "market": 70.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-08-27",
           "market": 70.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 66.5,
+          "kalshi_bid": 66,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-08-28",
           "market": 69.5,
           "polls": 81.8,
           "est": true,
-          "poll_margin_est": 5
+          "poll_margin_est": 5,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-08-29",
           "market": 69.5,
           "polls": 81.8,
           "est": true,
-          "poll_margin_est": 5
+          "poll_margin_est": 5,
+          "market_kalshi": 69.5,
+          "kalshi_bid": 69,
+          "kalshi_ask": 70
         },
         {
           "date": "2026-08-30",
           "market": 69.5,
           "polls": 81.8,
           "est": true,
-          "poll_margin_est": 5
+          "poll_margin_est": 5,
+          "market_kalshi": 69.5,
+          "kalshi_bid": 69,
+          "kalshi_ask": 70
         },
         {
           "date": "2026-08-31",
           "market": 69.5,
           "polls": 81.8,
           "est": true,
-          "poll_margin_est": 5
+          "poll_margin_est": 5,
+          "market_kalshi": 69.5,
+          "kalshi_bid": 69,
+          "kalshi_ask": 70
         },
         {
           "date": "2026-09-01",
           "market": 69.5,
           "polls": 81.8,
           "est": true,
-          "poll_margin_est": 5
+          "poll_margin_est": 5,
+          "market_kalshi": 69.5,
+          "kalshi_bid": 69,
+          "kalshi_ask": 70
         },
         {
           "date": "2026-09-02",
           "market": 69.5,
           "polls": 81.8,
           "est": true,
-          "poll_margin_est": 5
+          "poll_margin_est": 5,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-09-03",
           "market": 69.5,
           "polls": 81.8,
           "est": true,
-          "poll_margin_est": 5
+          "poll_margin_est": 5,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-09-04",
           "market": 69.5,
           "polls": 81.8,
           "est": true,
-          "poll_margin_est": 5
+          "poll_margin_est": 5,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-09-05",
           "market": 69.5,
           "polls": 81.8,
           "est": true,
-          "poll_margin_est": 5
+          "poll_margin_est": 5,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-09-06",
           "market": 69.5,
           "polls": 80.4,
           "est": true,
-          "poll_margin_est": 4.7
+          "poll_margin_est": 4.7,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-09-07",
           "market": 69.5,
           "polls": 80.4,
           "est": true,
-          "poll_margin_est": 4.7
+          "poll_margin_est": 4.7,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-09-08",
           "market": 70.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-09-09",
           "market": 72.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-09-10",
           "market": 71.5,
           "polls": 77.7,
           "est": true,
-          "poll_margin_est": 4.2
+          "poll_margin_est": 4.2,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-09-11",
           "market": 70.5,
           "polls": 77.7,
           "est": true,
-          "poll_margin_est": 4.2
+          "poll_margin_est": 4.2,
+          "market_kalshi": 67,
+          "kalshi_bid": 66,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-09-12",
           "market": 70.5,
           "polls": 77.7,
           "est": true,
-          "poll_margin_est": 4.2
+          "poll_margin_est": 4.2,
+          "market_kalshi": 67,
+          "kalshi_bid": 66,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-09-13",
           "market": 70.5,
           "polls": 77.7,
           "est": true,
-          "poll_margin_est": 4.2
+          "poll_margin_est": 4.2,
+          "market_kalshi": 66.5,
+          "kalshi_bid": 66,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-09-14",
           "market": 70.5,
           "polls": 78.8,
           "est": true,
-          "poll_margin_est": 4.4
+          "poll_margin_est": 4.4,
+          "market_kalshi": 66.5,
+          "kalshi_bid": 66,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-09-15",
           "market": 70.5,
           "polls": 73.8,
           "est": true,
-          "poll_margin_est": 3.5
+          "poll_margin_est": 3.5,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-09-16",
           "market": 70.5,
           "polls": 73.8,
           "est": true,
-          "poll_margin_est": 3.5
+          "poll_margin_est": 3.5,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-09-17",
           "market": 70.5,
           "polls": 73.8,
           "est": true,
-          "poll_margin_est": 3.5
+          "poll_margin_est": 3.5,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-09-18",
           "market": 70.5,
           "polls": 73.8,
           "est": true,
-          "poll_margin_est": 3.5
+          "poll_margin_est": 3.5,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-09-19",
           "market": 70.5,
           "polls": 73.8,
           "est": true,
-          "poll_margin_est": 3.5
+          "poll_margin_est": 3.5,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-09-20",
           "market": 69.5,
           "polls": 73.8,
           "est": true,
-          "poll_margin_est": 3.5
+          "poll_margin_est": 3.5,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-09-21",
           "market": 69.5,
           "polls": 74.4,
           "est": true,
-          "poll_margin_est": 3.6
+          "poll_margin_est": 3.6,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-09-22",
           "market": 70,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 71.5,
+          "kalshi_bid": 71,
+          "kalshi_ask": 72
         },
         {
           "date": "2026-09-23",
           "market": 73.5,
           "polls": 67.5,
           "est": true,
-          "poll_margin_est": 2.5
+          "poll_margin_est": 2.5,
+          "market_kalshi": 73,
+          "kalshi_bid": 72,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-09-24",
           "market": 73.5,
           "polls": 67.5,
           "est": true,
-          "poll_margin_est": 2.5
+          "poll_margin_est": 2.5,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-09-25",
           "market": 69.5,
           "polls": 62.8,
           "est": true,
-          "poll_margin_est": 1.8
+          "poll_margin_est": 1.8,
+          "market_kalshi": 63,
+          "kalshi_bid": 62,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-26",
           "market": 66.5,
           "polls": 62.8,
           "est": true,
-          "poll_margin_est": 1.8
+          "poll_margin_est": 1.8,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-09-27",
           "market": 64.5,
           "polls": 62.8,
           "est": true,
-          "poll_margin_est": 1.8
+          "poll_margin_est": 1.8,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-28",
           "market": 60.5,
           "polls": 62.8,
           "est": true,
-          "poll_margin_est": 1.8
+          "poll_margin_est": 1.8,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-29",
           "market": 60.5,
           "polls": 62.8,
           "est": true,
-          "poll_margin_est": 1.8
+          "poll_margin_est": 1.8,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-30",
           "market": 59.5,
           "polls": 60.7,
           "est": true,
-          "poll_margin_est": 1.5
+          "poll_margin_est": 1.5,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-10-01",
           "market": 58.5,
           "polls": 58.6,
           "est": true,
-          "poll_margin_est": 1.2
+          "poll_margin_est": 1.2,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-10-02",
           "market": 56.5,
           "polls": 58.6,
           "est": true,
-          "poll_margin_est": 1.2
+          "poll_margin_est": 1.2,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-10-03",
           "market": 59.5,
           "polls": 58.6,
           "est": true,
-          "poll_margin_est": 1.2
+          "poll_margin_est": 1.2,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-10-04",
           "market": 59.5,
           "polls": 59.3,
           "est": true,
-          "poll_margin_est": 1.3
+          "poll_margin_est": 1.3,
+          "market_kalshi": 57,
+          "kalshi_bid": 56,
+          "kalshi_ask": 58
         },
         {
           "date": "2026-10-05",
           "market": 58.5,
           "polls": 60.7,
           "est": true,
-          "poll_margin_est": 1.5
+          "poll_margin_est": 1.5,
+          "market_kalshi": 55.5,
+          "kalshi_bid": 55,
+          "kalshi_ask": 56
         },
         {
           "date": "2026-10-06",
           "market": 58.5,
           "polls": 59.3,
           "est": true,
-          "poll_margin_est": 1.3
+          "poll_margin_est": 1.3,
+          "market_kalshi": 57.5,
+          "kalshi_bid": 57,
+          "kalshi_ask": 58
         },
         {
           "date": "2026-10-07",
           "market": 58.5,
           "polls": 59.3,
           "est": true,
-          "poll_margin_est": 1.3
+          "poll_margin_est": 1.3,
+          "market_kalshi": 57,
+          "kalshi_bid": 56,
+          "kalshi_ask": 58
         },
         {
           "date": "2026-10-08",
           "market": 57.5,
           "polls": 59.3,
           "est": true,
-          "poll_margin_est": 1.3
+          "poll_margin_est": 1.3,
+          "market_kalshi": 56.5,
+          "kalshi_bid": 56,
+          "kalshi_ask": 57
         },
         {
           "date": "2026-10-09",
           "market": 58.5,
           "polls": 57.2,
           "bid": 58,
-          "ask": 59
+          "ask": 59,
+          "market_kalshi": 57.5,
+          "kalshi_bid": 57,
+          "kalshi_ask": 58
         },
         {
           "date": "2026-10-10",
           "market": 58.5,
           "polls": 57.2,
           "bid": 58,
-          "ask": 59
+          "ask": 59,
+          "market_kalshi": 57.5,
+          "kalshi_bid": 57,
+          "kalshi_ask": 58
         },
         {
           "date": "2026-10-11",
           "market": 58.5,
           "polls": 57.2,
           "bid": 58,
-          "ask": 59
+          "ask": 59,
+          "market_kalshi": 56.5,
+          "kalshi_bid": 56,
+          "kalshi_ask": 57
         },
         {
           "date": "2026-10-12",
           "market": 58.5,
           "polls": 57.2,
           "bid": 58,
-          "ask": 59
+          "ask": 59,
+          "market_kalshi": 57.5,
+          "kalshi_bid": 57,
+          "kalshi_ask": 58
         }
       ]
     },
@@ -2086,419 +2981,598 @@
       "poll_note": "RCP average 9/15 - 10/6: El-Sayed +3.2 (El-Sayed vs Rogers), fetched 2026-10-11",
       "result": {},
       "wedge": -1.5,
+      "market_kalshi": 67.5,
+      "wedge_kalshi": -4.5,
       "history": [
         {
           "date": "2026-08-15",
           "market": 55.5,
           "polls": 35.8,
           "est": true,
-          "poll_margin_est": -2
+          "poll_margin_est": -2,
+          "market_kalshi": 55.5,
+          "kalshi_bid": 55,
+          "kalshi_ask": 56
         },
         {
           "date": "2026-08-16",
           "market": 55.5,
           "polls": 35.8,
           "est": true,
-          "poll_margin_est": -2
+          "poll_margin_est": -2,
+          "market_kalshi": 56.5,
+          "kalshi_bid": 56,
+          "kalshi_ask": 57
         },
         {
           "date": "2026-08-17",
           "market": 58,
           "polls": 43.5,
           "est": true,
-          "poll_margin_est": -0.9
+          "poll_margin_est": -0.9,
+          "market_kalshi": 57.5,
+          "kalshi_bid": 57,
+          "kalshi_ask": 58
         },
         {
           "date": "2026-08-18",
           "market": 58.5,
           "polls": 43.5,
           "est": true,
-          "poll_margin_est": -0.9
+          "poll_margin_est": -0.9,
+          "market_kalshi": 56.5,
+          "kalshi_bid": 56,
+          "kalshi_ask": 57
         },
         {
           "date": "2026-08-19",
           "market": 58.5,
           "polls": 43.5,
           "est": true,
-          "poll_margin_est": -0.9
+          "poll_margin_est": -0.9,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-08-20",
           "market": 61.5,
           "polls": 48.5,
           "est": true,
-          "poll_margin_est": -0.2
+          "poll_margin_est": -0.2,
+          "market_kalshi": 62,
+          "kalshi_bid": 61,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-08-21",
           "market": 64.5,
           "polls": 57.2,
           "est": true,
-          "poll_margin_est": 1
+          "poll_margin_est": 1,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-08-22",
           "market": 64.5,
           "polls": 57.2,
           "est": true,
-          "poll_margin_est": 1
+          "poll_margin_est": 1,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-08-23",
           "market": 63,
           "polls": 57.2,
           "est": true,
-          "poll_margin_est": 1
+          "poll_margin_est": 1,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-08-24",
           "market": 63,
           "polls": 57.2,
           "est": true,
-          "poll_margin_est": 1
+          "poll_margin_est": 1,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-08-25",
           "market": 60.5,
           "polls": 57.2,
           "est": true,
-          "poll_margin_est": 1
+          "poll_margin_est": 1,
+          "market_kalshi": 61,
+          "kalshi_bid": 60,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-08-26",
           "market": 61.5,
           "polls": 57.9,
           "est": true,
-          "poll_margin_est": 1.1
+          "poll_margin_est": 1.1,
+          "market_kalshi": 61,
+          "kalshi_bid": 60,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-08-27",
           "market": 63,
           "polls": 60.7,
           "est": true,
-          "poll_margin_est": 1.5
+          "poll_margin_est": 1.5,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-08-28",
           "market": 64.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-08-29",
           "market": 64.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-08-30",
           "market": 64.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-08-31",
           "market": 64.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-01",
           "market": 64.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 64,
+          "kalshi_bid": 63,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-02",
           "market": 64.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-03",
           "market": 64.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-04",
           "market": 64.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-05",
           "market": 64.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-06",
           "market": 65.5,
           "polls": 64.9,
           "est": true,
-          "poll_margin_est": 2.1
+          "poll_margin_est": 2.1,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-07",
           "market": 65.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-08",
           "market": 65.5,
           "polls": 73.2,
           "est": true,
-          "poll_margin_est": 3.4
+          "poll_margin_est": 3.4,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-09",
           "market": 65.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-10",
           "market": 65,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-11",
           "market": 64.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-09-12",
           "market": 62.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-09-13",
           "market": 62.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-09-14",
           "market": 59.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-09-15",
           "market": 61.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-09-16",
           "market": 61.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-17",
           "market": 66.5,
           "polls": 63.5,
           "est": true,
-          "poll_margin_est": 1.9
+          "poll_margin_est": 1.9,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-18",
           "market": 64,
           "polls": 63.5,
           "est": true,
-          "poll_margin_est": 1.9
+          "poll_margin_est": 1.9,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-19",
           "market": 65.5,
           "polls": 63.5,
           "est": true,
-          "poll_margin_est": 1.9
+          "poll_margin_est": 1.9,
+          "market_kalshi": 65,
+          "kalshi_bid": 64,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-09-20",
           "market": 65.5,
           "polls": 67.5,
           "est": true,
-          "poll_margin_est": 2.5
+          "poll_margin_est": 2.5,
+          "market_kalshi": 66,
+          "kalshi_bid": 65,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-09-21",
           "market": 66.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 66.5,
+          "kalshi_bid": 66,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-09-22",
           "market": 67,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 71.5,
+          "kalshi_bid": 71,
+          "kalshi_ask": 72
         },
         {
           "date": "2026-09-23",
           "market": 75.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-09-24",
           "market": 72.5,
           "polls": 70.1,
           "est": true,
-          "poll_margin_est": 2.9
+          "poll_margin_est": 2.9,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-09-25",
           "market": 71.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 72.5,
+          "kalshi_bid": 72,
+          "kalshi_ask": 73
         },
         {
           "date": "2026-09-26",
           "market": 71.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 71.5,
+          "kalshi_bid": 71,
+          "kalshi_ask": 72
         },
         {
           "date": "2026-09-27",
           "market": 70.5,
           "polls": 72,
           "est": true,
-          "poll_margin_est": 3.2
+          "poll_margin_est": 3.2,
+          "market_kalshi": 71,
+          "kalshi_bid": 70,
+          "kalshi_ask": 72
         },
         {
           "date": "2026-09-28",
           "market": 70.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 71.5,
+          "kalshi_bid": 71,
+          "kalshi_ask": 72
         },
         {
           "date": "2026-09-29",
           "market": 70.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-09-30",
           "market": 72.5,
           "polls": 70.1,
           "est": true,
-          "poll_margin_est": 2.9
+          "poll_margin_est": 2.9,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-10-01",
           "market": 72.5,
           "polls": 73.2,
           "est": true,
-          "poll_margin_est": 3.4
+          "poll_margin_est": 3.4,
+          "market_kalshi": 72.5,
+          "kalshi_bid": 72,
+          "kalshi_ask": 73
         },
         {
           "date": "2026-10-02",
           "market": 71.5,
           "polls": 73.2,
           "est": true,
-          "poll_margin_est": 3.4
+          "poll_margin_est": 3.4,
+          "market_kalshi": 72.5,
+          "kalshi_bid": 72,
+          "kalshi_ask": 73
         },
         {
           "date": "2026-10-03",
           "market": 72.5,
           "polls": 73.2,
           "est": true,
-          "poll_margin_est": 3.4
+          "poll_margin_est": 3.4,
+          "market_kalshi": 71.5,
+          "kalshi_bid": 71,
+          "kalshi_ask": 72
         },
         {
           "date": "2026-10-04",
           "market": 72.5,
           "polls": 73.2,
           "est": true,
-          "poll_margin_est": 3.4
+          "poll_margin_est": 3.4,
+          "market_kalshi": 71.5,
+          "kalshi_bid": 71,
+          "kalshi_ask": 72
         },
         {
           "date": "2026-10-05",
           "market": 72.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-10-06",
           "market": 73.5,
           "polls": 71.3,
           "est": true,
-          "poll_margin_est": 3.1
+          "poll_margin_est": 3.1,
+          "market_kalshi": 72,
+          "kalshi_bid": 71,
+          "kalshi_ask": 73
         },
         {
           "date": "2026-10-07",
           "market": 72.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 70.5,
+          "kalshi_bid": 70,
+          "kalshi_ask": 71
         },
         {
           "date": "2026-10-08",
           "market": 72.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-10-09",
           "market": 68.5,
           "polls": 72,
           "bid": 68,
-          "ask": 69
+          "ask": 69,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-10-10",
           "market": 69.5,
           "polls": 72,
           "bid": 69,
-          "ask": 70
+          "ask": 70,
+          "market_kalshi": 66,
+          "kalshi_bid": 65,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-10-11",
           "market": 67.5,
           "polls": 72,
           "bid": 67,
-          "ask": 68
+          "ask": 68,
+          "market_kalshi": 66.5,
+          "kalshi_bid": 66,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-10-12",
           "market": 70.5,
           "polls": 72,
           "bid": 70,
-          "ask": 71
+          "ask": 71,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         }
       ]
     },
@@ -2512,412 +3586,588 @@
       "poll_note": "RCP average 9/9 - 10/5: Pappas +5.9 (Pappas vs Sununu), fetched 2026-10-11",
       "result": {},
       "wedge": 2.7,
+      "market_kalshi": 89.5,
+      "wedge_kalshi": 3.7,
       "history": [
         {
           "date": "2026-08-15",
           "market": 85,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 89.2,
+          "kalshi_bid": 88,
+          "kalshi_ask": 90.4
         },
         {
           "date": "2026-08-16",
           "market": 85.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 89.2,
+          "kalshi_bid": 88,
+          "kalshi_ask": 90.3
         },
         {
           "date": "2026-08-17",
           "market": 85.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 89,
+          "kalshi_bid": 88,
+          "kalshi_ask": 90
         },
         {
           "date": "2026-08-18",
           "market": 85.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 87.5,
+          "kalshi_bid": 87,
+          "kalshi_ask": 88
         },
         {
           "date": "2026-08-19",
           "market": 85.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 87.5,
+          "kalshi_bid": 87,
+          "kalshi_ask": 88
         },
         {
           "date": "2026-08-20",
           "market": 85.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 88,
+          "kalshi_bid": 87,
+          "kalshi_ask": 89
         },
         {
           "date": "2026-08-21",
           "market": 86.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 89.4,
+          "kalshi_bid": 88,
+          "kalshi_ask": 90.9
         },
         {
           "date": "2026-08-22",
           "market": 87.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 90,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90.9
         },
         {
           "date": "2026-08-23",
           "market": 89.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 90,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90.9
         },
         {
           "date": "2026-08-24",
           "market": 89.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 90,
+          "kalshi_bid": 89,
+          "kalshi_ask": 91
         },
         {
           "date": "2026-08-25",
           "market": 89.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 89.4,
+          "kalshi_bid": 88,
+          "kalshi_ask": 90.9
         },
         {
           "date": "2026-08-26",
           "market": 89.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-08-27",
           "market": 88,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-08-28",
           "market": 86.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 83.5,
+          "kalshi_bid": 83,
+          "kalshi_ask": 84
         },
         {
           "date": "2026-08-29",
           "market": 86.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 83.5,
+          "kalshi_bid": 83,
+          "kalshi_ask": 84
         },
         {
           "date": "2026-08-30",
           "market": 85.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 83.5,
+          "kalshi_bid": 83,
+          "kalshi_ask": 84
         },
         {
           "date": "2026-08-31",
           "market": 84.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 83.5,
+          "kalshi_bid": 83,
+          "kalshi_ask": 84
         },
         {
           "date": "2026-09-01",
           "market": 84.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 83.5,
+          "kalshi_bid": 83,
+          "kalshi_ask": 84
         },
         {
           "date": "2026-09-02",
           "market": 83.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 83.5,
+          "kalshi_bid": 83,
+          "kalshi_ask": 84
         },
         {
           "date": "2026-09-03",
           "market": 83.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 82.5,
+          "kalshi_bid": 82,
+          "kalshi_ask": 83
         },
         {
           "date": "2026-09-04",
           "market": 82.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 81.5,
+          "kalshi_bid": 81,
+          "kalshi_ask": 82
         },
         {
           "date": "2026-09-05",
           "market": 82.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 81.5,
+          "kalshi_bid": 81,
+          "kalshi_ask": 82
         },
         {
           "date": "2026-09-06",
           "market": 83.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 82.5,
+          "kalshi_bid": 82,
+          "kalshi_ask": 83
         },
         {
           "date": "2026-09-07",
           "market": 83.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 82.5,
+          "kalshi_bid": 82,
+          "kalshi_ask": 83
         },
         {
           "date": "2026-09-08",
           "market": 82.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 82.5,
+          "kalshi_bid": 82,
+          "kalshi_ask": 83
         },
         {
           "date": "2026-09-09",
           "market": 82,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 83.5,
+          "kalshi_bid": 83,
+          "kalshi_ask": 84
         },
         {
           "date": "2026-09-10",
           "market": 83,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 83.5,
+          "kalshi_bid": 83,
+          "kalshi_ask": 84
         },
         {
           "date": "2026-09-11",
           "market": 81,
           "polls": 76.6,
           "est": true,
-          "poll_margin_est": 4
+          "poll_margin_est": 4,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-12",
           "market": 82.5,
           "polls": 76.6,
           "est": true,
-          "poll_margin_est": 4
+          "poll_margin_est": 4,
+          "market_kalshi": 84.5,
+          "kalshi_bid": 84,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-13",
           "market": 83.5,
           "polls": 76.6,
           "est": true,
-          "poll_margin_est": 4
+          "poll_margin_est": 4,
+          "market_kalshi": 84,
+          "kalshi_bid": 83,
+          "kalshi_ask": 85
         },
         {
           "date": "2026-09-14",
           "market": 84.5,
           "polls": 76.6,
           "est": true,
-          "poll_margin_est": 4
+          "poll_margin_est": 4,
+          "market_kalshi": 82.5,
+          "kalshi_bid": 82,
+          "kalshi_ask": 83
         },
         {
           "date": "2026-09-15",
           "market": 83.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 81.5,
+          "kalshi_bid": 81,
+          "kalshi_ask": 82
         },
         {
           "date": "2026-09-16",
           "market": 80.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 81.5,
+          "kalshi_bid": 81,
+          "kalshi_ask": 82
         },
         {
           "date": "2026-09-17",
           "market": 82,
           "polls": 77.7,
           "est": true,
-          "poll_margin_est": 4.2
+          "poll_margin_est": 4.2,
+          "market_kalshi": 80.5,
+          "kalshi_bid": 80,
+          "kalshi_ask": 81
         },
         {
           "date": "2026-09-18",
           "market": 84,
           "polls": 77.7,
           "est": true,
-          "poll_margin_est": 4.2
+          "poll_margin_est": 4.2,
+          "market_kalshi": 83.5,
+          "kalshi_bid": 83,
+          "kalshi_ask": 84
         },
         {
           "date": "2026-09-19",
           "market": 80.5,
           "polls": 77.7,
           "est": true,
-          "poll_margin_est": 4.2
+          "poll_margin_est": 4.2,
+          "market_kalshi": 83.5,
+          "kalshi_bid": 83,
+          "kalshi_ask": 84
         },
         {
           "date": "2026-09-20",
           "market": 80.5,
           "polls": 77.7,
           "est": true,
-          "poll_margin_est": 4.2
+          "poll_margin_est": 4.2,
+          "market_kalshi": 82.5,
+          "kalshi_bid": 82,
+          "kalshi_ask": 83
         },
         {
           "date": "2026-09-21",
           "market": 80.5,
           "polls": 89.2,
           "est": true,
-          "poll_margin_est": 6.8
+          "poll_margin_est": 6.8,
+          "market_kalshi": 82.5,
+          "kalshi_bid": 82,
+          "kalshi_ask": 83
         },
         {
           "date": "2026-09-22",
           "market": 82.5,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-23",
           "market": 85,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-24",
           "market": 85.5,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 86.5,
+          "kalshi_bid": 86,
+          "kalshi_ask": 87
         },
         {
           "date": "2026-09-25",
           "market": 85,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-26",
           "market": 85.5,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-27",
           "market": 86.5,
           "polls": 87.4,
           "est": true,
-          "poll_margin_est": 6.3
+          "poll_margin_est": 6.3,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-28",
           "market": 85,
           "polls": 87.4,
           "est": true,
-          "poll_margin_est": 6.3
+          "poll_margin_est": 6.3,
+          "market_kalshi": 85.5,
+          "kalshi_bid": 85,
+          "kalshi_ask": 86
         },
         {
           "date": "2026-09-29",
           "market": 86.5,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 86.5,
+          "kalshi_bid": 86,
+          "kalshi_ask": 87
         },
         {
           "date": "2026-09-30",
           "market": 86.5,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 86.5,
+          "kalshi_bid": 86,
+          "kalshi_ask": 87
         },
         {
           "date": "2026-10-01",
           "market": 85.5,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 86.5,
+          "kalshi_bid": 86,
+          "kalshi_ask": 87
         },
         {
           "date": "2026-10-02",
           "market": 86.5,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 86,
+          "kalshi_bid": 85,
+          "kalshi_ask": 87
         },
         {
           "date": "2026-10-03",
           "market": 86.5,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 86,
+          "kalshi_bid": 85,
+          "kalshi_ask": 87
         },
         {
           "date": "2026-10-04",
           "market": 87.5,
           "polls": 87,
           "est": true,
-          "poll_margin_est": 6.2
+          "poll_margin_est": 6.2,
+          "market_kalshi": 86.5,
+          "kalshi_bid": 86,
+          "kalshi_ask": 87
         },
         {
           "date": "2026-10-05",
           "market": 86.5,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 86.5,
+          "kalshi_bid": 86,
+          "kalshi_ask": 87
         },
         {
           "date": "2026-10-06",
           "market": 87,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 89,
+          "kalshi_bid": 88,
+          "kalshi_ask": 90
         },
         {
           "date": "2026-10-07",
           "market": 89.5,
           "polls": 87.8,
           "est": true,
-          "poll_margin_est": 6.4
+          "poll_margin_est": 6.4,
+          "market_kalshi": 88.5,
+          "kalshi_bid": 88,
+          "kalshi_ask": 89
         },
         {
           "date": "2026-10-09",
           "market": 89.5,
           "polls": 85.8,
           "bid": 89,
-          "ask": 90
+          "ask": 90,
+          "market_kalshi": 89,
+          "kalshi_bid": 88,
+          "kalshi_ask": 90
         },
         {
           "date": "2026-10-10",
           "market": 89.5,
           "polls": 85.8,
           "bid": 89,
-          "ask": 90
+          "ask": 90,
+          "market_kalshi": 89.5,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90
         },
         {
           "date": "2026-10-11",
           "market": 89.5,
           "polls": 85.8,
           "bid": 89,
-          "ask": 90
+          "ask": 90,
+          "market_kalshi": 89.5,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90
         },
         {
           "date": "2026-10-12",
           "market": 88.5,
           "polls": 85.8,
           "bid": 88,
-          "ask": 89
+          "ask": 89,
+          "market_kalshi": 89.5,
+          "kalshi_bid": 89,
+          "kalshi_ask": 90
         }
       ]
     },
@@ -2931,419 +4181,598 @@
       "poll_note": "RCP average 9/12 - 10/8: Talarico +3.0 (Talarico vs Paxton), fetched 2026-10-11",
       "result": {},
       "wedge": -8.2,
+      "market_kalshi": 63.5,
+      "wedge_kalshi": -7.2,
       "history": [
         {
           "date": "2026-08-15",
           "market": 51.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 50.5,
+          "kalshi_bid": 50,
+          "kalshi_ask": 51
         },
         {
           "date": "2026-08-16",
           "market": 51.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-08-17",
           "market": 51.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-08-18",
           "market": 51.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-08-19",
           "market": 51.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-08-20",
           "market": 51.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-08-21",
           "market": 51.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-08-22",
           "market": 51.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-08-23",
           "market": 51.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-08-24",
           "market": 50.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-08-25",
           "market": 49.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-08-26",
           "market": 49.5,
           "polls": 66.9,
           "est": true,
-          "poll_margin_est": 2.4
+          "poll_margin_est": 2.4,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-08-27",
           "market": 49.5,
           "polls": 65.5,
           "est": true,
-          "poll_margin_est": 2.2
+          "poll_margin_est": 2.2,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-08-28",
           "market": 49.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-08-29",
           "market": 49.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-08-30",
           "market": 49.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-08-31",
           "market": 49.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 50.5,
+          "kalshi_bid": 50,
+          "kalshi_ask": 51
         },
         {
           "date": "2026-09-01",
           "market": 50,
           "polls": 66.9,
           "est": true,
-          "poll_margin_est": 2.4
+          "poll_margin_est": 2.4,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-09-02",
           "market": 50.5,
           "polls": 66.9,
           "est": true,
-          "poll_margin_est": 2.4
+          "poll_margin_est": 2.4,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-03",
           "market": 50.5,
           "polls": 66.9,
           "est": true,
-          "poll_margin_est": 2.4
+          "poll_margin_est": 2.4,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-09-04",
           "market": 50.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-09-05",
           "market": 50.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-09-06",
           "market": 50.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         },
         {
           "date": "2026-09-07",
           "market": 50.5,
           "polls": 74.4,
           "est": true,
-          "poll_margin_est": 3.6
+          "poll_margin_est": 3.6,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-08",
           "market": 50.5,
           "polls": 74.4,
           "est": true,
-          "poll_margin_est": 3.6
+          "poll_margin_est": 3.6,
+          "market_kalshi": 47.5,
+          "kalshi_bid": 47,
+          "kalshi_ask": 48
         },
         {
           "date": "2026-09-09",
           "market": 50.5,
           "polls": 72,
           "est": true,
-          "poll_margin_est": 3.2
+          "poll_margin_est": 3.2,
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         },
         {
           "date": "2026-09-10",
           "market": 50.5,
           "polls": 72,
           "est": true,
-          "poll_margin_est": 3.2
+          "poll_margin_est": 3.2,
+          "market_kalshi": 50.5,
+          "kalshi_bid": 50,
+          "kalshi_ask": 51
         },
         {
           "date": "2026-09-11",
           "market": 51,
           "polls": 74.4,
           "est": true,
-          "poll_margin_est": 3.6
+          "poll_margin_est": 3.6,
+          "market_kalshi": 50.5,
+          "kalshi_bid": 50,
+          "kalshi_ask": 51
         },
         {
           "date": "2026-09-12",
           "market": 51.5,
           "polls": 74.4,
           "est": true,
-          "poll_margin_est": 3.6
+          "poll_margin_est": 3.6,
+          "market_kalshi": 50.5,
+          "kalshi_bid": 50,
+          "kalshi_ask": 51
         },
         {
           "date": "2026-09-13",
           "market": 51.5,
           "polls": 74.4,
           "est": true,
-          "poll_margin_est": 3.6
+          "poll_margin_est": 3.6,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-09-14",
           "market": 49.5,
           "polls": 72,
           "est": true,
-          "poll_margin_est": 3.2
+          "poll_margin_est": 3.2,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-09-15",
           "market": 52.5,
           "polls": 72,
           "est": true,
-          "poll_margin_est": 3.2
+          "poll_margin_est": 3.2,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-16",
           "market": 55.5,
           "polls": 72,
           "est": true,
-          "poll_margin_est": 3.2
+          "poll_margin_est": 3.2,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-17",
           "market": 56.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 56.5,
+          "kalshi_bid": 56,
+          "kalshi_ask": 57
         },
         {
           "date": "2026-09-18",
           "market": 57.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 57.5,
+          "kalshi_bid": 57,
+          "kalshi_ask": 58
         },
         {
           "date": "2026-09-19",
           "market": 59.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-20",
           "market": 59.5,
           "polls": 71.3,
           "est": true,
-          "poll_margin_est": 3.1
+          "poll_margin_est": 3.1,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-21",
           "market": 59.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-09-22",
           "market": 62.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-09-23",
           "market": 61.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-09-24",
           "market": 62.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-09-25",
           "market": 60.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-09-26",
           "market": 61.5,
           "polls": 72,
           "est": true,
-          "poll_margin_est": 3.2
+          "poll_margin_est": 3.2,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-09-27",
           "market": 60.5,
           "polls": 72,
           "est": true,
-          "poll_margin_est": 3.2
+          "poll_margin_est": 3.2,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-28",
           "market": 60.5,
           "polls": 69.5,
           "est": true,
-          "poll_margin_est": 2.8
+          "poll_margin_est": 2.8,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-29",
           "market": 60.5,
           "polls": 68.2,
           "est": true,
-          "poll_margin_est": 2.6
+          "poll_margin_est": 2.6,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-30",
           "market": 61.5,
           "polls": 70.1,
           "est": true,
-          "poll_margin_est": 2.9
+          "poll_margin_est": 2.9,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-10-01",
           "market": 64.5,
           "polls": 70.1,
           "est": true,
-          "poll_margin_est": 2.9
+          "poll_margin_est": 2.9,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-10-02",
           "market": 61.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-10-03",
           "market": 60.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-10-04",
           "market": 64.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 64,
+          "kalshi_bid": 63,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-10-05",
           "market": 63.5,
           "polls": 70.1,
           "est": true,
-          "poll_margin_est": 2.9
+          "poll_margin_est": 2.9,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-10-06",
           "market": 64.5,
           "polls": 70.1,
           "est": true,
-          "poll_margin_est": 2.9
+          "poll_margin_est": 2.9,
+          "market_kalshi": 66,
+          "kalshi_bid": 65,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-10-07",
           "market": 65.5,
           "polls": 71.3,
           "est": true,
-          "poll_margin_est": 3.1
+          "poll_margin_est": 3.1,
+          "market_kalshi": 66.5,
+          "kalshi_bid": 66,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-10-08",
           "market": 65.5,
           "polls": 71.3,
           "est": true,
-          "poll_margin_est": 3.1
+          "poll_margin_est": 3.1,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-10-09",
           "market": 62.5,
           "polls": 69.5,
           "bid": 62,
-          "ask": 63
+          "ask": 63,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-10-10",
           "market": 63.5,
           "polls": 69.5,
           "bid": 63,
-          "ask": 64
+          "ask": 64,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-10-11",
           "market": 62.5,
           "polls": 70.7,
           "bid": 62,
-          "ask": 63
+          "ask": 63,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-10-12",
           "market": 62.5,
           "polls": 70.7,
           "bid": 62,
-          "ask": 63
+          "ask": 63,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         }
       ]
     },
@@ -3357,419 +4786,598 @@
       "poll_note": "RCP average 9/1 - 10/6: Brown +3.1 (Brown vs Husted), fetched 2026-10-11",
       "result": {},
       "wedge": -9.8,
+      "market_kalshi": 59.5,
+      "wedge_kalshi": -11.8,
       "history": [
         {
           "date": "2026-08-15",
           "market": 56.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 50.5,
+          "kalshi_bid": 50,
+          "kalshi_ask": 51
         },
         {
           "date": "2026-08-16",
           "market": 57.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 50.5,
+          "kalshi_bid": 50,
+          "kalshi_ask": 51
         },
         {
           "date": "2026-08-17",
           "market": 52.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-08-18",
           "market": 52.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-08-19",
           "market": 52.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-08-20",
           "market": 52.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-08-21",
           "market": 53.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-08-22",
           "market": 53.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-08-23",
           "market": 53.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-08-24",
           "market": 53.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 51.5,
+          "kalshi_bid": 51,
+          "kalshi_ask": 52
         },
         {
           "date": "2026-08-25",
           "market": 54.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 54.5,
+          "kalshi_bid": 54,
+          "kalshi_ask": 55
         },
         {
           "date": "2026-08-26",
           "market": 54.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 54.5,
+          "kalshi_bid": 54,
+          "kalshi_ask": 55
         },
         {
           "date": "2026-08-27",
           "market": 54.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-08-28",
           "market": 55.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-08-29",
           "market": 55.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 55,
+          "kalshi_bid": 54,
+          "kalshi_ask": 56
         },
         {
           "date": "2026-08-30",
           "market": 54.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 54.5,
+          "kalshi_bid": 54,
+          "kalshi_ask": 55
         },
         {
           "date": "2026-08-31",
           "market": 54.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 54.5,
+          "kalshi_bid": 54,
+          "kalshi_ask": 55
         },
         {
           "date": "2026-09-01",
           "market": 54.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-02",
           "market": 54.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-03",
           "market": 54.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-04",
           "market": 55.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-05",
           "market": 55.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-06",
           "market": 55.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-07",
           "market": 55.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-08",
           "market": 56.5,
           "polls": 68.8,
           "est": true,
-          "poll_margin_est": 2.7
+          "poll_margin_est": 2.7,
+          "market_kalshi": 52.5,
+          "kalshi_bid": 52,
+          "kalshi_ask": 53
         },
         {
           "date": "2026-09-09",
           "market": 56.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 50.5,
+          "kalshi_bid": 50,
+          "kalshi_ask": 51
         },
         {
           "date": "2026-09-10",
           "market": 54.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 52.5,
+          "kalshi_bid": 52,
+          "kalshi_ask": 53
         },
         {
           "date": "2026-09-11",
           "market": 51.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 52.5,
+          "kalshi_bid": 52,
+          "kalshi_ask": 53
         },
         {
           "date": "2026-09-12",
           "market": 51.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 52.5,
+          "kalshi_bid": 52,
+          "kalshi_ask": 53
         },
         {
           "date": "2026-09-13",
           "market": 51.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 52.5,
+          "kalshi_bid": 52,
+          "kalshi_ask": 53
         },
         {
           "date": "2026-09-14",
           "market": 51.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-15",
           "market": 53.5,
           "polls": 83.2,
           "est": true,
-          "poll_margin_est": 5.3
+          "poll_margin_est": 5.3,
+          "market_kalshi": 54.5,
+          "kalshi_bid": 54,
+          "kalshi_ask": 55
         },
         {
           "date": "2026-09-16",
           "market": 56.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-09-17",
           "market": 56.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 54.5,
+          "kalshi_bid": 54,
+          "kalshi_ask": 55
         },
         {
           "date": "2026-09-18",
           "market": 54.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 54.5,
+          "kalshi_bid": 54,
+          "kalshi_ask": 55
         },
         {
           "date": "2026-09-19",
           "market": 54.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 54.5,
+          "kalshi_bid": 54,
+          "kalshi_ask": 55
         },
         {
           "date": "2026-09-20",
           "market": 54.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 56.5,
+          "kalshi_bid": 56,
+          "kalshi_ask": 57
         },
         {
           "date": "2026-09-21",
           "market": 54.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-09-22",
           "market": 60.5,
           "polls": 74.9,
           "est": true,
-          "poll_margin_est": 3.7
+          "poll_margin_est": 3.7,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-23",
           "market": 62.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-09-24",
           "market": 62.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-09-25",
           "market": 58.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-09-26",
           "market": 57.5,
           "polls": 70.7,
           "est": true,
-          "poll_margin_est": 3
+          "poll_margin_est": 3,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-09-27",
           "market": 57.5,
           "polls": 74.4,
           "est": true,
-          "poll_margin_est": 3.6
+          "poll_margin_est": 3.6,
+          "market_kalshi": 57.5,
+          "kalshi_bid": 57,
+          "kalshi_ask": 58
         },
         {
           "date": "2026-09-28",
           "market": 57.5,
           "polls": 74.4,
           "est": true,
-          "poll_margin_est": 3.6
+          "poll_margin_est": 3.6,
+          "market_kalshi": 58.5,
+          "kalshi_bid": 58,
+          "kalshi_ask": 59
         },
         {
           "date": "2026-09-29",
           "market": 57.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-09-30",
           "market": 62,
           "polls": 73.2,
           "est": true,
-          "poll_margin_est": 3.4
+          "poll_margin_est": 3.4,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-10-01",
           "market": 59.5,
           "polls": 73.2,
           "est": true,
-          "poll_margin_est": 3.4
+          "poll_margin_est": 3.4,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-10-02",
           "market": 58.5,
           "polls": 73.2,
           "est": true,
-          "poll_margin_est": 3.4
+          "poll_margin_est": 3.4,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-10-03",
           "market": 59.5,
           "polls": 73.2,
           "est": true,
-          "poll_margin_est": 3.4
+          "poll_margin_est": 3.4,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-10-04",
           "market": 60.5,
           "polls": 73.2,
           "est": true,
-          "poll_margin_est": 3.4
+          "poll_margin_est": 3.4,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-10-05",
           "market": 61.5,
           "polls": 74.4,
           "est": true,
-          "poll_margin_est": 3.6
+          "poll_margin_est": 3.6,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-10-06",
           "market": 61.5,
           "polls": 72,
           "est": true,
-          "poll_margin_est": 3.2
+          "poll_margin_est": 3.2,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-10-07",
           "market": 61.5,
           "polls": 71.3,
           "est": true,
-          "poll_margin_est": 3.1
+          "poll_margin_est": 3.1,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-10-08",
           "market": 61.5,
           "polls": 71.3,
           "est": true,
-          "poll_margin_est": 3.1
+          "poll_margin_est": 3.1,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-10-09",
           "market": 62.5,
           "polls": 71.3,
           "bid": 62,
-          "ask": 63
+          "ask": 63,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-10-10",
           "market": 61.5,
           "polls": 71.3,
           "bid": 61,
-          "ask": 62
+          "ask": 62,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-10-11",
           "market": 61.5,
           "polls": 71.3,
           "bid": 61,
-          "ask": 62
+          "ask": 62,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-10-12",
           "market": 61.5,
           "polls": 71.3,
           "bid": 61,
-          "ask": 62
+          "ask": 62,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         }
       ]
     },
@@ -3783,419 +5391,598 @@
       "poll_note": "RCP average 9/9 - 10/6: Turek +0.5 (Turek vs Hinson), fetched 2026-10-11",
       "result": {},
       "wedge": -11.1,
+      "market_kalshi": 41.5,
+      "wedge_kalshi": -12.1,
       "history": [
         {
           "date": "2026-08-15",
           "market": 43.5,
           "polls": 47.8,
           "est": true,
-          "poll_margin_est": -0.3
+          "poll_margin_est": -0.3,
+          "market_kalshi": 45.5,
+          "kalshi_bid": 45,
+          "kalshi_ask": 46
         },
         {
           "date": "2026-08-16",
           "market": 43,
           "polls": 47.8,
           "est": true,
-          "poll_margin_est": -0.3
+          "poll_margin_est": -0.3,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-08-17",
           "market": 43.5,
           "polls": 47.8,
           "est": true,
-          "poll_margin_est": -0.3
+          "poll_margin_est": -0.3,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-08-18",
           "market": 40.5,
           "polls": 47.8,
           "est": true,
-          "poll_margin_est": -0.3
+          "poll_margin_est": -0.3,
+          "market_kalshi": 42.5,
+          "kalshi_bid": 42,
+          "kalshi_ask": 43
         },
         {
           "date": "2026-08-19",
           "market": 40.5,
           "polls": 47.8,
           "est": true,
-          "poll_margin_est": -0.3
+          "poll_margin_est": -0.3,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         },
         {
           "date": "2026-08-20",
           "market": 40,
           "polls": 47.8,
           "est": true,
-          "poll_margin_est": -0.3
+          "poll_margin_est": -0.3,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         },
         {
           "date": "2026-08-21",
           "market": 40,
           "polls": 47.8,
           "est": true,
-          "poll_margin_est": -0.3
+          "poll_margin_est": -0.3,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         },
         {
           "date": "2026-08-22",
           "market": 40.5,
           "polls": 47.8,
           "est": true,
-          "poll_margin_est": -0.3
+          "poll_margin_est": -0.3,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         },
         {
           "date": "2026-08-23",
           "market": 40.5,
           "polls": 29.3,
           "est": true,
-          "poll_margin_est": -3
+          "poll_margin_est": -3,
+          "market_kalshi": 42.5,
+          "kalshi_bid": 42,
+          "kalshi_ask": 43
         },
         {
           "date": "2026-08-24",
           "market": 40.5,
           "polls": 29.3,
           "est": true,
-          "poll_margin_est": -3
+          "poll_margin_est": -3,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-08-25",
           "market": 40.5,
           "polls": 29.3,
           "est": true,
-          "poll_margin_est": -3
+          "poll_margin_est": -3,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-08-26",
           "market": 40.5,
           "polls": 29.3,
           "est": true,
-          "poll_margin_est": -3
+          "poll_margin_est": -3,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         },
         {
           "date": "2026-08-27",
           "market": 40.5,
           "polls": 29.3,
           "est": true,
-          "poll_margin_est": -3
+          "poll_margin_est": -3,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         },
         {
           "date": "2026-08-28",
           "market": 39.5,
           "polls": 55.1,
           "est": true,
-          "poll_margin_est": 0.7
+          "poll_margin_est": 0.7,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         },
         {
           "date": "2026-08-29",
           "market": 40.5,
           "polls": 50,
           "est": true,
-          "poll_margin_est": 0
+          "poll_margin_est": 0,
+          "market_kalshi": 42.5,
+          "kalshi_bid": 42,
+          "kalshi_ask": 43
         },
         {
           "date": "2026-08-30",
           "market": 40.5,
           "polls": 50,
           "est": true,
-          "poll_margin_est": 0
+          "poll_margin_est": 0,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         },
         {
           "date": "2026-08-31",
           "market": 39.5,
           "polls": 50,
           "est": true,
-          "poll_margin_est": 0
+          "poll_margin_est": 0,
+          "market_kalshi": 39.5,
+          "kalshi_bid": 39,
+          "kalshi_ask": 40
         },
         {
           "date": "2026-09-01",
           "market": 39.5,
           "polls": 46.4,
           "est": true,
-          "poll_margin_est": -0.5
+          "poll_margin_est": -0.5,
+          "market_kalshi": 39.5,
+          "kalshi_bid": 39,
+          "kalshi_ask": 40
         },
         {
           "date": "2026-09-02",
           "market": 37,
           "polls": 46.4,
           "est": true,
-          "poll_margin_est": -0.5
+          "poll_margin_est": -0.5,
+          "market_kalshi": 37.5,
+          "kalshi_bid": 37,
+          "kalshi_ask": 38
         },
         {
           "date": "2026-09-03",
           "market": 37,
           "polls": 46.4,
           "est": true,
-          "poll_margin_est": -0.5
+          "poll_margin_est": -0.5,
+          "market_kalshi": 37.5,
+          "kalshi_bid": 37,
+          "kalshi_ask": 38
         },
         {
           "date": "2026-09-04",
           "market": 36.5,
           "polls": 46.4,
           "est": true,
-          "poll_margin_est": -0.5
+          "poll_margin_est": -0.5,
+          "market_kalshi": 35.5,
+          "kalshi_bid": 35,
+          "kalshi_ask": 36
         },
         {
           "date": "2026-09-05",
           "market": 36.5,
           "polls": 46.4,
           "est": true,
-          "poll_margin_est": -0.5
+          "poll_margin_est": -0.5,
+          "market_kalshi": 35.5,
+          "kalshi_bid": 35,
+          "kalshi_ask": 36
         },
         {
           "date": "2026-09-06",
           "market": 36.5,
           "polls": 46.4,
           "est": true,
-          "poll_margin_est": -0.5
+          "poll_margin_est": -0.5,
+          "market_kalshi": 36.5,
+          "kalshi_bid": 36,
+          "kalshi_ask": 37
         },
         {
           "date": "2026-09-07",
           "market": 35.5,
           "polls": 46.4,
           "est": true,
-          "poll_margin_est": -0.5
+          "poll_margin_est": -0.5,
+          "market_kalshi": 36.5,
+          "kalshi_bid": 36,
+          "kalshi_ask": 37
         },
         {
           "date": "2026-09-08",
           "market": 35,
           "polls": 50,
           "est": true,
-          "poll_margin_est": 0
+          "poll_margin_est": 0,
+          "market_kalshi": 36.5,
+          "kalshi_bid": 36,
+          "kalshi_ask": 37
         },
         {
           "date": "2026-09-09",
           "market": 34.5,
           "polls": 50,
           "est": true,
-          "poll_margin_est": 0
+          "poll_margin_est": 0,
+          "market_kalshi": 36.5,
+          "kalshi_bid": 36,
+          "kalshi_ask": 37
         },
         {
           "date": "2026-09-10",
           "market": 34.5,
           "polls": 55.8,
           "est": true,
-          "poll_margin_est": 0.8
+          "poll_margin_est": 0.8,
+          "market_kalshi": 33.5,
+          "kalshi_bid": 33,
+          "kalshi_ask": 34
         },
         {
           "date": "2026-09-11",
           "market": 34.5,
           "polls": 55.1,
           "est": true,
-          "poll_margin_est": 0.7
+          "poll_margin_est": 0.7,
+          "market_kalshi": 39,
+          "kalshi_bid": 38,
+          "kalshi_ask": 40
         },
         {
           "date": "2026-09-12",
           "market": 39.5,
           "polls": 55.1,
           "est": true,
-          "poll_margin_est": 0.7
+          "poll_margin_est": 0.7,
+          "market_kalshi": 38,
+          "kalshi_bid": 37,
+          "kalshi_ask": 39
         },
         {
           "date": "2026-09-13",
           "market": 39,
           "polls": 55.1,
           "est": true,
-          "poll_margin_est": 0.7
+          "poll_margin_est": 0.7,
+          "market_kalshi": 39.5,
+          "kalshi_bid": 39,
+          "kalshi_ask": 40
         },
         {
           "date": "2026-09-14",
           "market": 39.5,
           "polls": 55.1,
           "est": true,
-          "poll_margin_est": 0.7
+          "poll_margin_est": 0.7,
+          "market_kalshi": 38.5,
+          "kalshi_bid": 38,
+          "kalshi_ask": 39
         },
         {
           "date": "2026-09-15",
           "market": 42.5,
           "polls": 55.1,
           "est": true,
-          "poll_margin_est": 0.7
+          "poll_margin_est": 0.7,
+          "market_kalshi": 38.5,
+          "kalshi_bid": 38,
+          "kalshi_ask": 39
         },
         {
           "date": "2026-09-16",
           "market": 41.5,
           "polls": 50,
           "est": true,
-          "poll_margin_est": 0
+          "poll_margin_est": 0,
+          "market_kalshi": 39.5,
+          "kalshi_bid": 39,
+          "kalshi_ask": 40
         },
         {
           "date": "2026-09-17",
           "market": 40.5,
           "polls": 50,
           "est": true,
-          "poll_margin_est": 0
+          "poll_margin_est": 0,
+          "market_kalshi": 39.5,
+          "kalshi_bid": 39,
+          "kalshi_ask": 40
         },
         {
           "date": "2026-09-18",
           "market": 39.5,
           "polls": 48.5,
           "est": true,
-          "poll_margin_est": -0.2
+          "poll_margin_est": -0.2,
+          "market_kalshi": 39.5,
+          "kalshi_bid": 39,
+          "kalshi_ask": 40
         },
         {
           "date": "2026-09-19",
           "market": 39.5,
           "polls": 48.5,
           "est": true,
-          "poll_margin_est": -0.2
+          "poll_margin_est": -0.2,
+          "market_kalshi": 40.5,
+          "kalshi_bid": 40,
+          "kalshi_ask": 41
         },
         {
           "date": "2026-09-20",
           "market": 39,
           "polls": 57.9,
           "est": true,
-          "poll_margin_est": 1.1
+          "poll_margin_est": 1.1,
+          "market_kalshi": 40.5,
+          "kalshi_bid": 40,
+          "kalshi_ask": 41
         },
         {
           "date": "2026-09-21",
           "market": 39.5,
           "polls": 57.9,
           "est": true,
-          "poll_margin_est": 1.1
+          "poll_margin_est": 1.1,
+          "market_kalshi": 39.5,
+          "kalshi_bid": 39,
+          "kalshi_ask": 40
         },
         {
           "date": "2026-09-22",
           "market": 43.5,
           "polls": 57.9,
           "est": true,
-          "poll_margin_est": 1.1
+          "poll_margin_est": 1.1,
+          "market_kalshi": 44.5,
+          "kalshi_bid": 44,
+          "kalshi_ask": 45
         },
         {
           "date": "2026-09-23",
           "market": 49.5,
           "polls": 57.9,
           "est": true,
-          "poll_margin_est": 1.1
+          "poll_margin_est": 1.1,
+          "market_kalshi": 45.5,
+          "kalshi_bid": 45,
+          "kalshi_ask": 46
         },
         {
           "date": "2026-09-24",
           "market": 47.5,
           "polls": 57.9,
           "est": true,
-          "poll_margin_est": 1.1
+          "poll_margin_est": 1.1,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-09-25",
           "market": 45.5,
           "polls": 51.5,
           "est": true,
-          "poll_margin_est": 0.2
+          "poll_margin_est": 0.2,
+          "market_kalshi": 44.5,
+          "kalshi_bid": 44,
+          "kalshi_ask": 45
         },
         {
           "date": "2026-09-26",
           "market": 44,
           "polls": 53.6,
           "est": true,
-          "poll_margin_est": 0.5
+          "poll_margin_est": 0.5,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-09-27",
           "market": 41.5,
           "polls": 53.6,
           "est": true,
-          "poll_margin_est": 0.5
+          "poll_margin_est": 0.5,
+          "market_kalshi": 42.5,
+          "kalshi_bid": 42,
+          "kalshi_ask": 43
         },
         {
           "date": "2026-09-28",
           "market": 41.5,
           "polls": 55.1,
           "est": true,
-          "poll_margin_est": 0.7
+          "poll_margin_est": 0.7,
+          "market_kalshi": 40.5,
+          "kalshi_bid": 40,
+          "kalshi_ask": 41
         },
         {
           "date": "2026-09-29",
           "market": 41.5,
           "polls": 57.9,
           "est": true,
-          "poll_margin_est": 1.1
+          "poll_margin_est": 1.1,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         },
         {
           "date": "2026-09-30",
           "market": 41.5,
           "polls": 60,
           "est": true,
-          "poll_margin_est": 1.4
+          "poll_margin_est": 1.4,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         },
         {
           "date": "2026-10-01",
           "market": 41.5,
           "polls": 58.6,
           "est": true,
-          "poll_margin_est": 1.2
+          "poll_margin_est": 1.2,
+          "market_kalshi": 42.5,
+          "kalshi_bid": 42,
+          "kalshi_ask": 43
         },
         {
           "date": "2026-10-02",
           "market": 41.5,
           "polls": 58.6,
           "est": true,
-          "poll_margin_est": 1.2
+          "poll_margin_est": 1.2,
+          "market_kalshi": 44.5,
+          "kalshi_bid": 44,
+          "kalshi_ask": 45
         },
         {
           "date": "2026-10-03",
           "market": 43,
           "polls": 58.6,
           "est": true,
-          "poll_margin_est": 1.2
+          "poll_margin_est": 1.2,
+          "market_kalshi": 44.5,
+          "kalshi_bid": 44,
+          "kalshi_ask": 45
         },
         {
           "date": "2026-10-04",
           "market": 43.5,
           "polls": 60,
           "est": true,
-          "poll_margin_est": 1.4
+          "poll_margin_est": 1.4,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-10-05",
           "market": 41.5,
           "polls": 58.6,
           "est": true,
-          "poll_margin_est": 1.2
+          "poll_margin_est": 1.2,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-10-06",
           "market": 42.5,
           "polls": 55.8,
           "est": true,
-          "poll_margin_est": 0.8
+          "poll_margin_est": 0.8,
+          "market_kalshi": 45.5,
+          "kalshi_bid": 45,
+          "kalshi_ask": 46
         },
         {
           "date": "2026-10-07",
           "market": 42.5,
           "polls": 55.8,
           "est": true,
-          "poll_margin_est": 0.8
+          "poll_margin_est": 0.8,
+          "market_kalshi": 44.5,
+          "kalshi_bid": 44,
+          "kalshi_ask": 45
         },
         {
           "date": "2026-10-08",
           "market": 45.5,
           "polls": 53.6,
           "est": true,
-          "poll_margin_est": 0.5
+          "poll_margin_est": 0.5,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-10-09",
           "market": 43.5,
           "polls": 53.6,
           "bid": 43,
-          "ask": 44
+          "ask": 44,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-10-10",
           "market": 42.5,
           "polls": 53.6,
           "bid": 42,
-          "ask": 43
+          "ask": 43,
+          "market_kalshi": 43.5,
+          "kalshi_bid": 43,
+          "kalshi_ask": 44
         },
         {
           "date": "2026-10-11",
           "market": 42.5,
           "polls": 53.6,
           "bid": 42,
-          "ask": 43
+          "ask": 43,
+          "market_kalshi": 42.5,
+          "kalshi_bid": 42,
+          "kalshi_ask": 43
         },
         {
           "date": "2026-10-12",
           "market": 42.5,
           "polls": 53.6,
           "bid": 42,
-          "ask": 43
+          "ask": 43,
+          "market_kalshi": 41.5,
+          "kalshi_bid": 41,
+          "kalshi_ask": 42
         }
       ]
     },
@@ -4209,419 +5996,598 @@
       "poll_note": "RCP average 9/14 - 10/3: Peltola +1.2 (Peltola vs Sullivan), fetched 2026-10-11",
       "result": {},
       "wedge": 13.9,
+      "market_kalshi": 73.5,
+      "wedge_kalshi": 14.9,
       "history": [
         {
           "date": "2026-08-15",
           "market": 51.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 52.5,
+          "kalshi_bid": 52,
+          "kalshi_ask": 53
         },
         {
           "date": "2026-08-16",
           "market": 51,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 52.5,
+          "kalshi_bid": 52,
+          "kalshi_ask": 53
         },
         {
           "date": "2026-08-17",
           "market": 51.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-08-18",
           "market": 57.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 53.5,
+          "kalshi_bid": 53,
+          "kalshi_ask": 54
         },
         {
           "date": "2026-08-19",
           "market": 56.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 57,
+          "kalshi_bid": 56,
+          "kalshi_ask": 58
         },
         {
           "date": "2026-08-20",
           "market": 55,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 59.5,
+          "kalshi_bid": 59,
+          "kalshi_ask": 60
         },
         {
           "date": "2026-08-21",
           "market": 56.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 60,
+          "kalshi_bid": 59,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-08-22",
           "market": 56.5,
           "polls": 64.2,
           "est": true,
-          "poll_margin_est": 2
+          "poll_margin_est": 2,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-08-23",
           "market": 56.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-08-24",
           "market": 61.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-08-25",
           "market": 61.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 61.5,
+          "kalshi_bid": 61,
+          "kalshi_ask": 62
         },
         {
           "date": "2026-08-26",
           "market": 61,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 60.5,
+          "kalshi_bid": 60,
+          "kalshi_ask": 61
         },
         {
           "date": "2026-08-27",
           "market": 61.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         },
         {
           "date": "2026-08-28",
           "market": 64.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 63,
+          "kalshi_bid": 62,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-08-29",
           "market": 66.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-08-30",
           "market": 65,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-08-31",
           "market": 64.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-01",
           "market": 65,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-02",
           "market": 63.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-03",
           "market": 63.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-04",
           "market": 63.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 64,
+          "kalshi_bid": 63,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-05",
           "market": 63.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 64,
+          "kalshi_bid": 63,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-06",
           "market": 63.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 63.5,
+          "kalshi_bid": 63,
+          "kalshi_ask": 64
         },
         {
           "date": "2026-09-07",
           "market": 63.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-08",
           "market": 63.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 64,
+          "kalshi_bid": 63,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-09",
           "market": 63.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-10",
           "market": 63.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 65,
+          "kalshi_bid": 64,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-09-11",
           "market": 66.5,
           "polls": 72.6,
           "est": true,
-          "poll_margin_est": 3.3
+          "poll_margin_est": 3.3,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-12",
           "market": 66.5,
           "polls": 76.6,
           "est": true,
-          "poll_margin_est": 4
+          "poll_margin_est": 4,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-09-13",
           "market": 67.5,
           "polls": 76.6,
           "est": true,
-          "poll_margin_est": 4
+          "poll_margin_est": 4,
+          "market_kalshi": 65.5,
+          "kalshi_bid": 65,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-09-14",
           "market": 67.5,
           "polls": 76.6,
           "est": true,
-          "poll_margin_est": 4
+          "poll_margin_est": 4,
+          "market_kalshi": 64.5,
+          "kalshi_bid": 64,
+          "kalshi_ask": 65
         },
         {
           "date": "2026-09-15",
           "market": 66.5,
           "polls": 76.6,
           "est": true,
-          "poll_margin_est": 4
+          "poll_margin_est": 4,
+          "market_kalshi": 65,
+          "kalshi_bid": 64,
+          "kalshi_ask": 66
         },
         {
           "date": "2026-09-16",
           "market": 65.5,
           "polls": 76.6,
           "est": true,
-          "poll_margin_est": 4
+          "poll_margin_est": 4,
+          "market_kalshi": 66.5,
+          "kalshi_bid": 66,
+          "kalshi_ask": 67
         },
         {
           "date": "2026-09-17",
           "market": 65.5,
           "polls": 65.5,
           "est": true,
-          "poll_margin_est": 2.2
+          "poll_margin_est": 2.2,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         },
         {
           "date": "2026-09-18",
           "market": 67.5,
           "polls": 65.5,
           "est": true,
-          "poll_margin_est": 2.2
+          "poll_margin_est": 2.2,
+          "market_kalshi": 69,
+          "kalshi_bid": 68,
+          "kalshi_ask": 70
         },
         {
           "date": "2026-09-19",
           "market": 72.5,
           "polls": 65.5,
           "est": true,
-          "poll_margin_est": 2.2
+          "poll_margin_est": 2.2,
+          "market_kalshi": 71,
+          "kalshi_bid": 70,
+          "kalshi_ask": 72
         },
         {
           "date": "2026-09-20",
           "market": 74.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 70.5,
+          "kalshi_bid": 70,
+          "kalshi_ask": 71
         },
         {
           "date": "2026-09-21",
           "market": 74.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 70.5,
+          "kalshi_bid": 70,
+          "kalshi_ask": 71
         },
         {
           "date": "2026-09-22",
           "market": 73.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 75.5,
+          "kalshi_bid": 75,
+          "kalshi_ask": 76
         },
         {
           "date": "2026-09-23",
           "market": 80.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 72.5,
+          "kalshi_bid": 72,
+          "kalshi_ask": 73
         },
         {
           "date": "2026-09-24",
           "market": 77.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 70.5,
+          "kalshi_bid": 70,
+          "kalshi_ask": 71
         },
         {
           "date": "2026-09-25",
           "market": 73.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 70.5,
+          "kalshi_bid": 70,
+          "kalshi_ask": 71
         },
         {
           "date": "2026-09-26",
           "market": 72.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 70.5,
+          "kalshi_bid": 70,
+          "kalshi_ask": 71
         },
         {
           "date": "2026-09-27",
           "market": 72.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 70.5,
+          "kalshi_bid": 70,
+          "kalshi_ask": 71
         },
         {
           "date": "2026-09-28",
           "market": 72.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 69.5,
+          "kalshi_bid": 69,
+          "kalshi_ask": 70
         },
         {
           "date": "2026-09-29",
           "market": 72.5,
           "polls": 66.2,
           "est": true,
-          "poll_margin_est": 2.3
+          "poll_margin_est": 2.3,
+          "market_kalshi": 70.5,
+          "kalshi_bid": 70,
+          "kalshi_ask": 71
         },
         {
           "date": "2026-09-30",
           "market": 72.5,
           "polls": 60.7,
           "est": true,
-          "poll_margin_est": 1.5
+          "poll_margin_est": 1.5,
+          "market_kalshi": 69.5,
+          "kalshi_bid": 69,
+          "kalshi_ask": 70
         },
         {
           "date": "2026-10-01",
           "market": 72.5,
           "polls": 68.2,
           "est": true,
-          "poll_margin_est": 2.6
+          "poll_margin_est": 2.6,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-10-02",
           "market": 72.5,
           "polls": 68.2,
           "est": true,
-          "poll_margin_est": 2.6
+          "poll_margin_est": 2.6,
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         },
         {
           "date": "2026-10-03",
           "market": 71.5,
           "polls": 67.5,
           "est": true,
-          "poll_margin_est": 2.5
+          "poll_margin_est": 2.5,
+          "market_kalshi": 73,
+          "kalshi_bid": 72,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-10-04",
           "market": 72.5,
           "polls": 67.5,
           "est": true,
-          "poll_margin_est": 2.5
+          "poll_margin_est": 2.5,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-10-05",
           "market": 72.5,
           "polls": 67.5,
           "est": true,
-          "poll_margin_est": 2.5
+          "poll_margin_est": 2.5,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-10-06",
           "market": 73.5,
           "polls": 67.5,
           "est": true,
-          "poll_margin_est": 2.5
+          "poll_margin_est": 2.5,
+          "market_kalshi": 75.5,
+          "kalshi_bid": 75,
+          "kalshi_ask": 76
         },
         {
           "date": "2026-10-07",
           "market": 73.5,
           "polls": 67.5,
           "est": true,
-          "poll_margin_est": 2.5
+          "poll_margin_est": 2.5,
+          "market_kalshi": 76,
+          "kalshi_bid": 75,
+          "kalshi_ask": 77
         },
         {
           "date": "2026-10-08",
           "market": 73.5,
           "polls": 67.5,
           "est": true,
-          "poll_margin_est": 2.5
+          "poll_margin_est": 2.5,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-10-09",
           "market": 73.5,
           "polls": 58.6,
           "bid": 73,
-          "ask": 74
+          "ask": 74,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-10-10",
           "market": 73.5,
           "polls": 58.6,
           "bid": 73,
-          "ask": 74
+          "ask": 74,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-10-11",
           "market": 73.5,
           "polls": 58.6,
           "bid": 73,
-          "ask": 74
+          "ask": 74,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         },
         {
           "date": "2026-10-12",
           "market": 72.5,
           "polls": 58.6,
           "bid": 72,
-          "ask": 73
+          "ask": 73,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         }
       ]
     }
