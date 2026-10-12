@@ -24,9 +24,10 @@ docs/                     the site (static HTML, served by GitHub Pages)
 .github/workflows/        daily market run (06:30 UTC) and weekly poll refresh (Sundays 06:00 UTC)
 ```
 
-- **Market prices** are the bid–ask midpoint from the Polymarket Gamma API (and
-  last price from the Kalshi API). No liquidity weighting; thin markets can sit at
-  the same midpoint for days. A failed fetch carries the last price forward with a
+- **Market prices** are the midpoint of the best bid and best ask, read once a
+  day from the market's public API (Polymarket today; the Kalshi path uses the
+  same measure). No liquidity weighting; a thin market can sit at the same
+  midpoint for days without a trade. A failed fetch carries the last price forward with a
   `carried` flag so it is drawn as a gap, not a quote.
 - **Poll-implied probabilities** come from the RealClearPolling average for each
   race (refreshed weekly, so the poll series is a step function by design),

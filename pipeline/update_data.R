@@ -44,13 +44,21 @@ fetch_polymarket <- function(slug, outcome) {
 }
 
 fetch_kalshi <- function(ticker, outcome = "yes") {
+  # Same measure as Polymarket: the bid-ask midpoint, not the last trade.
+  # Kalshi quotes yes_bid / yes_ask in cents for the YES side; a NO price is 100 - YES.
   url <- paste0("https://api.elections.kalshi.com/trade-api/v2/markets/", ticker)
   m <- tryCatch(fromJSON(url), error = function(e) NULL)
   if (is.null(m$market)) return(NA_real_)
-  # last_price is in cents for the YES side
-  p <- as.numeric(m$market$last_price)
-  if (tolower(outcome) == "no") p <- 100 - p
-  round(p, 1)
+  bid <- suppressWarnings(as.numeric(m$market$yes_bid)); ask <- suppressWarnings(as.numeric(m$market$yes_ask))
+  if (is.na(bid) || is.na(ask)) {                     # no quotes: fall back to last trade, with no band
+    p <- as.numeric(m$market$last_price); if (is.na(p)) return(NA_real_)
+    if (tolower(outcome) == "no") p <- 100 - p
+    return(round(p, 1))
+  }
+  if (tolower(outcome) == "no") { tmp <- bid; bid <- 100 - ask; ask <- 100 - tmp }
+  p <- round((bid + ask) / 2, 1)
+  attr(p, "bid") <- round(bid, 1); attr(p, "ask") <- round(ask, 1)
+  p
 }
 
 # ---- load existing history ---------------------------------------
