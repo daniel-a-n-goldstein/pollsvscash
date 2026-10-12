@@ -63,6 +63,10 @@ For example, a price of 61.5¢ for a $1 payout is read as a 61.5% implied probab
 midpoint for days without a trade), fetched once daily at ~06:30 UTC by an automated script. If a fetch fails,
 the last recorded price is carried forward and flagged as stale on the site rather than shown as a fresh quote.</p>
 
+<p>Each race also records the same midpoint from <a href="https://kalshi.com">Kalshi</a>, shown on request
+(“compare venues”). Kalshi is a CFTC-regulated US exchange; Polymarket is crypto-settled with a global crowd.
+The two are never averaged. Where they disagree, part of the wedge is about who is betting.</p>
+
 <h2>Poll benchmarks</h2>
 <p>The poll benchmark for each race is the <a href="https://www.realclearpolling.com">RealClearPolling</a>
 average, pulled automatically once a week on Sundays from RCP's public data feed. I don't pick the polls
