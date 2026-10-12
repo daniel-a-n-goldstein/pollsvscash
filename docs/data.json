@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "races": [
     {
       "id": "senate-dem",
@@ -358,6 +358,13 @@
         },
         {
           "date": "2026-10-11",
+          "market": 63.5,
+          "polls": 56,
+          "bid": 63,
+          "ask": 64
+        },
+        {
+          "date": "2026-10-12",
           "market": 63.5,
           "polls": 56,
           "bid": 63,
@@ -781,6 +788,13 @@
           "polls": 92.5,
           "bid": 90,
           "ask": 91
+        },
+        {
+          "date": "2026-10-12",
+          "market": 90.5,
+          "polls": 92.5,
+          "bid": 90,
+          "ask": 91
         }
       ]
     },
@@ -788,12 +802,12 @@
       "id": "nc-senate",
       "name": "Cooper (D) flips NC",
       "sub": "NC Senate · Cooper vs Whatley",
-      "market": 96.3,
+      "market": 95.9,
       "polls": 94.5,
       "sigma": 5.5,
       "poll_note": "RCP average 9/6 - 10/3: Cooper +8.8 (Cooper vs Whatley), fetched 2026-10-11",
       "result": {},
-      "wedge": 1.8,
+      "wedge": 1.4,
       "history": [
         {
           "date": "2026-08-15",
@@ -1200,6 +1214,13 @@
           "polls": 94.5,
           "bid": 96.2,
           "ask": 96.4
+        },
+        {
+          "date": "2026-10-12",
+          "market": 95.9,
+          "polls": 94.5,
+          "bid": 95.7,
+          "ask": 96
         }
       ]
     },
@@ -1619,6 +1640,13 @@
           "polls": 93,
           "bid": 95.6,
           "ask": 96.8
+        },
+        {
+          "date": "2026-10-12",
+          "market": 96.2,
+          "polls": 93,
+          "bid": 95.7,
+          "ask": 96.7
         }
       ]
     },
@@ -2038,6 +2066,13 @@
           "polls": 57.2,
           "bid": 58,
           "ask": 59
+        },
+        {
+          "date": "2026-10-12",
+          "market": 58.5,
+          "polls": 57.2,
+          "bid": 58,
+          "ask": 59
         }
       ]
     },
@@ -2045,12 +2080,12 @@
       "id": "mi-senate",
       "name": "El-Sayed (D) holds MI",
       "sub": "MI Senate · El-Sayed vs Rogers",
-      "market": 67.5,
+      "market": 70.5,
       "polls": 72,
       "sigma": 5.5,
       "poll_note": "RCP average 9/15 - 10/6: El-Sayed +3.2 (El-Sayed vs Rogers), fetched 2026-10-11",
       "result": {},
-      "wedge": -4.5,
+      "wedge": -1.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -2457,6 +2492,13 @@
           "polls": 72,
           "bid": 67,
           "ask": 68
+        },
+        {
+          "date": "2026-10-12",
+          "market": 70.5,
+          "polls": 72,
+          "bid": 70,
+          "ask": 71
         }
       ]
     },
@@ -2464,12 +2506,12 @@
       "id": "nh-senate",
       "name": "Pappas (D) holds NH",
       "sub": "NH Senate · Pappas vs Sununu",
-      "market": 89.5,
+      "market": 88.5,
       "polls": 85.8,
       "sigma": 5.5,
       "poll_note": "RCP average 9/9 - 10/5: Pappas +5.9 (Pappas vs Sununu), fetched 2026-10-11",
       "result": {},
-      "wedge": 3.7,
+      "wedge": 2.7,
       "history": [
         {
           "date": "2026-08-15",
@@ -2869,6 +2911,13 @@
           "polls": 85.8,
           "bid": 89,
           "ask": 90
+        },
+        {
+          "date": "2026-10-12",
+          "market": 88.5,
+          "polls": 85.8,
+          "bid": 88,
+          "ask": 89
         }
       ]
     },
@@ -3284,6 +3333,13 @@
         },
         {
           "date": "2026-10-11",
+          "market": 62.5,
+          "polls": 70.7,
+          "bid": 62,
+          "ask": 63
+        },
+        {
+          "date": "2026-10-12",
           "market": 62.5,
           "polls": 70.7,
           "bid": 62,
@@ -3707,6 +3763,13 @@
           "polls": 71.3,
           "bid": 61,
           "ask": 62
+        },
+        {
+          "date": "2026-10-12",
+          "market": 61.5,
+          "polls": 71.3,
+          "bid": 61,
+          "ask": 62
         }
       ]
     },
@@ -4126,6 +4189,13 @@
           "polls": 53.6,
           "bid": 42,
           "ask": 43
+        },
+        {
+          "date": "2026-10-12",
+          "market": 42.5,
+          "polls": 53.6,
+          "bid": 42,
+          "ask": 43
         }
       ]
     },
@@ -4133,12 +4203,12 @@
       "id": "ak-senate",
       "name": "Peltola (D) flips AK",
       "sub": "AK Senate · Peltola vs Sullivan · candidate market",
-      "market": 73.5,
+      "market": 72.5,
       "polls": 58.6,
       "sigma": 5.5,
       "poll_note": "RCP average 9/14 - 10/3: Peltola +1.2 (Peltola vs Sullivan), fetched 2026-10-11",
       "result": {},
-      "wedge": 14.9,
+      "wedge": 13.9,
       "history": [
         {
           "date": "2026-08-15",
@@ -4545,6 +4615,13 @@
           "polls": 58.6,
           "bid": 73,
           "ask": 74
+        },
+        {
+          "date": "2026-10-12",
+          "market": 72.5,
+          "polls": 58.6,
+          "bid": 72,
+          "ask": 73
         }
       ]
     }
