@@ -3,8 +3,10 @@
 **Live site:** https://daniel-a-n-goldstein.github.io/pollsvscash/
 
 A daily tracker of the **wedge** between what prediction markets price and what
-the polls imply, for the 2026 U.S. midterms. Markets above polls = the money is
-more hopeful than the data. Markets below = more doubtful.
+the polls imply, for the 2026 U.S. midterms. Every race is read from the
+Democratic side: a positive wedge means the money leans more Democratic than
+the polls, a negative one more Republican. Either way, someone with money on
+the line is betting the polls are wrong.
 
 The wedge bundles together things that are hard to separate: genuine
 information the polls miss, systematic polling error the market anticipates,
@@ -21,7 +23,7 @@ pipeline/update_polls.R   weekly: fetches RealClearPolling averages into pipelin
 pipeline/polls_manual.csv benchmarks that have no RCP average (chamber control uses a model probability)
 pipeline/update_data.R    daily: pulls market prices, computes the wedge, writes docs/data.json
 docs/                     the site (static HTML, served by GitHub Pages)
-.github/workflows/        daily market run (06:30 UTC) and weekly poll refresh (Sundays 06:00 UTC)
+.github/workflows/        daily market run (morning UTC, afternoon backstop) and weekly poll refresh (Sundays)
 ```
 
 - **Market prices** are the midpoint of the best bid and best ask, read once a
