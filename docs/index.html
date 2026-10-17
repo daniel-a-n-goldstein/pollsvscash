@@ -6,7 +6,7 @@
 <title>Polls vs. Cash: The Hope Index</title>
 <meta name="description" content="The Hope Index: what bettors believe, minus what the polls say. Daily tracking of the wedge between prediction markets and polling for the 2026 midterms." />
 <meta property="og:title" content="Polls vs. Cash: The Hope Index" />
-<meta property="og:description" content="What bettors believe, minus what the polls say. Tracked daily, race by race, until November." />
+<meta property="og:description" content="What bettors believe, minus what the polls say. Tracked daily until November." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://daniel-a-n-goldstein.github.io/pollsvscash/" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230B2E24%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%279%27 fill=%27%23FFB52E%27/%3E%3C/svg%3E">
@@ -82,8 +82,8 @@
     <div>
       <div class="eyebrow">polls vs. cash · updated daily</div>
       <h1 class="display">The <span class="cash">Hope</span> Index</h1>
-      <p class="tagline">The audacity to hope the polls are wrong. People are putting real money on races that are polled almost daily, and sometimes the money and the polls disagree. Polls are cheap talk. Bets cost something. Is the money real sentiment, or partisan cheerleading with a wallet? The Hope Index tracks the spread, race by race, until November. Then we'll see where the smart money was.</p>
-      <p class="tagline" style="margin-top:6px">Every race is read from the Democratic side. Amber: the money is more Democratic than the polls. Teal: more Republican. Either way, someone is hoping the polls are wrong.</p>
+      <p class="tagline">The audacity to hope the polls are wrong. People are putting real money on races that are polled almost daily, and sometimes the money and the polls disagree. Polls are cheap talk. Bets cost something. Is the money real sentiment, or partisan cheerleading with a wallet? The Hope Index tracks the spread by race until November. Then we'll see where the smart money was.</p>
+      <p class="tagline" style="margin-top:6px">Every race is read from the Democratic side. Amber: the money is more Democratic than the polls. Teal: more Republican.</p>
       <p class="tagline" style="margin-top:6px">The money updates daily. The poll side is an average updated weekly.</p>
     </div>
     <div class="statline" id="stats"></div>
@@ -110,21 +110,20 @@
 
   <section class="methodology">
     <h2>How the wedge is computed</h2>
-    <p>Market prices are Polymarket prices, fetched daily. The poll side is the
+    <p>"Market prices" are Polymarket prices, which are fetched daily. The poll is the
     RealClearPolling average for each race, refreshed weekly and converted to a win
-    probability with a simple polling-error model (σ = 5.5 points). Senate control uses
-    Decision Desk HQ's forecast instead, since there is no margin to convert. Wedge =
+    probability with a simple polling-error model. Senate control uses
+    Decision Desk HQ's forecast instead, as there is no margin to convert. Wedge =
     market − polls, in percentage points. Every row is read from the Democratic side, so a positive wedge
-    means the money leans more Democratic than the polls and a negative one more Republican. The
-    size of the wedge is the hope (someone is betting the polls are wrong); the sign is whose hope
-    it is. Either could be information the polls haven't caught up to, or wishful thinking; the
-    wedge can't differentiate the two. Wedges near
-    0% or 100% are inflated by the favorite–longshot bias, since markets rarely price above
-    ~90¢, so those should be read loosely. Market history before launch (Oct 9) is backfilled
-    from Polymarket from mid-August. The poll line before launch is a 28-day rolling
+    means the money leans more Democratic than the polls and a negative one more Republican. 
+      
+    The size of the wedge is the hope (someone is betting the polls are wrong). The sign is whose hope
+    it is.  Wedges near 0% or 100% should be read loosely, since markets rarely price above 90¢.
+      
+    Market history before launch (Oct 9) is backfilled from prediction markets from mid-August. The poll line before launch is a 28-day rolling
     average of the individual RCP-listed polls (using at least three polls and not RCP's own
-    average), drawn dashed. Full
-    details: <a href="methods.html" style="color:var(--doubt)">methods &amp;
+    average), shown as a dashed line. Full
+    details can be found: <a href="methods.html" style="color:var(--doubt)">methods &amp;
     assumptions</a>. NOTE: this is a data project by <a href="https://daniel-a-n-goldstein.com" style="color:var(--doubt)">Daniel A. N. Goldstein</a>, not investment or voting advice. <a href="https://github.com/daniel-a-n-goldstein/pollsvscash" style="color:var(--muted)">Code &amp; data on GitHub.</a></p>
   </section>
 </main></div>
