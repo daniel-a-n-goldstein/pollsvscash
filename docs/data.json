@@ -1251,7 +1251,7 @@
           "bid": 90,
           "ask": 91,
           "market_kalshi": 90.2,
-          "kalshi_bid": 90.1,
+          "kalshi_bid": 90.2,
           "kalshi_ask": 90.3
         }
       ]
@@ -1266,8 +1266,8 @@
       "poll_note": "RCP average 9/6 - 10/3: Cooper +8.8 (Cooper vs Whatley), fetched 2026-10-11",
       "result": {},
       "wedge": 1.5,
-      "market_kalshi": 95.3,
-      "wedge_kalshi": 0.8,
+      "market_kalshi": 95.4,
+      "wedge_kalshi": 0.9,
       "history": [
         {
           "date": "2026-08-15",
@@ -1905,8 +1905,8 @@
           "polls": 94.5,
           "bid": 95.7,
           "ask": 96.4,
-          "market_kalshi": 95.3,
-          "kalshi_bid": 95.2,
+          "market_kalshi": 95.4,
+          "kalshi_bid": 95.4,
           "kalshi_ask": 95.5
         }
       ]
@@ -3225,12 +3225,12 @@
       "id": "mi-senate",
       "name": "El-Sayed (D) holds MI",
       "sub": "MI Senate · El-Sayed vs Rogers",
-      "market": 70.5,
+      "market": 69.5,
       "polls": 72,
       "sigma": 5.5,
       "poll_note": "RCP average 9/15 - 10/6: El-Sayed +3.2 (El-Sayed vs Rogers), fetched 2026-10-11",
       "result": {},
-      "wedge": -1.5,
+      "wedge": -2.5,
       "market_kalshi": 67.5,
       "wedge_kalshi": -4.5,
       "history": [
@@ -3866,10 +3866,10 @@
         },
         {
           "date": "2026-10-17",
-          "market": 70.5,
+          "market": 69.5,
           "polls": 72,
-          "bid": 70,
-          "ask": 71,
+          "bid": 69,
+          "ask": 70,
           "market_kalshi": 67.5,
           "kalshi_bid": 67,
           "kalshi_ask": 68
@@ -5835,12 +5835,12 @@
       "id": "ia-senate",
       "name": "Turek (D) flips IA",
       "sub": "IA Senate · Turek vs Hinson",
-      "market": 41.5,
+      "market": 42.5,
       "polls": 53.6,
       "sigma": 5.5,
       "poll_note": "RCP average 9/9 - 10/6: Turek +0.5 (Turek vs Hinson), fetched 2026-10-11",
       "result": {},
-      "wedge": -12.1,
+      "wedge": -11.1,
       "market_kalshi": 43.5,
       "wedge_kalshi": -10.1,
       "history": [
@@ -6476,10 +6476,10 @@
         },
         {
           "date": "2026-10-17",
-          "market": 41.5,
+          "market": 42.5,
           "polls": 53.6,
-          "bid": 41,
-          "ask": 42,
+          "bid": 42,
+          "ask": 43,
           "market_kalshi": 43.5,
           "kalshi_bid": 43,
           "kalshi_ask": 44
