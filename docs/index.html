@@ -56,8 +56,13 @@
   .row-nums { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); margin-top: 6px; }
   .row-nums b { color: var(--ink); font-weight: 500; }
 
-  #detail { position: sticky; top: 16px; }
-  .detail-pad { padding: 14px 16px 0; }
+  #detail { position: relative; }
+  @media (min-width: 720px) { #detail { position: sticky; top: 16px; } }  /* pin beside the board only when there are two columns */
+  .detail-close { position: absolute; top: 10px; right: 10px; width: 28px; height: 28px; border-radius: 50%;
+                  border: 1px solid var(--hair); background: transparent; color: var(--ink); font: 18px/1 'IBM Plex Mono', monospace;
+                  cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .detail-close:hover, .detail-close:focus-visible { background: var(--panel2); outline: none; }
+  .detail-pad { padding: 14px 40px 0 16px; }
   .detail-sub { font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; }
   .detail-name { font-family: 'Barlow Condensed', sans-serif; font-size: 28px; font-weight: 600; line-height: 1.05; margin-top: 4px; }
   .detail-stats { display: flex; align-items: baseline; gap: 14px; margin-top: 10px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
@@ -134,9 +139,12 @@ async function load() {
   const res = await fetch("data.json", { cache: "no-store" });
   DATA = await res.json();
   DATA.races.sort((a, b) => b.wedge - a.wedge);
-  selected = DATA.races[0].id;
+  // a link like …/#ak-senate opens straight to that race; otherwise start on the top row
+  selected = raceFromHash() || DATA.races[0].id;
   render();
 }
+
+const raceFromHash = () => { const id = location.hash.slice(1); return DATA && DATA.races.some(r => r.id === id) ? id : null; };
 
 function render() {
   const races = DATA.races;
@@ -206,11 +214,20 @@ function renderRecord(races) {
 }
 
 function renderDetail(r) {
+  if (!r) {   // closed: a small placeholder so the board keeps its column and the methods below are reachable
+    document.getElementById("detail").innerHTML = `
+      <div class="detail-pad" style="padding-bottom:14px">
+        <div class="detail-sub">race detail</div>
+        <p class="detail-blurb">Tap a race on the board to see its market and poll history.</p>
+      </div>`;
+    return;
+  }
   const pos = r.wedge >= 0, cls = pos ? "hope" : "doubt";
   const blurb = pos
     ? `The money is ${Math.abs(r.wedge).toFixed(1)} points more Democratic than the polls here — either it knows something the surveys don't, or Democrats are hoping.`
     : `The money is ${Math.abs(r.wedge).toFixed(1)} points more Republican than the polls here — either it knows something the surveys don't, or Republicans are hoping.`;
   document.getElementById("detail").innerHTML = `
+    <button class="detail-close" onclick="closeDetail()" aria-label="Close race detail" title="Close">×</button>
     <div class="detail-pad">
       <div class="detail-sub">${r.sub}</div>
       <div class="detail-name display">${r.name}</div>
@@ -324,7 +341,26 @@ function chartSVG(hist, race) {
   </svg>`;
 }
 
-window.select = id => { selected = id; render(); if (window.innerWidth < 720) { const d = document.getElementById('detail'); if (d) d.scrollIntoView({ behavior: 'smooth', block: 'start' }); } };
+// Selection lives in the URL hash. Opening a race from the closed state pushes one history entry,
+// so the phone's back button closes the panel; switching between races replaces it rather than
+// stacking entries. Nothing here touches data.json or the recorded price/poll history.
+window.select = id => {
+  const wasClosed = selected === null;
+  selected = id;
+  try {
+    if (wasClosed) history.pushState({ pvc: 'open' }, '', '#' + id);
+    else history.replaceState(history.state, '', '#' + id);
+  } catch (e) {}
+  render();
+  if (window.innerWidth < 720) { const d = document.getElementById('detail'); if (d) d.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+};
+window.closeDetail = () => {
+  if (history.state && history.state.pvc === 'open') { history.back(); return; }   // popstate below does the rest
+  selected = null;
+  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+  render();
+};
+window.addEventListener('popstate', () => { if (!DATA) return; selected = raceFromHash(); render(); });
 window.toggleBands = () => { SHOW_BANDS = !SHOW_BANDS; try { localStorage.setItem('pvc_bands', SHOW_BANDS ? '1' : '0'); } catch (e) {} render(); };
 window.toggleVenues = () => { SHOW_VENUES = !SHOW_VENUES; try { localStorage.setItem('pvc_venues', SHOW_VENUES ? '1' : '0'); } catch (e) {} render(); };
 load().catch(() => {
