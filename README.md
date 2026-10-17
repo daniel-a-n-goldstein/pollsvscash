@@ -5,7 +5,7 @@
 A daily tracker of the **wedge** between prediction markets and polls for the 2026 U.S. midterms. Every race is read from the Democratic side: a positive wedge means the money leans more Democratic than the polls, a negative one more Republican. When the wedge is non-zero, someone with money on
 the line is betting the polls are wrong.
 
-The wedge bundles together genuine information the polls miss, systematic polling error the market anticipates, thin liquidity, and plain wishful thinking by bettors. See the
+The wedge bundles together genuine information the polls miss, systematic polling error the market anticipates, thin liquidity, and plain wishful thinking by bettors, but does not differentiate these factors. See the
 [methods page](https://daniel-a-n-goldstein.github.io/pollsvscash/methods.html)
 for the assumptions.
 
@@ -20,7 +20,7 @@ docs/                     the site (static HTML, served by GitHub Pages)
 .github/workflows/        daily market run (morning UTC, afternoon backstop) and weekly poll refresh (Sundays)
 ```
 
-- **Market prices** are the midpoint of the best bid and best ask, read once a
+- **Market prices** are the midpoint of the best bid and best ask, which are read once a
   day from the market's public API (Polymarket). There is no liquidity weighting.
 - **Second venue.** Each race also records Kalshi's midpoint (`market_kalshi`).
 - **Poll-implied probabilities** come from the RealClearPolling average for each
