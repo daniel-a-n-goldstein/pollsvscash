@@ -2,16 +2,10 @@
 
 **Live site:** https://daniel-a-n-goldstein.github.io/pollsvscash/
 
-A daily tracker of the **wedge** between what prediction markets price and what
-the polls imply, for the 2026 U.S. midterms. Every race is read from the
-Democratic side: a positive wedge means the money leans more Democratic than
-the polls, a negative one more Republican. Either way, someone with money on
+A daily tracker of the **wedge** between prediction markets and polls for the 2026 U.S. midterms. Every race is read from the Democratic side: a positive wedge means the money leans more Democratic than the polls, a negative one more Republican. When the wedge is non-zero, someone with money on
 the line is betting the polls are wrong.
 
-The wedge bundles together things that are hard to separate: genuine
-information the polls miss, systematic polling error the market anticipates,
-thin liquidity, and plain wishful thinking by bettors. The site makes no claim
-about which is which — it just shows the gap and tracks it daily. See the
+The wedge bundles together genuine information the polls miss, systematic polling error the market anticipates, thin liquidity, and plain wishful thinking by bettors. See the
 [methods page](https://daniel-a-n-goldstein.github.io/pollsvscash/methods.html)
 for the assumptions.
 
@@ -27,23 +21,17 @@ docs/                     the site (static HTML, served by GitHub Pages)
 ```
 
 - **Market prices** are the midpoint of the best bid and best ask, read once a
-  day from the market's public API (Polymarket today; the Kalshi path uses the
-  same measure). No liquidity weighting; a thin market can sit at the same
-  midpoint for days without a trade. A failed fetch carries the last price forward with a
-  `carried` flag so it is drawn as a gap, not a quote.
-- **Second venue.** Each race also records Kalshi's midpoint (`market_kalshi`),
-  shown behind a "add Kalshi" toggle.
-  `pipeline/backfill_kalshi.R` (manual workflow) fills its history.
+  day from the market's public API (Polymarket). There is no liquidity weighting.
+- **Second venue.** Each race also records Kalshi's midpoint (`market_kalshi`).
 - **Poll-implied probabilities** come from the RealClearPolling average for each
-  race (refreshed weekly, so the poll series is a step function by design),
-  converted to a win probability via a normal error model
+  race (refreshed weekly), converted to a win probability via a normal error model
   (`pnorm(margin / sigma)`, sigma = 5.5 points). The House row uses the RCP
   generic-ballot average, which is a loose proxy for chamber control. Senate
   control has no polling margin, so it uses a published model probability,
   entered by hand and dated in `polls_manual.csv`.
 - **Wedge** = market − polls, in percentage points.
 
-Data is in [`docs/data.json`](docs/data.json) if you want to use it; a daily
+Data is in [`docs/data.json`](docs/data.json); a daily
 history per race is kept for up to a year.
 
 Built by [Daniel A. N. Goldstein](https://daniel-a-n-goldstein.com), University of Oslo.
