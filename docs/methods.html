@@ -45,11 +45,11 @@
   <div class="eyebrow" style="margin-top:6px">polls vs. cash</div>
 </header>
 
-<h2>What is the wedge</h2>
+<h2>What is the wedge?</h2>
 <p>For each race, two probabilities are compared: what current <b>polling</b> implies and what
 <b>prediction-market prices</b> suggest. The wedge is their difference in percentage points:</p>
 <div class="formula">wedge&nbsp;=&nbsp;market price&nbsp;−&nbsp;poll-implied probability</div>
-<p>A race is read from the Democratic side, so a positive (amber) wedge means the money leans more Democratic than the polls and a negative (teal) wedge means
+<p>Every race is read from the Democratic side (the chamber-control rows included), so a positive (amber) wedge means the money leans more Democratic than the polls and a negative (teal) wedge means
 it leans more Republican. The <i>size</i> of the wedge is the hope: someone is betting the polls are wrong. The <i>sign</i> says whose hope it is. The Hope Index at the top of the front page is
 the average absolute wedge across the board. The wedge interestingly conflates (at least) two things: <i>information</i> the polls haven't absorbed yet, and <i>sentiment</i> — the hopes,
 fears, and biases of the betting crowd. The wedge cannot differentiate the two. One aim of the tracker is to see which is correct.</p>
@@ -61,8 +61,8 @@ For example, a price of 61.5¢ for a $1 payout is read as a 61.5% implied probab
 midpoint for days without a trade.</p>
 
 <p>Each race also records the same midpoint from <a href="https://kalshi.com">Kalshi</a>, shown on request
-(“add Kalshi” under the chart). Kalshi is a CFTC-regulated US exchange whereas Polymarket is crypto-settled with a global audience, 
-meaning the sites likely differ by participants.</p>
+(“add Kalshi” under the chart). Kalshi is a CFTC-regulated US exchange whereas Polymarket is crypto-settled with a global audience,
+meaning the two sites likely differ in who is betting.</p>
 
 <h2>Poll benchmarks</h2>
 <p>The poll benchmark for each race is the <a href="https://www.realclearpolling.com">RealClearPolling</a>
@@ -84,8 +84,8 @@ the only one where the "polls" side is a model rather than a polling average.</p
 <table>
 <tr><th>Assumptions / concerns</th><th>What it does to the wedge</th></tr>
 <tr><td class="k">Favorite–longshot bias</td><td>Markets rarely price above ~90¢ or below ~10¢ even for near-certainties,
-because these bets are not profitable. Hence, big wedges on lopsided races
-(e.g., polls at 97%, market at 87%) are likely due to this outcome rather than sentiment.</td></tr>
+because the return on these bets is too small to be worth tying up cash until November. Hence, big wedges on lopsided races
+(e.g., polls at 97%, market at 87%) are likely due to this bias rather than sentiment.</td></tr>
 <tr><td class="k">Thin markets</td><td>Some of these markets rarely trade, so one trader can move the price and their wedges are noisy.</td></tr>
 <tr><td class="k">Polls aren't "ground truth"</td><td>House effects, herding, and differential response mean the poll benchmark
 has its own error. Some of the wedge is poll error rather than market opinion.</td></tr>
@@ -94,18 +94,18 @@ measures the mood of a rather particular crowd.</td></tr>
 <tr><td class="k">σ = 5.5 is a choice</td><td>A bigger σ pulls poll probabilities toward 50 and shrinks wedges on lopsided
 races, while a smaller σ does the reverse. Hence, the qualitative pattern is more robust than exact wedge sizes.</td></tr>
 <tr><td class="k">Pre-launch history</td><td>Market prices before launch (October 9, 2026) are backfilled from
-Polymarket's daily price history back to August 15. The poll line before launch is an
-estimate dashed line. For each pre-launch day I take the simple
+Polymarket's (and Kalshi's) daily price history back to August 15. The poll line before launch is an
+estimate, shown as a dashed line. For each pre-launch day I take the simple
 mean margin of the RCP-listed polls whose field period ended in the previous 28 days, widened to the most
 recent three polls whenever fewer than three fall in the window, and convert it with the same probit. It tracks RCP's current average to within
-about a point. Thw pre-launch wedges should be read loosely. From launch onward, every point is a daily snapshot with RCP's own number.</td></tr>
+about a point, but the pre-launch wedges should be read loosely. From launch onward, every point is a daily snapshot with RCP's own number.</td></tr>
 </table>
 
 <h2>Updates</h2>
 <p>A scheduled GitHub Action collects market prices every day (a morning UTC run, with an afternoon run
-as a backstop), recomputes the wedge. A second script refreshes the RCP poll benchmarks every Sunday.
+as a backstop) and recomputes the wedge. A second script refreshes the RCP poll benchmarks every Sunday.
 The plan is that when a race resolves, it is kept in the data with its outcome, so over time the tracker accumulates a
-public  record of whether the money or the polls was closer.</p>
+public record of whether the money or the polls were closer.</p>
 
 <p class="m" style="margin-top:26px">NOTE: this is a data project by <a href="https://daniel-a-n-goldstein.com">Daniel A. N. Goldstein</a> about measuring public sentiment, not investment advice. <a href="https://github.com/daniel-a-n-goldstein/pollsvscash">Code &amp; data on GitHub.</a></p>
 <a class="back" href="index.html">← back to the tracker</a>
