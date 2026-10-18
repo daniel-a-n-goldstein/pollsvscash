@@ -3275,12 +3275,12 @@
       "id": "mi-senate",
       "name": "El-Sayed (D) holds MI",
       "sub": "MI Senate · El-Sayed vs Rogers",
-      "market": 68.5,
+      "market": 69.5,
       "polls": 68.2,
       "sigma": 5.5,
       "poll_note": "RCP average 9/24 - 10/14: El-Sayed +2.6 (El-Sayed vs Rogers), fetched 2026-10-18",
       "result": {},
-      "wedge": 0.3,
+      "wedge": 1.3,
       "market_kalshi": 67.5,
       "wedge_kalshi": -0.7,
       "history": [
@@ -3926,10 +3926,10 @@
         },
         {
           "date": "2026-10-18",
-          "market": 68.5,
+          "market": 69.5,
           "polls": 68.2,
-          "bid": 68,
-          "ask": 69,
+          "bid": 69,
+          "ask": 70,
           "market_kalshi": 67.5,
           "kalshi_bid": 67,
           "kalshi_ask": 68
