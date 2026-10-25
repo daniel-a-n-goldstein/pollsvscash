@@ -101,16 +101,6 @@ recent three polls whenever fewer than three fall in the window, and convert it 
 about a point, but the pre-launch wedges should be read loosely. From launch onward, every point is a daily snapshot with RCP's own number.</td></tr>
 </table>
 
-<h2>Updates</h2>
-<p>A scheduled GitHub Action collects market prices every day (a morning UTC run, with an afternoon run
-as a backstop) and recomputes the wedge. A second script refreshes the RCP poll benchmarks every Sunday.
-The plan is that when a race resolves, it is kept in the data with its outcome, so over time the tracker accumulates a
-public record of whether the money or the polls were closer. Two rules, fixed before any results are in: each row is
-scored on its November 2 numbers, so nothing recorded while votes are being cast or counted enters the score, and each
-row resolves the way its Polymarket contract resolves (Peltola's is a candidate market; Senate control follows the
-majority when the new Senate is seated). A contract that resolves on a technicality unrelated to the vote would be
-flagged rather than scored.</p>
-
 <p class="m" style="margin-top:26px">NOTE: this is a data project by <a href="https://daniel-a-n-goldstein.com">Daniel A. N. Goldstein</a> about measuring public sentiment, not investment advice. <a href="https://github.com/daniel-a-n-goldstein/pollsvscash">Code &amp; data on GitHub.</a></p>
 <a class="back" href="index.html">← back to the tracker</a>
 
