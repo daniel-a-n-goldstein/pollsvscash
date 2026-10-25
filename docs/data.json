@@ -1412,7 +1412,7 @@
           "ask": 92,
           "market_kalshi": 90.6,
           "kalshi_bid": 90.5,
-          "kalshi_ask": 90.6
+          "kalshi_ask": 90.7
         }
       ]
     },
@@ -1420,12 +1420,12 @@
       "id": "nc-senate",
       "name": "Cooper (D) flips NC",
       "sub": "NC Senate · Cooper vs Whatley",
-      "market": 96.8,
+      "market": 96.9,
       "polls": 97.3,
       "sigma": 5.5,
       "poll_note": "RCP average 9/27 - 10/20: Cooper +10.6 (Cooper vs Whatley), fetched 2026-10-25",
       "result": {},
-      "wedge": -0.5,
+      "wedge": -0.4,
       "market_kalshi": 96.3,
       "wedge_kalshi": -1,
       "history": [
@@ -2141,10 +2141,10 @@
         },
         {
           "date": "2026-10-25",
-          "market": 96.8,
+          "market": 96.9,
           "polls": 97.3,
           "bid": 96.5,
-          "ask": 97.1,
+          "ask": 97.2,
           "market_kalshi": 96.3,
           "kalshi_bid": 96.2,
           "kalshi_ask": 96.5
@@ -5085,12 +5085,12 @@
       "id": "tx-senate",
       "name": "Talarico (D) flips TX",
       "sub": "TX Senate · Talarico vs Paxton",
-      "market": 62.5,
+      "market": 63.5,
       "polls": 60.7,
       "sigma": 5.5,
       "poll_note": "RCP average 10/8 - 10/21: Talarico +1.5 (Talarico vs Paxton), fetched 2026-10-25",
       "result": {},
-      "wedge": 1.8,
+      "wedge": 2.8,
       "market_kalshi": 64.5,
       "wedge_kalshi": 3.8,
       "history": [
@@ -5806,10 +5806,10 @@
         },
         {
           "date": "2026-10-25",
-          "market": 62.5,
+          "market": 63.5,
           "polls": 60.7,
-          "bid": 62,
-          "ask": 63,
+          "bid": 63,
+          "ask": 64,
           "market_kalshi": 64.5,
           "kalshi_bid": 64,
           "kalshi_ask": 65
@@ -7290,12 +7290,12 @@
       "id": "ak-senate",
       "name": "Peltola (D) flips AK",
       "sub": "AK Senate · Peltola vs Sullivan · candidate market",
-      "market": 75,
+      "market": 75.5,
       "polls": 58.6,
       "sigma": 5.5,
       "poll_note": "RCP average 9/28 - 10/16: Peltola +1.2 (Peltola vs Sullivan), fetched 2026-10-25",
       "result": {},
-      "wedge": 16.4,
+      "wedge": 16.9,
       "market_kalshi": 75,
       "wedge_kalshi": 16.4,
       "history": [
@@ -8011,9 +8011,9 @@
         },
         {
           "date": "2026-10-25",
-          "market": 75,
+          "market": 75.5,
           "polls": 58.6,
-          "bid": 74,
+          "bid": 75,
           "ask": 76,
           "market_kalshi": 75,
           "kalshi_bid": 74,
