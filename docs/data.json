@@ -691,8 +691,8 @@
       "poll_note": "RCP average 9/28 - 10/20: Democrats +8.1 (Democrats vs Republicans), fetched 2026-10-25",
       "result": {},
       "wedge": -1.5,
-      "market_kalshi": 90.6,
-      "wedge_kalshi": -2.4,
+      "market_kalshi": 90.7,
+      "wedge_kalshi": -2.3,
       "history": [
         {
           "date": "2026-08-15",
@@ -1410,8 +1410,8 @@
           "polls": 93,
           "bid": 91,
           "ask": 92,
-          "market_kalshi": 90.6,
-          "kalshi_bid": 90.5,
+          "market_kalshi": 90.7,
+          "kalshi_bid": 90.6,
           "kalshi_ask": 90.7
         }
       ]
