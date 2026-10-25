@@ -1,5 +1,5 @@
 "id","poll_prob","poll_margin","poll_date","note"
-"senate-dem",80,,"2026-10-25","DDHQ 2026 Senate forecast: Dem control 80% (GOP 20%), read 2026-10-25"
+"senate-dem",56,,"2026-10-25","DDHQ 2026 Senate forecast: Dem control 56% (GOP 44%), read 2026-10-25"
 "house-dem",,8.1,"9/28 - 10/20","RCP average 9/28 - 10/20: Democrats +8.1 (Democrats vs Republicans), fetched 2026-10-25"
 "nc-senate",,10.6,"9/27 - 10/20","RCP average 9/27 - 10/20: Cooper +10.6 (Cooper vs Whatley), fetched 2026-10-25"
 "ga-senate",,8.2,"9/21 - 10/17","RCP average 9/21 - 10/17: Ossoff +8.2 (Ossoff vs Collins), fetched 2026-10-25"

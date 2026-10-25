@@ -6,13 +6,13 @@
       "name": "Dems take the Senate",
       "sub": "2026 midterms · chamber control",
       "market": 66.5,
-      "polls": 80,
+      "polls": 56,
       "sigma": 5.5,
-      "poll_note": "DDHQ 2026 Senate forecast: Dem control 80% (GOP 20%), read 2026-10-25",
+      "poll_note": "DDHQ 2026 Senate forecast: Dem control 56% (GOP 44%), read 2026-10-25",
       "result": {},
-      "wedge": -13.5,
+      "wedge": 10.5,
       "market_kalshi": 62.5,
-      "wedge_kalshi": -17.5,
+      "wedge_kalshi": 6.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -672,7 +672,7 @@
         {
           "date": "2026-10-25",
           "market": 66.5,
-          "polls": 80,
+          "polls": 56,
           "bid": 66,
           "ask": 67,
           "market_kalshi": 62.5,
