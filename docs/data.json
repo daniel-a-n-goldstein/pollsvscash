@@ -11,8 +11,8 @@
       "poll_note": "DDHQ 2026 Senate forecast: Dem control 56% (GOP 44%), read 2026-10-25",
       "result": {},
       "wedge": 11.5,
-      "market_kalshi": 66.5,
-      "wedge_kalshi": 10.5,
+      "market_kalshi": 67.5,
+      "wedge_kalshi": 11.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -715,9 +715,9 @@
           "polls": 56,
           "bid": 67,
           "ask": 68,
-          "market_kalshi": 66.5,
-          "kalshi_bid": 66,
-          "kalshi_ask": 67
+          "market_kalshi": 67.5,
+          "kalshi_bid": 67,
+          "kalshi_ask": 68
         }
       ]
     },
@@ -731,8 +731,8 @@
       "poll_note": "RCP average 9/28 - 10/20: Democrats +8.1 (Democrats vs Republicans), fetched 2026-10-25",
       "result": {},
       "wedge": -0.5,
-      "market_kalshi": 91.2,
-      "wedge_kalshi": -1.8,
+      "market_kalshi": 91.3,
+      "wedge_kalshi": -1.7,
       "history": [
         {
           "date": "2026-08-15",
@@ -1490,9 +1490,9 @@
           "polls": 93,
           "bid": 92,
           "ask": 93,
-          "market_kalshi": 91.2,
-          "kalshi_bid": 91.2,
-          "kalshi_ask": 91.3
+          "market_kalshi": 91.3,
+          "kalshi_bid": 91.3,
+          "kalshi_ask": 91.4
         }
       ]
     },
@@ -1500,14 +1500,14 @@
       "id": "nc-senate",
       "name": "Cooper (D) flips NC",
       "sub": "NC Senate · Cooper vs Whatley",
-      "market": 97.6,
+      "market": 97.2,
       "polls": 97.3,
       "sigma": 5.5,
       "poll_note": "RCP average 9/27 - 10/20: Cooper +10.6 (Cooper vs Whatley), fetched 2026-10-25",
       "result": {},
-      "wedge": 0.3,
-      "market_kalshi": 96.5,
-      "wedge_kalshi": -0.8,
+      "wedge": -0.1,
+      "market_kalshi": 96.6,
+      "wedge_kalshi": -0.7,
       "history": [
         {
           "date": "2026-08-15",
@@ -2261,12 +2261,12 @@
         },
         {
           "date": "2026-10-29",
-          "market": 97.6,
+          "market": 97.2,
           "polls": 97.3,
-          "bid": 97.1,
-          "ask": 98.1,
-          "market_kalshi": 96.5,
-          "kalshi_bid": 96.3,
+          "bid": 96.1,
+          "ask": 98.2,
+          "market_kalshi": 96.6,
+          "kalshi_bid": 96.5,
           "kalshi_ask": 96.7
         }
       ]
@@ -2281,8 +2281,8 @@
       "poll_note": "RCP average 9/21 - 10/17: Ossoff +8.2 (Ossoff vs Collins), fetched 2026-10-25",
       "result": {},
       "wedge": 3.5,
-      "market_kalshi": 95.9,
-      "wedge_kalshi": 2.7,
+      "market_kalshi": 96,
+      "wedge_kalshi": 2.8,
       "history": [
         {
           "date": "2026-08-15",
@@ -3038,11 +3038,11 @@
           "date": "2026-10-29",
           "market": 96.7,
           "polls": 93.2,
-          "bid": 96.3,
-          "ask": 97.1,
-          "market_kalshi": 95.9,
-          "kalshi_bid": 95.8,
-          "kalshi_ask": 96
+          "bid": 96.2,
+          "ask": 97.2,
+          "market_kalshi": 96,
+          "kalshi_bid": 96,
+          "kalshi_ask": 96.1
         }
       ]
     },
@@ -3050,14 +3050,14 @@
       "id": "me-senate",
       "name": "Jackson (D) flips ME",
       "sub": "ME Senate · Jackson vs Collins",
-      "market": 63.5,
+      "market": 64.5,
       "polls": 60,
       "sigma": 5.5,
       "poll_note": "RCP average 9/23 - 10/20: Jackson +1.4 (Jackson vs Collins), fetched 2026-10-25",
       "result": {},
-      "wedge": 3.5,
-      "market_kalshi": 61.5,
-      "wedge_kalshi": 1.5,
+      "wedge": 4.5,
+      "market_kalshi": 62.5,
+      "wedge_kalshi": 2.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -3811,13 +3811,13 @@
         },
         {
           "date": "2026-10-29",
-          "market": 63.5,
+          "market": 64.5,
           "polls": 60,
           "bid": 63,
-          "ask": 64,
-          "market_kalshi": 61.5,
-          "kalshi_bid": 61,
-          "kalshi_ask": 62
+          "ask": 66,
+          "market_kalshi": 62.5,
+          "kalshi_bid": 62,
+          "kalshi_ask": 63
         }
       ]
     },
@@ -3825,14 +3825,14 @@
       "id": "mi-senate",
       "name": "El-Sayed (D) holds MI",
       "sub": "MI Senate · El-Sayed vs Rogers",
-      "market": 72.5,
+      "market": 73,
       "polls": 63.5,
       "sigma": 5.5,
       "poll_note": "RCP average 9/24 - 10/22: El-Sayed +1.9 (El-Sayed vs Rogers), fetched 2026-10-25",
       "result": {},
-      "wedge": 9,
-      "market_kalshi": 70.5,
-      "wedge_kalshi": 7,
+      "wedge": 9.5,
+      "market_kalshi": 73.5,
+      "wedge_kalshi": 10,
       "history": [
         {
           "date": "2026-08-15",
@@ -4586,13 +4586,13 @@
         },
         {
           "date": "2026-10-29",
-          "market": 72.5,
+          "market": 73,
           "polls": 63.5,
           "bid": 72,
-          "ask": 73,
-          "market_kalshi": 70.5,
-          "kalshi_bid": 70,
-          "kalshi_ask": 71
+          "ask": 74,
+          "market_kalshi": 73.5,
+          "kalshi_bid": 73,
+          "kalshi_ask": 74
         }
       ]
     },
@@ -4600,14 +4600,14 @@
       "id": "nh-senate",
       "name": "Pappas (D) holds NH",
       "sub": "NH Senate · Pappas vs Sununu",
-      "market": 91.5,
+      "market": 90.5,
       "polls": 88.1,
       "sigma": 5.5,
       "poll_note": "RCP average 9/15 - 10/20: Pappas +6.5 (Pappas vs Sununu), fetched 2026-10-25",
       "result": {},
-      "wedge": 3.4,
-      "market_kalshi": 89.5,
-      "wedge_kalshi": 1.4,
+      "wedge": 2.4,
+      "market_kalshi": 90.8,
+      "wedge_kalshi": 2.7,
       "history": [
         {
           "date": "2026-08-15",
@@ -5351,13 +5351,13 @@
         },
         {
           "date": "2026-10-29",
-          "market": 91.5,
+          "market": 90.5,
           "polls": 88.1,
-          "bid": 91,
-          "ask": 92,
-          "market_kalshi": 89.5,
-          "kalshi_bid": 89,
-          "kalshi_ask": 90
+          "bid": 90,
+          "ask": 91,
+          "market_kalshi": 90.8,
+          "kalshi_bid": 90.6,
+          "kalshi_ask": 91
         }
       ]
     },
@@ -5365,12 +5365,12 @@
       "id": "tx-senate",
       "name": "Talarico (D) flips TX",
       "sub": "TX Senate · Talarico vs Paxton",
-      "market": 68.5,
+      "market": 69.5,
       "polls": 60.7,
       "sigma": 5.5,
       "poll_note": "RCP average 10/8 - 10/21: Talarico +1.5 (Talarico vs Paxton), fetched 2026-10-25",
       "result": {},
-      "wedge": 7.8,
+      "wedge": 8.8,
       "market_kalshi": 68.5,
       "wedge_kalshi": 7.8,
       "history": [
@@ -6126,10 +6126,10 @@
         },
         {
           "date": "2026-10-29",
-          "market": 68.5,
+          "market": 69.5,
           "polls": 60.7,
-          "bid": 68,
-          "ask": 69,
+          "bid": 69,
+          "ask": 70,
           "market_kalshi": 68.5,
           "kalshi_bid": 68,
           "kalshi_ask": 69
@@ -6140,14 +6140,14 @@
       "id": "oh-senate",
       "name": "Brown (D) flips OH",
       "sub": "OH Senate special · Brown vs Husted",
-      "market": 68.5,
+      "market": 69,
       "polls": 72.6,
       "sigma": 5.5,
       "poll_note": "RCP average 9/22 - 10/22: Brown +3.3 (Brown vs Husted), fetched 2026-10-25",
       "result": {},
-      "wedge": -4.1,
-      "market_kalshi": 67.5,
-      "wedge_kalshi": -5.1,
+      "wedge": -3.6,
+      "market_kalshi": 68.5,
+      "wedge_kalshi": -4.1,
       "history": [
         {
           "date": "2026-08-15",
@@ -6901,13 +6901,13 @@
         },
         {
           "date": "2026-10-29",
-          "market": 68.5,
+          "market": 69,
           "polls": 72.6,
           "bid": 68,
-          "ask": 69,
-          "market_kalshi": 67.5,
-          "kalshi_bid": 67,
-          "kalshi_ask": 68
+          "ask": 70,
+          "market_kalshi": 68.5,
+          "kalshi_bid": 68,
+          "kalshi_ask": 69
         }
       ]
     },
@@ -6915,14 +6915,14 @@
       "id": "ia-senate",
       "name": "Turek (D) flips IA",
       "sub": "IA Senate · Turek vs Hinson",
-      "market": 44.5,
+      "market": 46.5,
       "polls": 45.7,
       "sigma": 5.5,
       "poll_note": "RCP average 9/29 - 10/22: Turek -0.6 (Turek vs Hinson), fetched 2026-10-25",
       "result": {},
-      "wedge": -1.2,
-      "market_kalshi": 46.5,
-      "wedge_kalshi": 0.8,
+      "wedge": 0.8,
+      "market_kalshi": 48.5,
+      "wedge_kalshi": 2.8,
       "history": [
         {
           "date": "2026-08-15",
@@ -7676,13 +7676,13 @@
         },
         {
           "date": "2026-10-29",
-          "market": 44.5,
+          "market": 46.5,
           "polls": 45.7,
-          "bid": 44,
-          "ask": 45,
-          "market_kalshi": 46.5,
-          "kalshi_bid": 46,
-          "kalshi_ask": 47
+          "bid": 45,
+          "ask": 48,
+          "market_kalshi": 48.5,
+          "kalshi_bid": 48,
+          "kalshi_ask": 49
         }
       ]
     },
@@ -7690,12 +7690,12 @@
       "id": "ak-senate",
       "name": "Peltola (D) flips AK",
       "sub": "AK Senate · Peltola vs Sullivan · candidate market",
-      "market": 70.5,
+      "market": 71,
       "polls": 58.6,
       "sigma": 5.5,
       "poll_note": "RCP average 9/28 - 10/16: Peltola +1.2 (Peltola vs Sullivan), fetched 2026-10-25",
       "result": {},
-      "wedge": 11.9,
+      "wedge": 12.4,
       "market_kalshi": 68.5,
       "wedge_kalshi": 9.9,
       "history": [
@@ -8451,10 +8451,10 @@
         },
         {
           "date": "2026-10-29",
-          "market": 70.5,
+          "market": 71,
           "polls": 58.6,
           "bid": 70,
-          "ask": 71,
+          "ask": 72,
           "market_kalshi": 68.5,
           "kalshi_bid": 68,
           "kalshi_ask": 69
