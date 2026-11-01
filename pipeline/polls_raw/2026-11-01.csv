@@ -1,4 +1,5 @@
 "snapshot","race","rcp_id","rcp_poll_id","pollster","start_date","end_date","sample","moe","side_name","side_value","other_name","other_value","margin","spread","link"
+"2026-11-01","house-dem",8670,"159205","NBC News","2026/10/28","2026/10/30","1000 RV","","Democrats",52,"Republicans",45,7,NA,"https://www.nbcnews.com/politics/2026-election/poll-voters-demand-change-check-trump-fueling-steep-democratic-midterm-rcna606183"
 "2026-11-01","house-dem",8670,"159203","Big Data Poll","2026/10/27","2026/10/30","3214 LV","","Democrats",52,"Republicans",40,12,NA,"https://www.bigdatapoll.com/blog/democrats-head-into-midterms-with-big-advantage-in-final-poll/"
 "2026-11-01","house-dem",8670,"158905","Economist/YouGov","2026/10/23","2026/10/26","1263 LV","","Democrats",50,"Republicans",41,9,NA,"https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_nJaupnc.pdf"
 "2026-11-01","house-dem",8670,"159119","Emerson","2026/10/24","2026/10/26","1000 LV","","Democrats",52,"Republicans",42,10,NA,"https://emersoncollegepolling.com/october-2026-national-poll-democrats-hold-10-point-midterm-advantage/"
