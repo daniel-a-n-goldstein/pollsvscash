@@ -127,7 +127,7 @@
     average of the individual RCP-listed polls (using at least three polls and not RCP's own
     average), shown as a dashed line. Full
     details can be found in the <a href="methods.html" style="color:var(--doubt)">methods &amp;
-    assumptions</a>. NOTE: this is a data project by <a href="https://daniel-a-n-goldstein.com" style="color:var(--doubt)">Daniel A. N. Goldstein</a>, not investment advice. <a href="https://github.com/daniel-a-n-goldstein/pollsvscash" style="color:var(--muted)">Code &amp; data on GitHub.</a></p>
+    assumptions</a>; the post-election <a href="results.html" style="color:var(--doubt)">scorecard</a> fills in as races resolve. NOTE: this is a data project by <a href="https://daniel-a-n-goldstein.com" style="color:var(--doubt)">Daniel A. N. Goldstein</a>, not investment advice. <a href="https://github.com/daniel-a-n-goldstein/pollsvscash" style="color:var(--muted)">Code &amp; data on GitHub.</a></p>
   </section>
 </main></div>
 
@@ -211,7 +211,7 @@ function renderRecord(races) {
         <th style="text-align:left;padding:8px 14px">money said</th><th style="text-align:left;padding:8px 14px">polls said</th>
         <th style="text-align:left;padding:8px 14px">closer</th></tr></thead>
       <tbody>${rows.replace(/<td/g, '<td style="padding:8px 14px;border-top:1px solid var(--hair)"').replace(/<td style="padding:8px 14px;border-top:1px solid var\(--hair\)" style=/g, '<td style="padding:8px 14px;border-top:1px solid var(--hair);')}</tbody></table></div>
-    <p class="detail-blurb" style="margin:8px 14px 14px">"Closer" compares each side's election-eve probability to the outcome (0 or 100). One race tells you little; the tally across the board is the point.</p>`;
+    <p class="detail-blurb" style="margin:8px 14px 14px">"Closer" compares each side's election-eve probability to the outcome (0 or 100). One race tells you little; the tally across the board is the point. <a href="results.html" style="color:var(--doubt)">Full scorecard →</a></p>`;
 }
 
 function renderDetail(r) {
@@ -281,6 +281,11 @@ function chartSVG(hist, race) {
   const launchIdx = hist.findIndex(d => !d.est);
   const launch = launchIdx > 0 ? `<line x1="${x(launchIdx)}" x2="${x(launchIdx)}" y1="${T}" y2="${H - B}" stroke="rgba(242,239,230,0.25)" stroke-dasharray="2 3"/>
      <text x="${x(launchIdx) + (x(launchIdx) > W - 60 ? -4 : 4)}" y="${T + 9}" text-anchor="${x(launchIdx) > W - 60 ? "end" : "start"}" fill="rgba(242,239,230,0.5)">launch</text>` : "";
+  // election marker: drawn once the series runs past election day (x is by calendar date, so the line sits on Nov 3 itself)
+  const xd = d => L + (day(d) - d0) / span * (W - L - R);
+  const election = (day(ELECTION) > d0 && day(ELECTION) <= d0 + span)
+    ? `<line x1="${xd(ELECTION)}" x2="${xd(ELECTION)}" y1="${T}" y2="${H - B}" stroke="rgba(242,239,230,0.35)" stroke-dasharray="2 3"/>
+       <text x="${xd(ELECTION) - 4}" y="${T + 9}" text-anchor="end" fill="rgba(242,239,230,0.5)">election</text>` : "";
 
   // poll band: Φ(Φ⁻¹(p) ± 1) — only meaningful when the benchmark is a polling margin
   let pollBand = "";
@@ -338,7 +343,7 @@ function chartSVG(hist, race) {
   }
 
   return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block;padding:6px 6px 0">
-    ${grid}${xticks}${launch}${pollBand}${mktBand}${pollPaths}${kalshiPath}${mktPath}
+    ${grid}${xticks}${launch}${election}${pollBand}${mktBand}${pollPaths}${kalshiPath}${mktPath}
   </svg>`;
 }
 

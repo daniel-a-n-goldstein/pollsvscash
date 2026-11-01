@@ -22,6 +22,15 @@ jobs:
       - name: Install jsonlite
         run: Rscript -e 'install.packages("jsonlite")'
 
+      - name: Tag the election-eve state (first run on election day, before today's point is added)
+        if: ${{ always() }}
+        run: |
+          if [ "$(date -u +%F)" = "2026-11-03" ] && ! git ls-remote --tags origin | grep -q refs/tags/election-eve; then
+            git config user.name "pollsvscash-bot"; git config user.email "actions@github.com"
+            git tag -a election-eve -m "Pre-election state: last data point 2026-11-02" HEAD
+            git push origin election-eve
+          fi
+
       - name: Run pipeline
         run: Rscript pipeline/update_data.R
 

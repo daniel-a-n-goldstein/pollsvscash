@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Hope Index — Scorecard</title>
+<meta name="description" content="Polls vs. Cash scorecard: for each 2026 midterm race, what the money said, what the polls said on election eve, and what happened." />
+<meta property="og:title" content="The Hope Index — Scorecard" />
+<meta property="og:description" content="Election-eve market prices vs. poll-implied probabilities, scored against the results." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://daniel-a-n-goldstein.github.io/pollsvscash/results.html" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230B2E24%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%279%27 fill=%27%23FFB52E%27/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B2E24; --panel: #0E382B; --panel2: #10402F;
+    --ink: #F2EFE6; --muted: #93B0A4; --hair: rgba(242,239,230,0.14);
+    --hope: #FFB52E; --doubt: #52D8C4; --kalshi: rgba(242,239,230,0.75);
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: 'IBM Plex Mono', monospace; padding-bottom: 60px; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 18px; }
+  .display { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; }
+  a { color: var(--doubt); }
+
+  header { border-bottom: 1px solid var(--hair); padding: 26px 0 18px; }
+  .masthead { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 10px; }
+  .eyebrow { font-size: 11px; letter-spacing: .22em; color: var(--muted); text-transform: uppercase; }
+  h1 { font-size: clamp(40px, 6vw, 64px); font-weight: 700; line-height: .95; margin-top: 6px; }
+  h1 .cash { color: var(--hope); text-shadow: 0 0 22px rgba(255,181,46,.45); }
+  .tagline { font-size: 12.5px; color: var(--muted); margin-top: 10px; max-width: 640px; line-height: 1.55; }
+  .statline { text-align: right; font-size: 11px; color: var(--muted); line-height: 1.8; }
+  .statline b { color: var(--ink); font-weight: 500; }
+  .updated { margin-top: 14px; display: inline-block; font-size: 10.5px; color: var(--bg); background: var(--hope); padding: 3px 8px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+  .updated.pending { background: transparent; color: var(--muted); border: 1px solid var(--hair); }
+
+  main { margin-top: 22px; display: grid; grid-template-columns: 1fr; gap: 22px; }
+  section { background: var(--panel); border: 1px solid var(--hair); }
+  .sec-head { display: flex; justify-content: space-between; padding: 12px 14px; border-bottom: 1px solid var(--hair); align-items: baseline; flex-wrap: wrap; gap: 6px 14px; }
+  .sec-title { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 16px; font-weight: 600; letter-spacing: .08em; }
+  .muted { color: var(--muted); font-size: 10.5px; }
+  .blurb { font-size: 11.5px; color: var(--muted); line-height: 1.6; margin: 10px 14px 14px; max-width: 760px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+  th { text-align: left; padding: 8px 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: 10px; font-weight: 500; white-space: nowrap; }
+  td { padding: 9px 12px; border-top: 1px solid var(--hair); vertical-align: top; white-space: nowrap; }
+  td.name { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 16px; font-weight: 600; white-space: normal; min-width: 150px; }
+  td.sub { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; white-space: normal; }
+  tr.total td { border-top: 2px solid var(--hair); font-weight: 600; }
+  .hope { color: var(--hope); } .doubt { color: var(--doubt); } .kalshi { color: var(--kalshi); }
+  .win { font-weight: 600; }
+  .pend { color: var(--muted); font-style: italic; }
+
+  svg text { font-family: 'IBM Plex Mono', monospace; font-size: 10px; fill: var(--muted); }
+  .legend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 0 14px 14px; font-size: 10.5px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 26px; font-size: 12px; margin-right: 18px; }
+  .foot { margin-top: 26px; font-size: 11.5px; color: var(--muted); line-height: 1.7; max-width: 760px; }
+</style>
+<script data-goatcounter="https://dgold.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="masthead">
+    <div>
+      <div class="eyebrow">polls vs. cash · scorecard</div>
+      <h1 class="display">Who was <span class="cash">right</span>?</h1>
+      <p class="tagline">Each race is scored on its election-eve numbers (November 2): the market price, the poll-implied probability, and the outcome. Nothing recorded while votes were being cast or counted enters the score. Results fill in as each Polymarket contract resolves.</p>
+    </div>
+    <div class="statline" id="stats"></div>
+  </div>
+  <div class="updated pending" id="updated">loading…</div>
+</div></header>
+
+<div class="wrap"><main>
+  <section id="scorecard"></section>
+  <section id="hope"></section>
+  <section id="closing"></section>
+</main>
+<a class="back" href="index.html">← back to the tracker</a><a class="back" href="methods.html">methods &amp; assumptions</a>
+<p class="foot">Scores: the Brier score is the squared gap between a probability and the outcome (0 or 1), averaged across races; lower is better, 0.25 is what a coin flip scores. "Closer" is the simpler version: which side's election-eve number was nearer the outcome. Rules fixed before results: <a href="methods.html">methods page</a>. Data: <a href="data.json">data.json</a>. A project by <a href="https://daniel-a-n-goldstein.com">Daniel A. N. Goldstein</a>; <a href="https://github.com/daniel-a-n-goldstein/pollsvscash">code on GitHub</a>.</p>
+</div>
+
+<script>
+const ELECTION = "2026-11-03";
+const EVE = "2026-11-02";
+const fmt = w => (w >= 0 ? "+" : "−") + Math.abs(w).toFixed(1);
+const pct = v => v == null ? "—" : v.toFixed(1).replace(/\.0$/, "") + "%";
+const day = d => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +d.slice(8, 10)) / 86400000;
+
+async function load() {
+  const res = await fetch("data.json", { cache: "no-store" });
+  const DATA = await res.json();
+  const races = DATA.races.map(r => {
+    const hist = r.history || [];
+    const eve = [...hist].reverse().find(h => h.date <= EVE) || hist[hist.length - 1];
+    const launch = hist.find(h => !h.est) || hist[0];
+    const resolved = r.result === "Yes" || r.result === "No";
+    const y = resolved ? (r.result === "Yes" ? 1 : 0) : null;
+    const brier = p => (p == null || y == null) ? null : Math.pow(p / 100 - y, 2);
+    return { ...r, eve, launch, resolved, y,
+      bm: brier(eve.market), bp: brier(eve.polls), bk: brier(eve.market_kalshi) };
+  });
+  const haveEve = races.every(r => r.eve && r.eve.date >= EVE);
+  const done = races.filter(r => r.resolved);
+
+  // header
+  const up = document.getElementById("updated");
+  if (done.length === races.length) { up.textContent = "all " + races.length + " races resolved"; up.classList.remove("pending"); }
+  else if (done.length) { up.textContent = done.length + " of " + races.length + " resolved · scoring in progress"; up.classList.remove("pending"); }
+  else up.textContent = haveEve ? "election-eve numbers locked · awaiting results" : "pre-election · numbers shown are the latest, to be locked on Nov 2";
+
+  const mean = a => a.length ? a.reduce((s, v) => s + v, 0) / a.length : null;
+  const mB = mean(done.map(r => r.bm)), pB = mean(done.map(r => r.bp));
+  const kDone = done.filter(r => r.bk != null), kB = mean(kDone.map(r => r.bk));
+  let wm = 0, wp = 0, ties = 0;
+  done.forEach(r => { const em = Math.abs(r.y * 100 - r.eve.market), ep = Math.abs(r.y * 100 - r.eve.polls);
+    if (em < ep) wm++; else if (ep < em) wp++; else ties++; });
+  document.getElementById("stats").innerHTML = done.length
+    ? `<div><b>${done.length}</b> of ${races.length} races resolved</div>
+       <div>closer: <b class="hope">money ${wm}</b> · <b class="doubt">polls ${wp}</b>${ties ? " · ties " + ties : ""}</div>
+       <div>Brier: <b class="hope">money ${mB.toFixed(3)}</b> · <b class="doubt">polls ${pB.toFixed(3)}</b>${kB != null ? ` · <b class="kalshi">Kalshi ${kB.toFixed(3)}</b>` : ""}</div>`
+    : `<div><b>${races.length}</b> races on the board</div><div>election day <b>${ELECTION}</b></div><div>scored on <b>${EVE}</b> numbers</div>`;
+
+  renderScorecard(races, haveEve, { wm, wp, mB, pB, kB, kDone: kDone.length });
+  renderHope(races);
+  renderClosing(races, haveEve);
+}
+
+function renderScorecard(races, haveEve, agg) {
+  const order = [...races].sort((a, b) => (b.resolved - a.resolved) || (Math.abs(b.wedge) - Math.abs(a.wedge)));
+  const rows = order.map(r => {
+    const e = r.eve;
+    let closer = `<span class="pend">pending</span>`, bm = "—", bp = "—", bk = "—";
+    if (r.resolved) {
+      const em = Math.abs(r.y * 100 - e.market), ep = Math.abs(r.y * 100 - e.polls);
+      closer = em < ep ? `<span class="hope win">money</span> <span class="muted">by ${(ep - em).toFixed(1)}</span>`
+             : ep < em ? `<span class="doubt win">polls</span> <span class="muted">by ${(em - ep).toFixed(1)}</span>` : `<span class="muted">tie</span>`;
+      bm = r.bm.toFixed(3); bp = r.bp.toFixed(3); bk = r.bk == null ? "—" : r.bk.toFixed(3);
+    }
+    const outcome = r.resolved ? (r.result === "Yes" ? "happened" : "didn't") : `<span class="pend">—</span>`;
+    return `<tr>
+      <td class="name">${r.name}<div class="sub">${r.sub}</div></td>
+      <td>${outcome}</td>
+      <td class="hope">${pct(e.market)}</td>
+      <td class="doubt">${pct(e.polls)}</td>
+      <td class="kalshi">${pct(e.market_kalshi)}</td>
+      <td>${closer}</td>
+      <td class="hope">${bm}</td><td class="doubt">${bp}</td><td class="kalshi">${bk}</td>
+    </tr>`;
+  }).join("");
+  const total = agg.mB == null ? "" : `<tr class="total">
+      <td class="name">All resolved races</td><td></td><td></td><td></td><td></td>
+      <td><span class="hope">money ${agg.wm}</span> · <span class="doubt">polls ${agg.wp}</span></td>
+      <td class="hope">${agg.mB.toFixed(3)}</td><td class="doubt">${agg.pB.toFixed(3)}</td><td class="kalshi">${agg.kB == null ? "—" : agg.kB.toFixed(3)}</td></tr>`;
+  document.getElementById("scorecard").innerHTML = `
+    <div class="sec-head"><span class="sec-title">The scorecard</span>
+      <span class="muted">${haveEve ? "election-eve (Nov 2) numbers" : "latest numbers · locks on Nov 2"} · every row read from the Democratic side</span></div>
+    <div style="overflow-x:auto"><table>
+      <thead><tr><th>race</th><th>result</th><th>money said</th><th>polls said</th><th>Kalshi said</th><th>closer</th><th>Brier money</th><th>Brier polls</th><th>Brier Kalshi</th></tr></thead>
+      <tbody>${rows}${total}</tbody></table></div>
+    <p class="blurb">One race tells you little: a 60% call that doesn't happen was still a reasonable call. The tally across the board is the point, and the Brier score is the fairer tally because it rewards being confidently right and punishes being confidently wrong. Senate control is scored against the Decision Desk HQ model rather than a polling average.</p>`;
+}
+
+// --- Hope Index over time: mean |wedge| across races, by date
+function renderHope(races) {
+  const byDate = new Map();
+  races.forEach(r => (r.history || []).forEach(h => {
+    if (h.market == null || h.polls == null) return;
+    if (!byDate.has(h.date)) byDate.set(h.date, { abs: [], est: false, pos: 0, neg: 0 });
+    const o = byDate.get(h.date); o.abs.push(Math.abs(h.market - h.polls)); if (h.est) o.est = true;
+    if (h.market - h.polls > 0) o.pos++; else if (h.market - h.polls < 0) o.neg++;
+  }));
+  const pts = [...byDate.entries()].filter(([, o]) => o.abs.length >= Math.max(3, races.length - 2))
+    .map(([d, o]) => ({ date: d, v: o.abs.reduce((s, x) => s + x, 0) / o.abs.length, est: o.est, pos: o.pos, neg: o.neg }))
+    .sort((a, b) => a.date < b.date ? -1 : 1);
+  if (pts.length < 2) { document.getElementById("hope").innerHTML = ""; return; }
+
+  const W = 1000, H = 230, L = 40, R = 14, T = 16, B = 26;
+  const d0 = day(pts[0].date), span = Math.max(day(pts[pts.length - 1].date) - d0, 1);
+  const x = d => L + (day(d) - d0) / span * (W - L - R);
+  const maxV = Math.max(8, Math.ceil(Math.max(...pts.map(p => p.v)) / 2) * 2);
+  const y = v => T + (1 - v / maxV) * (H - T - B);
+  const seg = a => a.map((p, i) => (i ? "L" : "M") + x(p.date).toFixed(1) + " " + y(p.v).toFixed(1)).join(" ");
+  const ticks = []; for (let v = 0; v <= maxV; v += maxV / 4) ticks.push(v);
+  const grid = ticks.map(v => `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="rgba(242,239,230,0.08)"/><text x="${L - 6}" y="${y(v) + 3}" text-anchor="end">${v}</text>`).join("");
+  const li = pts.findIndex(p => !p.est);
+  const estPath = li > 0 ? `<path d="${seg(pts.slice(0, li + 1))}" fill="none" stroke="var(--hope)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>` : "";
+  const livePath = `<path d="${seg(pts.slice(Math.max(li, 0)))}" fill="none" stroke="var(--hope)" stroke-width="2"/>`;
+  const marker = (d, label) => (day(d) >= d0 && day(d) <= d0 + span) ? `<line x1="${x(d)}" x2="${x(d)}" y1="${T}" y2="${H - B}" stroke="rgba(242,239,230,0.25)" stroke-dasharray="2 3"/><text x="${x(d) + 4}" y="${T + 9}" fill="rgba(242,239,230,0.5)">${label}</text>` : "";
+  const launch = li > 0 ? marker(pts[li].date, "launch") : "";
+  const election = marker(ELECTION, "election");
+  const xt = [pts[0], pts[Math.floor(pts.length / 2)], pts[pts.length - 1]].map((p, i) =>
+    `<text x="${x(p.date)}" y="${H - 8}" text-anchor="${["start", "middle", "end"][i]}">${p.date.slice(5)}</text>`).join("");
+  const last = pts[pts.length - 1], first = pts[li > 0 ? li : 0];
+  document.getElementById("hope").innerHTML = `
+    <div class="sec-head"><span class="sec-title">The Hope Index over time</span>
+      <span class="muted">mean |wedge| across the board, in points · ${first.date.slice(5)}: ${first.v.toFixed(1)} → ${last.date.slice(5)}: ${last.v.toFixed(1)}</span></div>
+    <svg viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet" style="display:block">${grid}${launch}${election}${estPath}${livePath}</svg>
+    <div class="legend"><span><span class="hope">━</span> mean absolute wedge</span><span><span class="hope">┄</span> pre-launch (poll side estimated)</span></div>
+    <p class="blurb">How far apart the money and the polls were, on average, each day. A fall means the two converged; the decomposition below says which side did the moving.</p>`;
+}
+
+// --- who closed the gap: launch → eve, market movement vs poll movement, per race
+function renderClosing(races, haveEve) {
+  const rows = races.map(r => {
+    const dm = r.eve.market - r.launch.market, dp = r.eve.polls - r.launch.polls;
+    const w0 = r.launch.market - r.launch.polls, w1 = r.eve.market - r.eve.polls;
+    return { r, dm, dp, w0, w1, closed: Math.abs(w0) - Math.abs(w1) };
+  }).sort((a, b) => Math.abs(b.w0) - Math.abs(a.w0));
+  const maxAbs = Math.max(2, ...rows.flatMap(o => [Math.abs(o.dm), Math.abs(o.dp)]));
+  const sumM = rows.reduce((s, o) => s + Math.abs(o.dm), 0), sumP = rows.reduce((s, o) => s + Math.abs(o.dp), 0);
+  const closed = rows.reduce((s, o) => s + o.closed, 0);
+  const W = 1000, rowH = 34, L = 190, R = 200, T = 26;   // R leaves room for the value label and the wedge column
+  const H = T + rows.length * rowH + 10;
+  const mid = L + (W - L - R) / 2, half = (W - L - R) / 2;
+  const bx = v => mid + v / maxAbs * half;
+  const bars = rows.map((o, i) => {
+    const yy = T + i * rowH;
+    const bar = (v, y0, cls) => `<rect x="${Math.min(bx(0), bx(v)).toFixed(1)}" y="${y0}" width="${Math.abs(bx(v) - bx(0)).toFixed(1)}" height="9" rx="2" fill="var(--${cls})" opacity="0.9"/>
+      <text x="${(v >= 0 ? bx(v) + 5 : bx(v) - 5).toFixed(1)}" y="${y0 + 8}" text-anchor="${v >= 0 ? "start" : "end"}">${fmt(v)}</text>`;
+    return `<text x="${L - 10}" y="${yy + 14}" text-anchor="end" style="font-family:'Barlow Condensed';font-size:13px;fill:var(--ink);text-transform:uppercase">${o.r.name}</text>
+      ${bar(o.dm, yy + 3, "hope")}${bar(o.dp, yy + 15, "doubt")}
+      <text x="${W - 4}" y="${yy + 14}" text-anchor="end" fill="var(--ink)">${fmt(o.w0)} → ${fmt(o.w1)}</text>`;
+  }).join("");
+  document.getElementById("closing").innerHTML = `
+    <div class="sec-head"><span class="sec-title">Who closed the gap?</span>
+      <span class="muted">launch (${rows[0].r.launch.date.slice(5)}) → ${haveEve ? "election eve" : "latest"} · total movement: <span class="hope">money ${sumM.toFixed(0)} pts</span> · <span class="doubt">polls ${sumP.toFixed(0)} pts</span> · gaps ${closed >= 0 ? "narrowed" : "widened"} by ${Math.abs(closed).toFixed(1)} pts in all</span></div>
+    <svg viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet" style="display:block">
+      <line x1="${mid}" x2="${mid}" y1="${T - 6}" y2="${H - 6}" stroke="rgba(242,239,230,0.2)"/>
+      <text x="${mid}" y="${T - 10}" text-anchor="middle">◂ moved toward R &nbsp;·&nbsp; moved toward D ▸</text>
+      <text x="${W - 4}" y="${T - 10}" text-anchor="end">wedge: launch → now</text>
+      ${bars}</svg>
+    <div class="legend"><span><span class="hope">━</span> change in the market price</span><span><span class="doubt">━</span> change in the poll-implied probability</span><span>both in points, Democratic side</span></div>
+    <p class="blurb">For each race, how much the market moved and how much the poll benchmark moved between launch and election eve. If the amber bars are long and the teal ones short, the money did the adjusting; the reverse means the polls caught up to the money. The right-hand column shows the wedge itself at the start and the end.</p>`;
+}
+
+load().catch(e => { document.getElementById("updated").textContent = "could not load data.json"; console.error(e); });
+</script>
+</body>
+</html>
