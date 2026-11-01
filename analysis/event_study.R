@@ -109,6 +109,6 @@ plot(ks, avg, type = "n", ylim = range(c(avg - 2 * s_e, avg + 2 * s_e, 0), na.rm
 axis(1, at = ks); abline(h = 0, col = "grey60"); abline(v = -0.5, col = "grey75", lty = 2)
 polygon(c(ks, rev(ks)), c(avg - 2 * s_e, rev(avg + 2 * s_e)), col = "#FFB52E33", border = NA)
 lines(ks, avg, col = "#D9950F", lwd = 2.5); points(ks, avg, pch = 16, col = "#D9950F")
-text(-0.5, par("usr")[4], "release", pos = 2, cex = .75, col = "grey40")
+text(-0.5, par("usr")[3] + 0.06 * diff(par("usr")[3:4]), "release", pos = 4, cex = .75, col = "grey40")
 dev.off()
 message("Wrote analysis/output/event_{releases,summary}.csv and event_study.png")
