@@ -144,7 +144,7 @@ function renderScorecard(races, haveEve, agg) {
       <td>${outcome}</td>
       <td class="hope">${pct(e.market)}</td>
       <td class="kalshi">${pct(e.market_kalshi)}</td>
-      <td class="doubt">${pct(e.polls)}</td>
+      <td class="doubt">${pct(e.polls)}${/DDHQ/.test(r.poll_note || "") ? '<div class="sub">DDHQ model, no polling average</div>' : ""}</td>
       <td>${closer}</td>
       <td class="hope">${bm}</td><td class="kalshi">${bk}</td><td class="doubt">${bp}</td>
     </tr>`;
