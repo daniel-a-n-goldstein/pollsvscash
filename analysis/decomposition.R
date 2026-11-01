@@ -73,7 +73,7 @@ summ <- data.frame(
   net_change_in_abs_wedge = c(sum(daily$d_abs_wedge[!daily$poll_day]), sum(daily$d_abs_wedge[daily$poll_day])),
   n_days = c(sum(!daily$poll_day), sum(daily$poll_day)))
 cat("\n=== Launch to eve, all races pooled ===\n")
-cat(sprintf("Total |movement|: market %.1f pts, polls %.1f pts\n", sum(abs(by_race$d_market)), sum(abs(by_race$d_polls))))
+cat(sprintf("Total |movement| (NB: market is daily, polls are a weekly step series, so this is biased toward the market): market %.1f pts, polls %.1f pts\n", sum(abs(by_race$d_market)), sum(abs(by_race$d_polls))))
 cat(sprintf("Sum of |wedge| at launch %.1f -> at eve %.1f (closed %.1f)\n", sum(abs(by_race$wedge_start)), sum(abs(by_race$wedge_end)), sum(by_race$gap_closed)))
 cat(sprintf("Of which closed by the market: %.1f; by the polls: %.1f\n", sum(by_race$closed_by_market), sum(by_race$closed_by_polls)))
 cat("\n=== Day-to-day: change in sum |wedge| on poll-update days vs market-only days ===\n"); print(summ, row.names = FALSE)

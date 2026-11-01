@@ -65,7 +65,7 @@
     <div>
       <div class="eyebrow">polls vs. cash · scorecard</div>
       <h1 class="display">Who was <span class="cash">right</span>?</h1>
-      <p class="tagline">Each race is scored on its election-eve numbers (November 2): the market price, the poll-implied probability, and the outcome. Nothing recorded while votes were being cast or counted enters the score. Results fill in as each Polymarket contract resolves.</p>
+      <p class="tagline">Each race scored on its November 2 numbers: the Polymarket price, the poll-implied probability, and what happened. Kalshi alongside for comparison. Results fill in as the contracts resolve.</p>
     </div>
     <div class="statline" id="stats"></div>
   </div>
@@ -78,7 +78,7 @@
   <section id="closing"></section>
 </main>
 <a class="back" href="index.html">← back to the tracker</a><a class="back" href="methods.html">methods &amp; assumptions</a>
-<p class="foot">Scores: the Brier score is the squared gap between a probability and the outcome (0 or 1), averaged across races; lower is better, 0.25 is what a coin flip scores. "Closer" is the simpler version: which side's election-eve number was nearer the outcome. Rules fixed before results: <a href="methods.html">methods page</a>. Data: <a href="data.json">data.json</a>. A project by <a href="https://daniel-a-n-goldstein.com">Daniel A. N. Goldstein</a>; <a href="https://github.com/daniel-a-n-goldstein/pollsvscash">code on GitHub</a>.</p>
+<p class="foot">Brier score: the squared gap between a probability and the outcome (0 or 1), averaged across races. Lower is better; a coin flip scores 0.25. "Closer" is the simpler version: whose Nov 2 number was nearer the outcome. Scoring rules are on the <a href="methods.html">methods page</a>. Data: <a href="data.json">data.json</a>. A project by <a href="https://daniel-a-n-goldstein.com">Daniel A. N. Goldstein</a>; <a href="https://github.com/daniel-a-n-goldstein/pollsvscash">code on GitHub</a>.</p>
 </div>
 
 <script>
@@ -108,7 +108,7 @@ async function load() {
   const up = document.getElementById("updated");
   if (done.length === races.length) { up.textContent = "all " + races.length + " races resolved"; up.classList.remove("pending"); }
   else if (done.length) { up.textContent = done.length + " of " + races.length + " resolved · scoring in progress"; up.classList.remove("pending"); }
-  else up.textContent = haveEve ? "election-eve numbers locked · awaiting results" : "pre-election · numbers shown are the latest, to be locked on Nov 2";
+  else up.textContent = haveEve ? "awaiting results" : "pre-election · showing the latest numbers";
 
   const mean = a => a.length ? a.reduce((s, v) => s + v, 0) / a.length : null;
   const mB = mean(done.map(r => r.bm)), pB = mean(done.map(r => r.bp));
@@ -119,7 +119,7 @@ async function load() {
   document.getElementById("stats").innerHTML = done.length
     ? `<div><b>${done.length}</b> of ${races.length} races resolved</div>
        <div>closer: <b class="hope">money ${wm}</b> · <b class="doubt">polls ${wp}</b>${ties ? " · ties " + ties : ""}</div>
-       <div>Brier: <b class="hope">money ${mB.toFixed(3)}</b> · <b class="doubt">polls ${pB.toFixed(3)}</b>${kB != null ? ` · <b class="kalshi">Kalshi ${kB.toFixed(3)}</b>` : ""}</div>`
+       <div>Brier: <b class="hope">money ${mB.toFixed(3)}</b>${kB != null ? ` · <b class="kalshi">Kalshi ${kB.toFixed(3)}</b>` : ""} · <b class="doubt">polls ${pB.toFixed(3)}</b></div>`
     : `<div><b>${races.length}</b> races on the board</div><div>election day <b>${ELECTION}</b></div><div>scored on <b>${EVE}</b> numbers</div>`;
 
   renderScorecard(races, haveEve, { wm, wp, mB, pB, kB, kDone: kDone.length });
@@ -143,30 +143,30 @@ function renderScorecard(races, haveEve, agg) {
       <td class="name">${r.name}<div class="sub">${r.sub}</div></td>
       <td>${outcome}</td>
       <td class="hope">${pct(e.market)}</td>
-      <td class="doubt">${pct(e.polls)}</td>
       <td class="kalshi">${pct(e.market_kalshi)}</td>
+      <td class="doubt">${pct(e.polls)}</td>
       <td>${closer}</td>
-      <td class="hope">${bm}</td><td class="doubt">${bp}</td><td class="kalshi">${bk}</td>
+      <td class="hope">${bm}</td><td class="kalshi">${bk}</td><td class="doubt">${bp}</td>
     </tr>`;
   }).join("");
   const total = agg.mB == null ? "" : `<tr class="total">
       <td class="name">All resolved races</td><td></td><td></td><td></td><td></td>
       <td><span class="hope">money ${agg.wm}</span> · <span class="doubt">polls ${agg.wp}</span></td>
-      <td class="hope">${agg.mB.toFixed(3)}</td><td class="doubt">${agg.pB.toFixed(3)}</td><td class="kalshi">${agg.kB == null ? "—" : agg.kB.toFixed(3)}</td></tr>`;
+      <td class="hope">${agg.mB.toFixed(3)}</td><td class="kalshi">${agg.kB == null ? "—" : agg.kB.toFixed(3)}</td><td class="doubt">${agg.pB.toFixed(3)}</td></tr>`;
   document.getElementById("scorecard").innerHTML = `
     <div class="sec-head"><span class="sec-title">The scorecard</span>
-      <span class="muted">${haveEve ? "election-eve (Nov 2) numbers" : "latest numbers · locks on Nov 2"} · every row read from the Democratic side</span></div>
+      <span class="muted">${haveEve ? "Nov 2 numbers" : "latest numbers"} · every row read from the Democratic side</span></div>
     <div style="overflow-x:auto"><table>
-      <thead><tr><th>race</th><th>result</th><th>money said</th><th>polls said</th><th>Kalshi said</th><th>closer</th><th>Brier money</th><th>Brier polls</th><th>Brier Kalshi</th></tr></thead>
+      <thead><tr><th>race</th><th>result</th><th class="hope">Polymarket<br><span style="letter-spacing:0;text-transform:none">the money, as scored</span></th><th class="kalshi">Kalshi</th><th class="doubt">polls</th><th>closer</th><th class="hope">Brier · Polymarket</th><th class="kalshi">Brier · Kalshi</th><th class="doubt">Brier · polls</th></tr></thead>
       <tbody>${rows}${total}</tbody></table></div>
-    <p class="blurb">One race tells you little: a 60% call that doesn't happen was still a reasonable call. The tally across the board is the point, and the Brier score is the fairer tally because it rewards being confidently right and punishes being confidently wrong. Senate control is scored against the Decision Desk HQ model rather than a polling average.</p>`;
+`;
 }
 
 // --- Hope Index over time: mean |wedge| across races, by date
 function renderHope(races) {
   const byDate = new Map();
   races.forEach(r => (r.history || []).forEach(h => {
-    if (h.market == null || h.polls == null) return;
+    if (h.market == null || h.polls == null || h.date > EVE) return;   // stop at Nov 2: after that prices resolve to 0/100 and the mean gap means nothing
     if (!byDate.has(h.date)) byDate.set(h.date, { abs: [], est: false, pos: 0, neg: 0 });
     const o = byDate.get(h.date); o.abs.push(Math.abs(h.market - h.polls)); if (h.est) o.est = true;
     if (h.market - h.polls > 0) o.pos++; else if (h.market - h.polls < 0) o.neg++;
@@ -195,10 +195,10 @@ function renderHope(races) {
   const last = pts[pts.length - 1], first = pts[li > 0 ? li : 0];
   document.getElementById("hope").innerHTML = `
     <div class="sec-head"><span class="sec-title">The Hope Index over time</span>
-      <span class="muted">mean |wedge| across the board, in points · ${first.date.slice(5)}: ${first.v.toFixed(1)} → ${last.date.slice(5)}: ${last.v.toFixed(1)}</span></div>
+      <span class="muted">mean |wedge| across the board, in points, through Nov 2 · ${first.date.slice(5)}: ${first.v.toFixed(1)} → ${last.date.slice(5)}: ${last.v.toFixed(1)}</span></div>
     <svg viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet" style="display:block">${grid}${launch}${election}${estPath}${livePath}</svg>
     <div class="legend"><span><span class="hope">━</span> mean absolute wedge</span><span><span class="hope">┄</span> pre-launch (poll side estimated)</span></div>
-    <p class="blurb">How far apart the money and the polls were, on average, each day. A fall means the two converged; the decomposition below says which side did the moving.</p>`;
+    <p class="blurb">How far apart the money and the polls were on an average day. The poll side updates weekly, so the week-to-week pattern is the one to read.</p>`;
 }
 
 // --- who closed the gap: launch → eve, market movement vs poll movement, per race
@@ -209,7 +209,6 @@ function renderClosing(races, haveEve) {
     return { r, dm, dp, w0, w1, closed: Math.abs(w0) - Math.abs(w1) };
   }).sort((a, b) => Math.abs(b.w0) - Math.abs(a.w0));
   const maxAbs = Math.max(2, ...rows.flatMap(o => [Math.abs(o.dm), Math.abs(o.dp)]));
-  const sumM = rows.reduce((s, o) => s + Math.abs(o.dm), 0), sumP = rows.reduce((s, o) => s + Math.abs(o.dp), 0);
   const closed = rows.reduce((s, o) => s + o.closed, 0);
   const W = 1000, rowH = 34, L = 190, R = 200, T = 26;   // R leaves room for the value label and the wedge column
   const H = T + rows.length * rowH + 10;
@@ -225,14 +224,14 @@ function renderClosing(races, haveEve) {
   }).join("");
   document.getElementById("closing").innerHTML = `
     <div class="sec-head"><span class="sec-title">Who closed the gap?</span>
-      <span class="muted">launch (${rows[0].r.launch.date.slice(5)}) → ${haveEve ? "election eve" : "latest"} · total movement: <span class="hope">money ${sumM.toFixed(0)} pts</span> · <span class="doubt">polls ${sumP.toFixed(0)} pts</span> · gaps ${closed >= 0 ? "narrowed" : "widened"} by ${Math.abs(closed).toFixed(1)} pts in all</span></div>
+      <span class="muted">launch (${rows[0].r.launch.date.slice(5)}) → ${haveEve ? "Nov 2" : "latest"} · gaps ${closed >= 0 ? "narrowed" : "widened"} by ${Math.abs(closed).toFixed(1)} pts in all</span></div>
     <svg viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet" style="display:block">
       <line x1="${mid}" x2="${mid}" y1="${T - 6}" y2="${H - 6}" stroke="rgba(242,239,230,0.2)"/>
       <text x="${mid}" y="${T - 10}" text-anchor="middle">◂ moved toward R &nbsp;·&nbsp; moved toward D ▸</text>
       <text x="${W - 4}" y="${T - 10}" text-anchor="end">wedge: launch → now</text>
       ${bars}</svg>
     <div class="legend"><span><span class="hope">━</span> change in the market price</span><span><span class="doubt">━</span> change in the poll-implied probability</span><span>both in points, Democratic side</span></div>
-    <p class="blurb">For each race, how much the market moved and how much the poll benchmark moved between launch and election eve. If the amber bars are long and the teal ones short, the money did the adjusting; the reverse means the polls caught up to the money. The right-hand column shows the wedge itself at the start and the end.</p>`;
+    <p class="blurb">Net change from launch to Nov 2: how far the Polymarket price moved and how far the poll benchmark moved. The market is daily and the poll benchmark is a weekly average, so this compares start to end, not day-to-day movement. Right-hand column: the wedge at the start and the end.</p>`;
 }
 
 load().catch(e => { document.getElementById("updated").textContent = "could not load data.json"; console.error(e); });
