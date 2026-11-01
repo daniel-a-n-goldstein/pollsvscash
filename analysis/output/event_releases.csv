@@ -1,0 +1,43 @@
+"race","pollster","release","field_end","poll_margin","bench_margin","surprise","pre","day","post"
+"ak-senate","Rasmussen Reports",2026-10-26,"2026/10/15",-1,1.2,-2.2,-1,1,3.5
+"ak-senate","Alaska Survey Research**",2026-10-31,"2026/10/29",2,1.2,0.8,-5,4,0
+"house-dem","Rasmussen Reports",2026-10-26,"2026/10/21",5,8.1,-3.1,0.5,0.5,-1
+"house-dem","Morning Consult",2026-10-26,"2026/10/25",7,8.1,-1.1,0.5,0.5,-1
+"house-dem","Reuters/Ipsos",2026-10-27,"2026/10/26",9,8.1,0.9,-1,1,1
+"house-dem","NPR/PBS/Marist",2026-10-27,"2026/10/25",8,8.1,-0.1,1,-1,-1
+"house-dem","Economist/YouGov",2026-10-27,"2026/10/26",9,8.1,0.9,-1,1,1
+"house-dem","Harvard-Harris",2026-10-28,"2026/10/26",4,8.1,-4.1,0,-1,-2
+"house-dem","Deseret News/Morning Consult",2026-10-28,"2026/10/20",6,8.1,-2.1,0,-1,-2
+"house-dem","Cygnal",2026-10-28,"2026/10/24",9,8.1,0.9,0,1,2
+"house-dem","Tufts University**",2026-10-30,"2026/10/27",12,8.1,3.9,1,2,0
+"house-dem","THP/MM**",2026-10-30,"2026/10/29",13,8.1,4.9,1,2,0
+"house-dem","Emerson",2026-10-30,"2026/10/26",10,8.1,1.9,1,2,0
+"house-dem","Reuters/Ipsos",2026-10-31,"2026/10/28",6,8.1,-2.1,-2,-1,0
+"house-dem","Big Data Poll",2026-11-01,"2026/10/30",12,8.1,3.9,2,0,0
+"house-dem","NBC News",2026-11-01,"2026/10/30",7,8.1,-1.1,-2,0,0
+"ia-senate","Echelon Insights**",2026-10-29,"2026/10/23",2,-0.6,2.6,2,1,-2
+"ia-senate","co/efficient*",2026-10-29,"2026/10/28",-2,-0.6,-1.4,-2,-1,2
+"me-senate","Echelon Insights**",2026-10-27,"2026/10/23",7,1.4,5.6,-8,3.5,7
+"me-senate","Marist",2026-10-27,"2026/10/25",2,1.4,0.6,-8,3.5,7
+"me-senate","CNN",2026-10-29,"2026/10/26",4,1.4,2.6,-1,7,-2
+"me-senate","Data for Progress",2026-10-31,"2026/10/26",5,1.4,3.6,7,-2,0
+"mi-senate","Michigan State/YouGov",2026-10-27,"2026/10/19",2,1.9,0.1,-3.5,1,7
+"mi-senate","Detroit News/Glengariff",2026-10-27,"2026/10/22",6,1.9,4.1,-3.5,1,7
+"mi-senate","CBS News/Mitchell",2026-10-29,"2026/10/27",7,1.9,5.1,-2,7,5
+"mi-senate","CNN",2026-10-29,"2026/10/27",7,1.9,5.1,-2,7,5
+"mi-senate","Michigan St./DPS",2026-10-31,"2026/10/23",8,1.9,6.1,8,5,0
+"mi-senate","Rasmussen Reports*",2026-10-31,"2026/10/29",5,1.9,3.1,8,5,0
+"mi-senate","Data for Progress*",2026-10-31,"2026/10/26",4,1.9,2.1,8,5,0
+"nc-senate","Quantus Insights",2026-10-27,"2026/10/25",8,10.6,-2.6,-0.299999999999997,-0.200000000000003,-0.5
+"nc-senate","High Point University*",2026-10-29,"2026/10/20",14,10.6,3.4,0.299999999999997,0.5,0
+"nh-senate","Rasmussen Reports*",2026-10-27,"2026/10/23",6,6.5,-0.5,0,1,-2.5
+"nh-senate","UMass Lowell*",2026-10-29,"2026/10/19",7,6.5,0.5,-1,2.5,0.5
+"oh-senate","Echelon Insights**",2026-10-28,"2026/10/23",0,3.3,-3.3,-2,1.5,-4.5
+"oh-senate","Suffolk University*",2026-10-28,"2026/10/26",3,3.3,-0.3,-2,1.5,-4.5
+"tx-senate","Univision/YouGov",2026-10-27,"2026/10/21",5,1.5,3.5,-2,4,3
+"tx-senate","Heritage Action/Cor Strategies**",2026-10-29,"2026/10/15",4,1.5,2.5,5,3,-1
+"tx-senate","254 Labs/YouGov Blue**",2026-10-29,"2026/10/26",8,1.5,6.5,5,3,-1
+"tx-senate","CNN",2026-10-29,"2026/10/27",6,1.5,4.5,5,3,-1
+"tx-senate","TSU/YouGov*",2026-10-29,"2026/10/25",2,1.5,0.5,5,3,-1
+"tx-senate","Quantus Insights*",2026-10-30,"2026/10/28",-1,1.5,-2.5,-5,-2,1
+"tx-senate","Data for Progress*",2026-10-31,"2026/10/26",4,1.5,2.5,4,-1,0
