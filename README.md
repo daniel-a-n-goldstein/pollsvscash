@@ -16,8 +16,10 @@ pipeline/races.csv        which markets are tracked (Polymarket slugs) and which
 pipeline/update_polls.R   weekly: fetches RealClearPolling averages into pipeline/polls.csv
 pipeline/polls_manual.csv benchmarks that have no RCP average (chamber control uses a model probability)
 pipeline/update_data.R    daily: pulls market prices, computes the wedge, writes docs/data.json
-docs/                     the site (static HTML, served by GitHub Pages)
-.github/workflows/        daily market run (morning UTC, afternoon backstop) and weekly poll refresh (Sundays)
+pipeline/archive_polls.R  daily: snapshots the individual polls behind each RCP average into pipeline/polls_raw/
+docs/                     the site: index.html (tracker), methods.html, results.html (post-election scorecard)
+analysis/                 post-election scripts: who closed the gap, and an event study around poll releases
+.github/workflows/        daily market run (morning UTC, afternoon backstop), weekly poll refresh (Sundays), manual analysis run
 ```
 
 - **Market prices** are the midpoint of the best bid and best ask, which are read once a

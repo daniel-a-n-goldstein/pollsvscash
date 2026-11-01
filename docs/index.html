@@ -25,6 +25,9 @@
   header { border-bottom: 1px solid var(--hair); padding: 26px 0 18px; }
   .masthead { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 10px; }
   .eyebrow { font-size: 11px; letter-spacing: .22em; color: var(--muted); text-transform: uppercase; }
+  .eyebrow a { color: var(--muted); text-decoration: none; border-bottom: 1px dotted rgba(147,176,164,.5); }
+  .eyebrow a:hover { color: var(--ink); }
+  .eyebrow b { color: var(--ink); font-weight: 500; }
   h1 { font-size: clamp(44px, 7vw, 72px); font-weight: 700; line-height: .95; margin-top: 6px; }
   h1 .cash { color: var(--hope); text-shadow: 0 0 22px rgba(255,181,46,.45); }
   .tagline { font-size: 12.5px; color: var(--muted); margin-top: 10px; max-width: 620px; line-height: 1.55; }
@@ -85,7 +88,7 @@
 <header><div class="wrap">
   <div class="masthead">
     <div>
-      <div class="eyebrow">polls vs. cash · updated daily</div>
+      <div class="eyebrow">polls vs. cash · <b>tracker</b> · <a href="methods.html">methods</a> · <a href="results.html">scorecard</a></div>
       <h1 class="display">The <span class="cash">Hope</span> Index</h1>
       <p class="tagline">The audacity to hope the polls are wrong. People are putting real money on races that are polled almost daily, and sometimes the money and the polls disagree. Polls are cheap talk. Bets cost something. Is the money real sentiment, or partisan cheerleading with a wallet? The Hope Index tracks the spread by race until November. Then we'll see where the smart money was.</p>
       <p class="tagline" style="margin-top:6px">Every race is read from the Democratic side. Amber: the money is more Democratic than the polls. Teal: more Republican.</p>
@@ -187,31 +190,16 @@ function renderRecord(races) {
   const el = document.getElementById("record");
   if (!done.length) { el.style.display = "none"; return; }
   let money = 0, polls = 0;
-  const rows = done.map(r => {
+  done.forEach(r => {
     const eve = [...r.history].reverse().find(h => h.date <= EVE) || r.history[r.history.length - 1];
     const y = r.result === "Yes" ? 100 : 0;
     const em = Math.abs(y - eve.market), ep = Math.abs(y - eve.polls);
-    const winner = em < ep ? "money" : (ep < em ? "polls" : "tie");
-    if (winner === "money") money++; else if (winner === "polls") polls++;
-    return `<tr>
-      <td class="display" style="font-size:16px;font-weight:600">${r.name}</td>
-      <td>${r.result === "Yes" ? "happened" : "didn't"}</td>
-      <td style="color:var(--hope)">${eve.market}%</td>
-      <td style="color:var(--doubt)">${eve.polls}%</td>
-      <td style="color:${winner === "money" ? "var(--hope)" : winner === "polls" ? "var(--doubt)" : "var(--muted)"};font-weight:600">${winner === "tie" ? "tie" : winner + " (by " + Math.abs(em - ep).toFixed(1) + ")"}</td>
-    </tr>`;
-  }).join("");
+    if (em < ep) money++; else if (ep < em) polls++;
+  });
   el.style.display = "block";
   el.innerHTML = `
-    <div class="sec-head"><span class="sec-title">Track record</span>
-      <span class="muted">election-eve numbers vs. what happened · money ${money} – polls ${polls}</span></div>
-    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:11.5px">
-      <thead><tr style="color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:10px">
-        <th style="text-align:left;padding:8px 14px">race</th><th style="text-align:left;padding:8px 14px">result</th>
-        <th style="text-align:left;padding:8px 14px">money said</th><th style="text-align:left;padding:8px 14px">polls said</th>
-        <th style="text-align:left;padding:8px 14px">closer</th></tr></thead>
-      <tbody>${rows.replace(/<td/g, '<td style="padding:8px 14px;border-top:1px solid var(--hair)"').replace(/<td style="padding:8px 14px;border-top:1px solid var\(--hair\)" style=/g, '<td style="padding:8px 14px;border-top:1px solid var(--hair);')}</tbody></table></div>
-    <p class="detail-blurb" style="margin:8px 14px 14px">"Closer" compares each side's election-eve probability to the outcome (0 or 100). One race tells you little; the tally across the board is the point. <a href="results.html" style="color:var(--doubt)">Full scorecard →</a></p>`;
+    <div class="sec-head"><span class="sec-title">Scorecard so far</span>
+      <span class="muted">${done.length} of ${races.length} resolved · closer on Nov 2: <b style="color:var(--hope)">money ${money}</b> · <b style="color:var(--doubt)">polls ${polls}</b> · <a href="results.html" style="color:var(--doubt)">full scorecard →</a></span></div>`;
 }
 
 function renderDetail(r) {

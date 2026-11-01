@@ -26,6 +26,9 @@
   header { border-bottom: 1px solid var(--hair); padding: 26px 0 18px; }
   .masthead { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 10px; }
   .eyebrow { font-size: 11px; letter-spacing: .22em; color: var(--muted); text-transform: uppercase; }
+  .eyebrow a { color: var(--muted); text-decoration: none; border-bottom: 1px dotted rgba(147,176,164,.5); }
+  .eyebrow a:hover { color: var(--ink); }
+  .eyebrow b { color: var(--ink); font-weight: 500; }
   h1 { font-size: clamp(40px, 6vw, 64px); font-weight: 700; line-height: .95; margin-top: 6px; }
   h1 .cash { color: var(--hope); text-shadow: 0 0 22px rgba(255,181,46,.45); }
   .tagline { font-size: 12.5px; color: var(--muted); margin-top: 10px; max-width: 640px; line-height: 1.55; }
@@ -50,6 +53,12 @@
   .hope { color: var(--hope); } .doubt { color: var(--doubt); } .kalshi { color: var(--kalshi); }
   .win { font-weight: 600; }
   .pend { color: var(--muted); font-style: italic; }
+  @media (max-width: 719px) {   /* phones: Polymarket, polls, closer; the Brier and Kalshi columns are on wider screens */
+    .brier, .kalshi, .sub, th span { display: none; }
+    td { white-space: normal; }
+    th, td { padding: 8px 6px; font-size: 10.5px; }
+    td.name { font-size: 14px; min-width: 96px; }
+  }
 
   svg text { font-family: 'IBM Plex Mono', monospace; font-size: 10px; fill: var(--muted); }
   .legend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 0 14px 14px; font-size: 10.5px; color: var(--muted); }
@@ -63,7 +72,7 @@
 <header><div class="wrap">
   <div class="masthead">
     <div>
-      <div class="eyebrow">polls vs. cash · scorecard</div>
+      <div class="eyebrow">polls vs. cash · <a href="index.html">tracker</a> · <a href="methods.html">methods</a> · <b>scorecard</b></div>
       <h1 class="display">Who was <span class="cash">right</span>?</h1>
       <p class="tagline">Each race scored on its November 2 numbers: the Polymarket price, the poll-implied probability, and what happened. Kalshi alongside for comparison. Results fill in as the contracts resolve.</p>
     </div>
@@ -146,18 +155,18 @@ function renderScorecard(races, haveEve, agg) {
       <td class="kalshi">${pct(e.market_kalshi)}</td>
       <td class="doubt">${pct(e.polls)}${/DDHQ/.test(r.poll_note || "") ? '<div class="sub">DDHQ model, no polling average</div>' : ""}</td>
       <td>${closer}</td>
-      <td class="hope">${bm}</td><td class="kalshi">${bk}</td><td class="doubt">${bp}</td>
+      <td class="hope brier">${bm}</td><td class="kalshi brier">${bk}</td><td class="doubt brier">${bp}</td>
     </tr>`;
   }).join("");
   const total = agg.mB == null ? "" : `<tr class="total">
       <td class="name">All resolved races</td><td></td><td></td><td></td><td></td>
       <td><span class="hope">money ${agg.wm}</span> · <span class="doubt">polls ${agg.wp}</span></td>
-      <td class="hope">${agg.mB.toFixed(3)}</td><td class="kalshi">${agg.kB == null ? "—" : agg.kB.toFixed(3)}</td><td class="doubt">${agg.pB.toFixed(3)}</td></tr>`;
+      <td class="hope brier">${agg.mB.toFixed(3)}</td><td class="kalshi brier">${agg.kB == null ? "—" : agg.kB.toFixed(3)}</td><td class="doubt brier">${agg.pB.toFixed(3)}</td></tr>`;
   document.getElementById("scorecard").innerHTML = `
     <div class="sec-head"><span class="sec-title">The scorecard</span>
       <span class="muted">${haveEve ? "Nov 2 numbers" : "latest numbers"} · every row read from the Democratic side</span></div>
     <div style="overflow-x:auto"><table>
-      <thead><tr><th>race</th><th>result</th><th class="hope">Polymarket<br><span style="letter-spacing:0;text-transform:none">the money, as scored</span></th><th class="kalshi">Kalshi</th><th class="doubt">polls</th><th>closer</th><th class="hope">Brier · Polymarket</th><th class="kalshi">Brier · Kalshi</th><th class="doubt">Brier · polls</th></tr></thead>
+      <thead><tr><th>race</th><th>result</th><th class="hope">Polymarket<br><span style="letter-spacing:0;text-transform:none">the money, as scored</span></th><th class="kalshi">Kalshi</th><th class="doubt">polls</th><th>closer</th><th class="hope brier">Brier · Polymarket</th><th class="kalshi brier">Brier · Kalshi</th><th class="doubt brier">Brier · polls</th></tr></thead>
       <tbody>${rows}${total}</tbody></table></div>
 `;
 }

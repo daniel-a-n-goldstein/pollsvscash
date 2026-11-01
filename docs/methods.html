@@ -16,6 +16,9 @@
   .display { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; }
   header { border-bottom: 1px solid var(--hair); padding: 26px 0 18px; }
   .eyebrow { font-size: 11px; letter-spacing: .22em; color: var(--muted); text-transform: uppercase; }
+  .eyebrow a { color: var(--muted); text-decoration: none; border-bottom: 1px dotted rgba(147,176,164,.5); }
+  .eyebrow a:hover { color: var(--ink); }
+  .eyebrow b { color: var(--ink); font-weight: 500; }
   h1 { font-size: clamp(34px, 6vw, 54px); font-weight: 700; line-height: .95; margin-top: 6px; }
   h1 .cash { color: var(--hope); text-shadow: 0 0 22px rgba(255,181,46,.45); }
   a { color: var(--doubt); }
@@ -40,9 +43,8 @@
 <body><div class="wrap">
 
 <header>
-  <div class="eyebrow">methods &amp; assumptions · one page</div>
-  <h1 class="display">The <span class="cash">Hope</span> Index</h1>
-  <div class="eyebrow" style="margin-top:6px">polls vs. cash</div>
+  <div class="eyebrow">polls vs. cash · <a href="index.html">tracker</a> · <b>methods</b> · <a href="results.html">scorecard</a></div>
+  <h1 class="display">Methods &amp; <span class="cash">assumptions</span></h1>
 </header>
 
 <h2>What is the wedge?</h2>
@@ -100,6 +102,14 @@ mean margin of the RCP-listed polls whose field period ended in the previous 28 
 recent three polls whenever fewer than three fall in the window, and convert it with the same probit. It tracks RCP's current average to within
 about a point, but the pre-launch wedges should be read loosely. From launch onward, every point is a daily snapshot with RCP's own number.</td></tr>
 </table>
+
+<h2>Scoring</h2>
+<p>Each race is scored on its November 2 numbers, so nothing from election day itself enters the score. A race
+resolves the way its Polymarket contract resolves (Peltola's is a candidate market; Senate control follows the
+majority when the new Senate is seated). The <a href="results.html">scorecard</a> then shows two things per race:
+which side was closer to the outcome, and the Brier score, which is the squared gap between a probability and the
+outcome, averaged across races. Lower is better. The Brier score penalizes a confident miss more than a hedged one,
+which is the point of using it.</p>
 
 <p class="m" style="margin-top:26px">NOTE: this is a data project by <a href="https://daniel-a-n-goldstein.com">Daniel A. N. Goldstein</a> about measuring public sentiment, not investment advice. <a href="https://github.com/daniel-a-n-goldstein/pollsvscash">Code &amp; data on GitHub.</a></p>
 <a class="back" href="index.html">← back to the tracker</a>
