@@ -1,0 +1,34 @@
+name: Run post-election analysis (manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analysis:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install jsonlite
+        run: Rscript -e 'install.packages("jsonlite")'
+
+      - name: Who closed the gap (decomposition)
+        run: Rscript analysis/decomposition.R
+
+      - name: Does the money move before the poll (event study)
+        run: Rscript analysis/event_study.R
+
+      - name: Commit outputs
+        run: |
+          git config user.name "pollsvscash-bot"
+          git config user.email "actions@github.com"
+          git add analysis/output
+          git diff --cached --quiet || git commit -m "Analysis outputs $(date -u +%F)"
+          git push
