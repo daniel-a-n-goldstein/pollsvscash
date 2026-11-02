@@ -1,6 +1,6 @@
 # Election eve update — November 2, 2026
 
-*Posted on LinkedIn. Numbers are as of that morning's board; the scored numbers are the last point recorded on November 2.*
+*(Numbers are as of that morning's board; the scored numbers are the last point recorded on November 2.)*
 
 Election eve update on The Hope Index
 
