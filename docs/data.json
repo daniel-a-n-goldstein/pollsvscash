@@ -771,8 +771,8 @@
       "poll_note": "RCP average 10/9 - 10/30: Democrats +8.9 (Democrats vs Republicans), fetched 2026-11-02",
       "result": {},
       "wedge": -0.2,
-      "market_kalshi": 94,
-      "wedge_kalshi": -0.7,
+      "market_kalshi": 94.2,
+      "wedge_kalshi": -0.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -1570,9 +1570,9 @@
           "polls": 94.7,
           "bid": 94,
           "ask": 95,
-          "market_kalshi": 94,
-          "kalshi_bid": 94,
-          "kalshi_ask": 94.1
+          "market_kalshi": 94.2,
+          "kalshi_bid": 94.2,
+          "kalshi_ask": 94.3
         }
       ]
     },
@@ -1586,8 +1586,8 @@
       "poll_note": "RCP average 9/29 - 10/29: Cooper +10.8 (Cooper vs Whatley), fetched 2026-11-02",
       "result": {},
       "wedge": 0.4,
-      "market_kalshi": 97.3,
-      "wedge_kalshi": -0.2,
+      "market_kalshi": 97.4,
+      "wedge_kalshi": -0.1,
       "history": [
         {
           "date": "2026-08-15",
@@ -2384,10 +2384,10 @@
           "market": 97.9,
           "polls": 97.5,
           "bid": 97.8,
-          "ask": 98,
-          "market_kalshi": 97.3,
-          "kalshi_bid": 97.3,
-          "kalshi_ask": 97.4
+          "ask": 97.9,
+          "market_kalshi": 97.4,
+          "kalshi_bid": 97.4,
+          "kalshi_ask": 97.5
         }
       ]
     },
@@ -2395,14 +2395,14 @@
       "id": "ga-senate",
       "name": "Ossoff (D) holds GA",
       "sub": "GA Senate · Ossoff vs Collins",
-      "market": 96.8,
+      "market": 97.2,
       "polls": 93.2,
       "sigma": 5.5,
       "poll_note": "RCP average 9/21 - 10/17: Ossoff +8.2 (Ossoff vs Collins), fetched 2026-11-02",
       "result": {},
-      "wedge": 3.6,
-      "market_kalshi": 96.9,
-      "wedge_kalshi": 3.7,
+      "wedge": 4,
+      "market_kalshi": 97.2,
+      "wedge_kalshi": 4,
       "history": [
         {
           "date": "2026-08-15",
@@ -3196,13 +3196,13 @@
         },
         {
           "date": "2026-11-02",
-          "market": 96.8,
+          "market": 97.2,
           "polls": 93.2,
-          "bid": 96.7,
-          "ask": 96.9,
-          "market_kalshi": 96.9,
-          "kalshi_bid": 96.9,
-          "kalshi_ask": 97
+          "bid": 97.1,
+          "ask": 97.2,
+          "market_kalshi": 97.2,
+          "kalshi_bid": 97.1,
+          "kalshi_ask": 97.2
         }
       ]
     },
@@ -4846,8 +4846,8 @@
       "poll_note": "RCP average 9/28 - 10/31: Pappas +8.0 (Pappas vs Sununu), fetched 2026-11-02",
       "result": {},
       "wedge": 1.8,
-      "market_kalshi": 93.6,
-      "wedge_kalshi": 0.9,
+      "market_kalshi": 93.8,
+      "wedge_kalshi": 1.1,
       "history": [
         {
           "date": "2026-08-15",
@@ -5635,9 +5635,9 @@
           "polls": 92.7,
           "bid": 94,
           "ask": 95,
-          "market_kalshi": 93.6,
-          "kalshi_bid": 93.5,
-          "kalshi_ask": 93.6
+          "market_kalshi": 93.8,
+          "kalshi_bid": 93.7,
+          "kalshi_ask": 94
         }
       ]
     },
@@ -7275,14 +7275,14 @@
       "id": "ia-senate",
       "name": "Turek (D) flips IA",
       "sub": "IA Senate · Turek vs Hinson",
-      "market": 47.5,
+      "market": 49.5,
       "polls": 47.8,
       "sigma": 5.5,
       "poll_note": "RCP average 10/9 - 11/1: Turek -0.3 (Turek vs Hinson), fetched 2026-11-02",
       "result": {},
-      "wedge": -0.3,
-      "market_kalshi": 49.5,
-      "wedge_kalshi": 1.7,
+      "wedge": 1.7,
+      "market_kalshi": 50.5,
+      "wedge_kalshi": 2.7,
       "history": [
         {
           "date": "2026-08-15",
@@ -8076,13 +8076,13 @@
         },
         {
           "date": "2026-11-02",
-          "market": 47.5,
+          "market": 49.5,
           "polls": 47.8,
-          "bid": 47,
-          "ask": 48,
-          "market_kalshi": 49.5,
-          "kalshi_bid": 49,
-          "kalshi_ask": 50
+          "bid": 49,
+          "ask": 50,
+          "market_kalshi": 50.5,
+          "kalshi_bid": 50,
+          "kalshi_ask": 51
         }
       ]
     },
