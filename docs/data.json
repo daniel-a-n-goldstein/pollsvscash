@@ -771,8 +771,8 @@
       "poll_note": "RCP average 10/9 - 10/30: Democrats +8.9 (Democrats vs Republicans), fetched 2026-11-02",
       "result": {},
       "wedge": -0.2,
-      "market_kalshi": 93.8,
-      "wedge_kalshi": -0.9,
+      "market_kalshi": 94,
+      "wedge_kalshi": -0.7,
       "history": [
         {
           "date": "2026-08-15",
@@ -1570,9 +1570,9 @@
           "polls": 94.7,
           "bid": 94,
           "ask": 95,
-          "market_kalshi": 93.8,
-          "kalshi_bid": 93.7,
-          "kalshi_ask": 93.9
+          "market_kalshi": 94,
+          "kalshi_bid": 94,
+          "kalshi_ask": 94.1
         }
       ]
     },
@@ -1580,14 +1580,14 @@
       "id": "nc-senate",
       "name": "Cooper (D) flips NC",
       "sub": "NC Senate · Cooper vs Whatley",
-      "market": 98,
+      "market": 97.9,
       "polls": 97.5,
       "sigma": 5.5,
       "poll_note": "RCP average 9/29 - 10/29: Cooper +10.8 (Cooper vs Whatley), fetched 2026-11-02",
       "result": {},
-      "wedge": 0.5,
-      "market_kalshi": 97.2,
-      "wedge_kalshi": -0.3,
+      "wedge": 0.4,
+      "market_kalshi": 97.3,
+      "wedge_kalshi": -0.2,
       "history": [
         {
           "date": "2026-08-15",
@@ -2381,13 +2381,13 @@
         },
         {
           "date": "2026-11-02",
-          "market": 98,
+          "market": 97.9,
           "polls": 97.5,
-          "bid": 97.9,
+          "bid": 97.8,
           "ask": 98,
-          "market_kalshi": 97.2,
-          "kalshi_bid": 97.2,
-          "kalshi_ask": 97.3
+          "market_kalshi": 97.3,
+          "kalshi_bid": 97.3,
+          "kalshi_ask": 97.4
         }
       ]
     },
@@ -2395,12 +2395,12 @@
       "id": "ga-senate",
       "name": "Ossoff (D) holds GA",
       "sub": "GA Senate · Ossoff vs Collins",
-      "market": 97,
+      "market": 96.8,
       "polls": 93.2,
       "sigma": 5.5,
       "poll_note": "RCP average 9/21 - 10/17: Ossoff +8.2 (Ossoff vs Collins), fetched 2026-11-02",
       "result": {},
-      "wedge": 3.8,
+      "wedge": 3.6,
       "market_kalshi": 96.9,
       "wedge_kalshi": 3.7,
       "history": [
@@ -3196,10 +3196,10 @@
         },
         {
           "date": "2026-11-02",
-          "market": 97,
+          "market": 96.8,
           "polls": 93.2,
-          "bid": 96.9,
-          "ask": 97.1,
+          "bid": 96.7,
+          "ask": 96.9,
           "market_kalshi": 96.9,
           "kalshi_bid": 96.9,
           "kalshi_ask": 97
@@ -4031,8 +4031,8 @@
       "poll_note": "RCP average 10/15 - 11/1: El-Sayed +5.3 (El-Sayed vs Rogers), fetched 2026-11-02",
       "result": {},
       "wedge": -3.7,
-      "market_kalshi": 78.5,
-      "wedge_kalshi": -4.7,
+      "market_kalshi": 77.5,
+      "wedge_kalshi": -5.7,
       "history": [
         {
           "date": "2026-08-15",
@@ -4830,9 +4830,9 @@
           "polls": 83.2,
           "bid": 79,
           "ask": 80,
-          "market_kalshi": 78.5,
-          "kalshi_bid": 78,
-          "kalshi_ask": 79
+          "market_kalshi": 77.5,
+          "kalshi_bid": 77,
+          "kalshi_ask": 78
         }
       ]
     },
@@ -4846,8 +4846,8 @@
       "poll_note": "RCP average 9/28 - 10/31: Pappas +8.0 (Pappas vs Sununu), fetched 2026-11-02",
       "result": {},
       "wedge": 1.8,
-      "market_kalshi": 93.5,
-      "wedge_kalshi": 0.8,
+      "market_kalshi": 93.6,
+      "wedge_kalshi": 0.9,
       "history": [
         {
           "date": "2026-08-15",
@@ -5635,8 +5635,8 @@
           "polls": 92.7,
           "bid": 94,
           "ask": 95,
-          "market_kalshi": 93.5,
-          "kalshi_bid": 93.4,
+          "market_kalshi": 93.6,
+          "kalshi_bid": 93.5,
           "kalshi_ask": 93.6
         }
       ]
@@ -5651,8 +5651,8 @@
       "poll_note": "RCP average 10/15 - 11/1: Talarico +2.5 (Talarico vs Paxton), fetched 2026-11-02",
       "result": {},
       "wedge": 8,
-      "market_kalshi": 74.5,
-      "wedge_kalshi": 7,
+      "market_kalshi": 75.5,
+      "wedge_kalshi": 8,
       "history": [
         {
           "date": "2026-08-15",
@@ -6450,9 +6450,9 @@
           "polls": 67.5,
           "bid": 75,
           "ask": 76,
-          "market_kalshi": 74.5,
-          "kalshi_bid": 74,
-          "kalshi_ask": 75
+          "market_kalshi": 75.5,
+          "kalshi_bid": 75,
+          "kalshi_ask": 76
         }
       ]
     },
@@ -7281,8 +7281,8 @@
       "poll_note": "RCP average 10/9 - 11/1: Turek -0.3 (Turek vs Hinson), fetched 2026-11-02",
       "result": {},
       "wedge": -0.3,
-      "market_kalshi": 48.5,
-      "wedge_kalshi": 0.7,
+      "market_kalshi": 49.5,
+      "wedge_kalshi": 1.7,
       "history": [
         {
           "date": "2026-08-15",
@@ -8080,9 +8080,9 @@
           "polls": 47.8,
           "bid": 47,
           "ask": 48,
-          "market_kalshi": 48.5,
-          "kalshi_bid": 48,
-          "kalshi_ask": 49
+          "market_kalshi": 49.5,
+          "kalshi_bid": 49,
+          "kalshi_ask": 50
         }
       ]
     },
