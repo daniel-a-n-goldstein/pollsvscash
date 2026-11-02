@@ -36,4 +36,6 @@ analysis/                 post-election scripts: who closed the gap, and an even
 Data is in [`docs/data.json`](docs/data.json); a daily
 history per race is kept for up to a year.
 
+Write-ups posted along the way are in [`notes/`](notes/).
+
 Built by [Daniel A. N. Goldstein](https://daniel-a-n-goldstein.com), University of Oslo.
