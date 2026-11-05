@@ -8370,14 +8370,14 @@
       "id": "ak-senate",
       "name": "Peltola (D) flips AK",
       "sub": "AK Senate · Peltola vs Sullivan · candidate market",
-      "market": 95.1,
+      "market": 96.4,
       "polls": 60,
       "sigma": 5.5,
       "poll_note": "RCP average 10/8 - 10/30: Peltola +1.4 (Peltola vs Sullivan), fetched 2026-11-02",
       "result": {},
-      "wedge": 35.1,
-      "market_kalshi": 94.4,
-      "wedge_kalshi": 34.4,
+      "wedge": 36.4,
+      "market_kalshi": 94.9,
+      "wedge_kalshi": 34.9,
       "history": [
         {
           "date": "2026-08-15",
@@ -9201,13 +9201,13 @@
         },
         {
           "date": "2026-11-05",
-          "market": 95.1,
+          "market": 96.4,
           "polls": 60,
-          "bid": 94.9,
-          "ask": 95.3,
-          "market_kalshi": 94.4,
-          "kalshi_bid": 94.4,
-          "kalshi_ask": 94.5
+          "bid": 96.3,
+          "ask": 96.4,
+          "market_kalshi": 94.9,
+          "kalshi_bid": 94.9,
+          "kalshi_ask": 95
         }
       ]
     }
