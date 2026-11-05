@@ -54,7 +54,8 @@ fetch_kalshi <- function(ticker, outcome = "yes") {
   num <- function(x) suppressWarnings(as.numeric(x))
   bid <- if (!is.null(mk$yes_bid_dollars)) 100 * num(mk$yes_bid_dollars) else num(mk$yes_bid)
   ask <- if (!is.null(mk$yes_ask_dollars)) 100 * num(mk$yes_ask_dollars) else num(mk$yes_ask)
-  if (length(bid) == 0 || length(ask) == 0 || is.na(bid) || is.na(ask) || (bid == 0 && ask == 0)) {
+  # a closed or resolved book shows up as bid 0 / ask 100 (midpoint 50, meaningless); treat any spread that wide as no quote
+  if (length(bid) == 0 || length(ask) == 0 || is.na(bid) || is.na(ask) || (bid == 0 && ask == 0) || (ask - bid) >= 50) {
     p <- if (!is.null(mk$last_price_dollars)) 100 * num(mk$last_price_dollars) else num(mk$last_price)
     if (length(p) == 0 || is.na(p)) return(NA_real_)
     if (tolower(outcome) == "no") p <- 100 - p
