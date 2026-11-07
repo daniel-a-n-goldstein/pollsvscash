@@ -8536,8 +8536,8 @@
       "poll_note": "RCP average 10/8 - 10/30: Peltola +1.4 (Peltola vs Sullivan), fetched 2026-11-02",
       "result": {},
       "wedge": 38.2,
-      "market_kalshi": 96.8,
-      "wedge_kalshi": 36.8,
+      "market_kalshi": 97.2,
+      "wedge_kalshi": 37.2,
       "history": [
         {
           "date": "2026-08-15",
@@ -9383,11 +9383,11 @@
           "date": "2026-11-07",
           "market": 98.2,
           "polls": 60,
-          "bid": 98,
-          "ask": 98.3,
-          "market_kalshi": 96.8,
-          "kalshi_bid": 96.7,
-          "kalshi_ask": 96.8
+          "bid": 98.1,
+          "ask": 98.2,
+          "market_kalshi": 97.2,
+          "kalshi_bid": 97.2,
+          "kalshi_ask": 97.3
         }
       ]
     }
