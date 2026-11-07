@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "races": [
     {
       "id": "senate-dem",
@@ -789,6 +789,14 @@
         },
         {
           "date": "2026-11-06",
+          "market": 74.5,
+          "polls": 63,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-07",
           "market": 74.5,
           "polls": 63,
           "carried": true,
@@ -1645,6 +1653,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-07",
+          "market": 94.5,
+          "polls": 94.7,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -2491,6 +2507,14 @@
         },
         {
           "date": "2026-11-06",
+          "market": 98,
+          "polls": 97.5,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.8
+        },
+        {
+          "date": "2026-11-07",
           "market": 98,
           "polls": 97.5,
           "carried": true,
@@ -3347,6 +3371,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.8
+        },
+        {
+          "date": "2026-11-07",
+          "market": 97.2,
+          "polls": 93.2,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.8
         }
       ]
     },
@@ -4193,6 +4225,14 @@
         },
         {
           "date": "2026-11-06",
+          "market": 70.5,
+          "polls": 72.6,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-07",
           "market": 70.5,
           "polls": 72.6,
           "carried": true,
@@ -5049,6 +5089,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-07",
+          "market": 75.5,
+          "polls": 83.2,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -5885,6 +5933,14 @@
         },
         {
           "date": "2026-11-06",
+          "market": 95.5,
+          "polls": 92.7,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-07",
           "market": 95.5,
           "polls": 92.7,
           "carried": true,
@@ -6741,6 +6797,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.7
+        },
+        {
+          "date": "2026-11-07",
+          "market": 74.5,
+          "polls": 67.5,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.7
         }
       ]
     },
@@ -7587,6 +7651,14 @@
         },
         {
           "date": "2026-11-06",
+          "market": 72.5,
+          "polls": 69.5,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.8
+        },
+        {
+          "date": "2026-11-07",
           "market": 72.5,
           "polls": 69.5,
           "carried": true,
@@ -8443,6 +8515,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-07",
+          "market": 50.5,
+          "polls": 47.8,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -8450,14 +8530,14 @@
       "id": "ak-senate",
       "name": "Peltola (D) flips AK",
       "sub": "AK Senate · Peltola vs Sullivan · candidate market",
-      "market": 98.6,
+      "market": 98.2,
       "polls": 60,
       "sigma": 5.5,
       "poll_note": "RCP average 10/8 - 10/30: Peltola +1.4 (Peltola vs Sullivan), fetched 2026-11-02",
       "result": {},
-      "wedge": 38.6,
-      "market_kalshi": 98,
-      "wedge_kalshi": 38,
+      "wedge": 38.2,
+      "market_kalshi": 96.8,
+      "wedge_kalshi": 36.8,
       "history": [
         {
           "date": "2026-08-15",
@@ -9298,6 +9378,16 @@
           "market_kalshi": 98,
           "kalshi_bid": 98,
           "kalshi_ask": 98.1
+        },
+        {
+          "date": "2026-11-07",
+          "market": 98.2,
+          "polls": 60,
+          "bid": 98,
+          "ask": 98.3,
+          "market_kalshi": 96.8,
+          "kalshi_bid": 96.7,
+          "kalshi_ask": 96.8
         }
       ]
     }
