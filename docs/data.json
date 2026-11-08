@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "races": [
     {
       "id": "senate-dem",
@@ -802,6 +802,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-08",
+          "market": 74.5,
+          "polls": 63,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -810,13 +818,13 @@
       "name": "Dems take the House",
       "sub": "2026 midterms · generic ballot vs control market",
       "market": 94.5,
-      "polls": 94.7,
+      "polls": 94.5,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/9 - 10/30: Democrats +8.9 (Democrats vs Republicans), fetched 2026-11-02",
+      "poll_note": "RCP average 10/9 - 11/1: Democrats +8.8 (Democrats vs Republicans), fetched 2026-11-08",
       "result": "Yes",
-      "wedge": -0.2,
+      "wedge": 0,
       "market_kalshi": 99.9,
-      "wedge_kalshi": 5.2,
+      "wedge_kalshi": 5.4,
       "history": [
         {
           "date": "2026-08-15",
@@ -1661,6 +1669,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-08",
+          "market": 94.5,
+          "polls": 94.5,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -1669,13 +1685,13 @@
       "name": "Cooper (D) flips NC",
       "sub": "NC Senate · Cooper vs Whatley",
       "market": 98,
-      "polls": 97.5,
+      "polls": 97.7,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/29 - 10/29: Cooper +10.8 (Cooper vs Whatley), fetched 2026-11-02",
+      "poll_note": "RCP average 10/1 - 11/1: Cooper +11.0 (Cooper vs Whatley), fetched 2026-11-08",
       "result": "Yes",
-      "wedge": 0.5,
+      "wedge": 0.3,
       "market_kalshi": 99.8,
-      "wedge_kalshi": 2.3,
+      "wedge_kalshi": 2.1,
       "history": [
         {
           "date": "2026-08-15",
@@ -2520,6 +2536,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.8
+        },
+        {
+          "date": "2026-11-08",
+          "market": 98,
+          "polls": 97.7,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.8
         }
       ]
     },
@@ -2528,13 +2552,13 @@
       "name": "Ossoff (D) holds GA",
       "sub": "GA Senate · Ossoff vs Collins",
       "market": 97.2,
-      "polls": 93.2,
+      "polls": 94.1,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/21 - 10/17: Ossoff +8.2 (Ossoff vs Collins), fetched 2026-11-02",
+      "poll_note": "RCP average 9/15 - 11/2: Ossoff +8.6 (Ossoff vs Collins), fetched 2026-11-08",
       "result": "Yes",
-      "wedge": 4,
+      "wedge": 3.1,
       "market_kalshi": 99.8,
-      "wedge_kalshi": 6.6,
+      "wedge_kalshi": 5.7,
       "history": [
         {
           "date": "2026-08-15",
@@ -3379,6 +3403,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.8
+        },
+        {
+          "date": "2026-11-08",
+          "market": 97.2,
+          "polls": 94.1,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.8
         }
       ]
     },
@@ -3387,13 +3419,13 @@
       "name": "Jackson (D) flips ME",
       "sub": "ME Senate · Jackson vs Collins",
       "market": 70.5,
-      "polls": 72.6,
+      "polls": 74.4,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/8 - 11/1: Jackson +3.3 (Jackson vs Collins), fetched 2026-11-02",
+      "poll_note": "RCP average 10/16 - 11/1: Jackson +3.6 (Jackson vs Collins), fetched 2026-11-08",
       "result": "Yes",
-      "wedge": -2.1,
+      "wedge": -3.9,
       "market_kalshi": 99.9,
-      "wedge_kalshi": 27.3,
+      "wedge_kalshi": 25.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -4238,6 +4270,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-08",
+          "market": 70.5,
+          "polls": 74.4,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -4248,7 +4288,7 @@
       "market": 75.5,
       "polls": 83.2,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/15 - 11/1: El-Sayed +5.3 (El-Sayed vs Rogers), fetched 2026-11-02",
+      "poll_note": "RCP average 10/15 - 11/1: El-Sayed +5.3 (El-Sayed vs Rogers), fetched 2026-11-08",
       "result": "Yes",
       "wedge": -7.7,
       "market_kalshi": 99.9,
@@ -5097,6 +5137,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-08",
+          "market": 75.5,
+          "polls": 83.2,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -5107,7 +5155,7 @@
       "market": 95.5,
       "polls": 92.7,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/28 - 10/31: Pappas +8.0 (Pappas vs Sununu), fetched 2026-11-02",
+      "poll_note": "RCP average 10/2 - 11/1: Pappas +8.0 (Pappas vs Sununu), fetched 2026-11-08",
       "result": "Yes",
       "wedge": 2.8,
       "market_kalshi": 99.9,
@@ -5946,6 +5994,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-08",
+          "market": 95.5,
+          "polls": 92.7,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -5954,13 +6010,13 @@
       "name": "Talarico (D) flips TX",
       "sub": "TX Senate · Talarico vs Paxton",
       "market": 74.5,
-      "polls": 67.5,
+      "polls": 68.2,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/15 - 11/1: Talarico +2.5 (Talarico vs Paxton), fetched 2026-11-02",
+      "poll_note": "RCP average 10/15 - 11/1: Talarico +2.6 (Talarico vs Paxton), fetched 2026-11-08",
       "result": "Yes",
-      "wedge": 7,
+      "wedge": 6.3,
       "market_kalshi": 99.7,
-      "wedge_kalshi": 32.2,
+      "wedge_kalshi": 31.5,
       "history": [
         {
           "date": "2026-08-15",
@@ -6805,6 +6861,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.7
+        },
+        {
+          "date": "2026-11-08",
+          "market": 74.5,
+          "polls": 68.2,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.7
         }
       ]
     },
@@ -6815,7 +6879,7 @@
       "market": 72.5,
       "polls": 69.5,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/12 - 11/1: Brown +2.8 (Brown vs Husted), fetched 2026-11-02",
+      "poll_note": "RCP average 10/15 - 11/1: Brown +2.8 (Brown vs Husted), fetched 2026-11-08",
       "result": "Yes",
       "wedge": 3,
       "market_kalshi": 99.8,
@@ -7664,6 +7728,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.8
+        },
+        {
+          "date": "2026-11-08",
+          "market": 72.5,
+          "polls": 69.5,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.8
         }
       ]
     },
@@ -7672,13 +7744,13 @@
       "name": "Turek (D) flips IA",
       "sub": "IA Senate · Turek vs Hinson",
       "market": 50.5,
-      "polls": 47.8,
+      "polls": 50,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/9 - 11/1: Turek -0.3 (Turek vs Hinson), fetched 2026-11-02",
+      "poll_note": "RCP average 10/13 - 11/1: Turek +0.0 (Turek vs Hinson), fetched 2026-11-08",
       "result": "Yes",
-      "wedge": 2.7,
+      "wedge": 0.5,
       "market_kalshi": 99.9,
-      "wedge_kalshi": 52.1,
+      "wedge_kalshi": 49.9,
       "history": [
         {
           "date": "2026-08-15",
@@ -8523,6 +8595,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-08",
+          "market": 50.5,
+          "polls": 50,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -8530,14 +8610,14 @@
       "id": "ak-senate",
       "name": "Peltola (D) flips AK",
       "sub": "AK Senate · Peltola vs Sullivan · candidate market",
-      "market": 98.2,
-      "polls": 60,
+      "market": 98.6,
+      "polls": 57.2,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/8 - 10/30: Peltola +1.4 (Peltola vs Sullivan), fetched 2026-11-02",
+      "poll_note": "RCP average 10/8 - 11/1: Peltola +1.0 (Peltola vs Sullivan), fetched 2026-11-08",
       "result": {},
-      "wedge": 38.2,
-      "market_kalshi": 97.2,
-      "wedge_kalshi": 37.2,
+      "wedge": 41.4,
+      "market_kalshi": 97.3,
+      "wedge_kalshi": 40.1,
       "history": [
         {
           "date": "2026-08-15",
@@ -9388,6 +9468,16 @@
           "market_kalshi": 97.2,
           "kalshi_bid": 97.2,
           "kalshi_ask": 97.3
+        },
+        {
+          "date": "2026-11-08",
+          "market": 98.6,
+          "polls": 57.2,
+          "bid": 98.5,
+          "ask": 98.6,
+          "market_kalshi": 97.3,
+          "kalshi_bid": 97.3,
+          "kalshi_ask": 97.4
         }
       ]
     }
