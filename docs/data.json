@@ -10196,8 +10196,8 @@
           "bid": 99.8,
           "ask": 99.9,
           "market_kalshi": 99.8,
-          "kalshi_bid": 99.7,
-          "kalshi_ask": 99.8
+          "kalshi_bid": 99.8,
+          "kalshi_ask": 99.9
         }
       ]
     }
