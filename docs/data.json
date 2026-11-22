@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "races": [
     {
       "id": "senate-dem",
@@ -914,6 +914,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-22",
+          "market": 74.5,
+          "polls": 63,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -924,7 +932,7 @@
       "market": 94.5,
       "polls": 94.5,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/9 - 11/1: Democrats +8.8 (Democrats vs Republicans), fetched 2026-11-15",
+      "poll_note": "RCP average 10/9 - 11/1: Democrats +8.8 (Democrats vs Republicans), fetched 2026-11-22",
       "result": "Yes",
       "wedge": 0,
       "market_kalshi": 99.9,
@@ -1885,6 +1893,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-22",
+          "market": 94.5,
+          "polls": 94.5,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -1895,7 +1911,7 @@
       "market": 98,
       "polls": 97.7,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/1 - 11/1: Cooper +11.0 (Cooper vs Whatley), fetched 2026-11-15",
+      "poll_note": "RCP average 10/1 - 11/1: Cooper +11.0 (Cooper vs Whatley), fetched 2026-11-22",
       "result": "Yes",
       "wedge": 0.3,
       "market_kalshi": 99.8,
@@ -2856,6 +2872,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.8
+        },
+        {
+          "date": "2026-11-22",
+          "market": 98,
+          "polls": 97.7,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.8
         }
       ]
     },
@@ -2866,7 +2890,7 @@
       "market": 97.2,
       "polls": 94.1,
       "sigma": 5.5,
-      "poll_note": "RCP average 9/15 - 11/2: Ossoff +8.6 (Ossoff vs Collins), fetched 2026-11-15",
+      "poll_note": "RCP average 9/15 - 11/2: Ossoff +8.6 (Ossoff vs Collins), fetched 2026-11-22",
       "result": "Yes",
       "wedge": 3.1,
       "market_kalshi": 99.8,
@@ -3827,6 +3851,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.8
+        },
+        {
+          "date": "2026-11-22",
+          "market": 97.2,
+          "polls": 94.1,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.8
         }
       ]
     },
@@ -3837,7 +3869,7 @@
       "market": 70.5,
       "polls": 74.4,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/16 - 11/1: Jackson +3.6 (Jackson vs Collins), fetched 2026-11-15",
+      "poll_note": "RCP average 10/16 - 11/1: Jackson +3.6 (Jackson vs Collins), fetched 2026-11-22",
       "result": "Yes",
       "wedge": -3.9,
       "market_kalshi": 99.9,
@@ -4798,6 +4830,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-22",
+          "market": 70.5,
+          "polls": 74.4,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -4808,7 +4848,7 @@
       "market": 75.5,
       "polls": 83.2,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/15 - 11/1: El-Sayed +5.3 (El-Sayed vs Rogers), fetched 2026-11-15",
+      "poll_note": "RCP average 10/15 - 11/1: El-Sayed +5.3 (El-Sayed vs Rogers), fetched 2026-11-22",
       "result": "Yes",
       "wedge": -7.7,
       "market_kalshi": 99.9,
@@ -5769,6 +5809,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-22",
+          "market": 75.5,
+          "polls": 83.2,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -5779,7 +5827,7 @@
       "market": 95.5,
       "polls": 92.7,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/2 - 11/1: Pappas +8.0 (Pappas vs Sununu), fetched 2026-11-15",
+      "poll_note": "RCP average 10/2 - 11/1: Pappas +8.0 (Pappas vs Sununu), fetched 2026-11-22",
       "result": "Yes",
       "wedge": 2.8,
       "market_kalshi": 99.9,
@@ -6730,6 +6778,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-22",
+          "market": 95.5,
+          "polls": 92.7,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -6740,7 +6796,7 @@
       "market": 74.5,
       "polls": 68.2,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/15 - 11/1: Talarico +2.6 (Talarico vs Paxton), fetched 2026-11-15",
+      "poll_note": "RCP average 10/15 - 11/1: Talarico +2.6 (Talarico vs Paxton), fetched 2026-11-22",
       "result": "Yes",
       "wedge": 6.3,
       "market_kalshi": 99.7,
@@ -7701,6 +7757,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.7
+        },
+        {
+          "date": "2026-11-22",
+          "market": 74.5,
+          "polls": 68.2,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.7
         }
       ]
     },
@@ -7711,7 +7775,7 @@
       "market": 72.5,
       "polls": 69.5,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/15 - 11/1: Brown +2.8 (Brown vs Husted), fetched 2026-11-15",
+      "poll_note": "RCP average 10/15 - 11/1: Brown +2.8 (Brown vs Husted), fetched 2026-11-22",
       "result": "Yes",
       "wedge": 3,
       "market_kalshi": 99.8,
@@ -8672,6 +8736,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.8
+        },
+        {
+          "date": "2026-11-22",
+          "market": 72.5,
+          "polls": 69.5,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.8
         }
       ]
     },
@@ -8682,7 +8754,7 @@
       "market": 50.5,
       "polls": 50,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/13 - 11/1: Turek +0.0 (Turek vs Hinson), fetched 2026-11-15",
+      "poll_note": "RCP average 10/13 - 11/1: Turek +0.0 (Turek vs Hinson), fetched 2026-11-22",
       "result": "Yes",
       "wedge": 0.5,
       "market_kalshi": 99.9,
@@ -9643,6 +9715,14 @@
           "carried": true,
           "carried_from": "2026-11-03",
           "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-22",
+          "market": 50.5,
+          "polls": 50,
+          "carried": true,
+          "carried_from": "2026-11-03",
+          "market_kalshi": 99.9
         }
       ]
     },
@@ -9653,7 +9733,7 @@
       "market": 99.9,
       "polls": 57.2,
       "sigma": 5.5,
-      "poll_note": "RCP average 10/8 - 11/1: Peltola +1.0 (Peltola vs Sullivan), fetched 2026-11-15",
+      "poll_note": "RCP average 10/8 - 11/1: Peltola +1.0 (Peltola vs Sullivan), fetched 2026-11-22",
       "result": {},
       "wedge": 42.7,
       "market_kalshi": 99.9,
@@ -10635,6 +10715,14 @@
         },
         {
           "date": "2026-11-21",
+          "market": 99.9,
+          "polls": 57.2,
+          "carried": true,
+          "carried_from": "2026-11-17",
+          "market_kalshi": 99.9
+        },
+        {
+          "date": "2026-11-22",
           "market": 99.9,
           "polls": 57.2,
           "carried": true,
